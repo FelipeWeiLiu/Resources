@@ -1,0 +1,95 @@
+OVERTHEWIRE-BANDIT系列Level0 学习资料
+阅读文献:
+https://en.wikipedia.org/wiki/Secure_Shell
+https://itsfoss.com/ssh-to-port/
+https://www.wikihow.com/Use-SSH
+https://linuxhandbook.com/ssh-basics/
+https://linuxhandbook.com/ssh-hardening-tips/?ref=itsfoss.com
+
+通关流程
+sudo apt update
+//检查最新更新
+sudo apt-get install openssh-server
+//下载ssh工具
+ssh -p 2220 bandit0@bandit.labs.overthewire.org
+//连接 端口 用户@hostname(DNS)
+Password: bandit0
+
+笔记:
+
+SSH 配置文件位于 /etc/ssh/sshd_config
+
+
+
+ssh-keygen
+回车默认路径 ~/.ssh
+-f 自定义路径
+
+
+
+ssh -i
+
+百科:
+-i identity_file 从指定文件中读取传输时使用的密钥文件（例如亚马逊云pem），此参数直接传递给ssh；
+
+总结:
+由local本地发出请求给远程目标服务器，服务器收到请求后再由公钥向local本地返回一串随机数据，local收到数据后进行数字签名并再次返回，身份得到认证后将由SSH建立加密传输通道用于用户远程操作。
+
+
+
+mkdir
+-p
+层层递增式建立目录，用于子目录快速建立不存在的母目录
+
+
+
+ls -l权限含义
+--- --- --- user staff（同组用户）
+root, staff, others
+---(文件所有者root,owner)---(同组用户group,staff)---(其它用户others)
+例子 rwx r-- ---
+文件所有者拥有rwx权限
+同组用户拥有r权限
+其它用户无权限
+ls会列出你当前目录中的所有文件和文件夹。
+ls –l将列出目录内容及大小、权限和日期等额外信息。
+ls-a会列出所有内容，包括隐藏文件和文件夹。
+
+
+AI文献:
+Linux 权限用的是“二进制位 + 八进制表示法”
+r=4
+w=2
+x=1
+权限600换算
+rw-(4+2) ---(0) ---(0)
+
+举例:
+rwx -w- ---
+rwx(4+2+1)-w-(2)---(0) 也就是 chmod 720 (权限720)
+
+Linux权限中
+r、w、x 彼此独立，没有先后顺序
+
+
+建立SSH远程操作:
+
+scp端口用-P
+ssh端口用-p
+
+第1步 以root身份检查Linux最新更新，并安装 OpenSSH Server
+sudo apt update
+sudo apt-get install openssh-server
+
+第2步 建立SSH通道
+sudo systemctl start ssh //systemctl的全写形式是 System Control
+sudo systemctl status ssh //用于检查通道是否开启， status状态
+同理， stop为关闭
+
+第3步 建立远程连接并找到.ssh文件夹
+ssh username@IP
+
+第5步植入公钥
+scp 路径 密钥.pub user@IP:路径
+
+rm 旧文件名 新文件名
