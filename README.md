@@ -6,10 +6,16 @@
   </head>
 <body>
 <strong><p>*LIB</p></strong>
-<p style="background-color:rgba(255,255,0)">//Librerias</p>
-<h1>*OverTheWire</h1>
-<p style="background-color:rgba(255,255,0)"//Recursos, apuntes de estudios y prácticas en https://overthewire.org/wargames/ </p>
+<p style="background-color:rgba(255,255,0)">
+  //Librerias
+</p>
+<strong><p>*OverTheWire</p></strong>
+<p style="background-color:rgba(255,255,0)"
+  //Recursos, apuntes de estudios y prácticas en https://overthewire.org/wargames/ 
+</p>
 <strong><p>*WEB</p></strong>
-<p style="background-color:rgba(255,255,0)">// Apuntes y recursos de HTML, JAVASCRIPT y CSS</p>
+<p style="background-color:rgba(255,255,0)">
+  // Apuntes y recursos de HTML, JAVASCRIPT y CSS
+</p>
 </body>
 </html>
