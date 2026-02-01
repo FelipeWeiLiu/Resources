@@ -1,4 +1,4 @@
-//Aquí subo todos mis apuntes y recursos durante mis estudios y prácticas en ser un Hacker Ético
+**Aquí subo todos mis apuntes y recursos durante mis estudios y prácticas en ser un Hacker Ético
 *LIB
 //Librerias
 *OverTheWire
