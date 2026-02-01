@@ -2,14 +2,14 @@
 <html>
   <head>
   <meta charset="utf-8">
-<title>**Aquí subo todos mis apuntes y recursos durante mis estudios y prácticas en ser un Hacker Ético</title>
+<strong><h2>**Aquí subo todos mis apuntes y recursos durante mis estudios y prácticas en ser un Hacker Ético</h2></strong>
   </head>
 <body>
-<h1>*LIB</h1>
-<p>//Librerias</p>
+<strong><p>*LIB</p></strong>
+<p style="background-color:rgba(255,255,0)">//Librerias</p>
 <h1>*OverTheWire</h1>
-<p>//Recursos, apuntes de estudios y prácticas en https://overthewire.org/wargames/ </p>
-<h1>*WEB</h1>
-<p>// Apuntes y recursos de HTML, JAVASCRIPT y CSS</p>
+<p style="background-color:rgba(255,255,0)"//Recursos, apuntes de estudios y prácticas en https://overthewire.org/wargames/ </p>
+<strong><p>*WEB</p></strong>
+<p style="background-color:rgba(255,255,0)">// Apuntes y recursos de HTML, JAVASCRIPT y CSS</p>
 </body>
 </html>
