@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <div style="color:#980000">
+        <p style="background-color:rgb(112,255,0)">
+        ¡Hola Mundo!
+        </p>
+        <p style="background-color:rgb(0,255,255)">
+            Color azúl claro
+            </p>
+        </div>
+        </head>
+        <body>
+            <a href="https://www.runoob.com/tags/tag-div.html"> El uso de div </a>
+            <br />
+            <a href="https://www.runoob.com/html/html-colors.html"> El uso de RGBA y los colores </a>
+            </body>
+</html>
