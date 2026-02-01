@@ -11,7 +11,7 @@
 </p>
 <strong><p>*OverTheWire</p></strong>
 <p style="background-color:rgba(255,255,0)"
-  //Recursos, apuntes de estudios y prácticas en https://overthewire.org/wargames/ 
+//Recursos, apuntes de estudios y prácticas en https://overthewire.org/wargames/ 
 </p>
 <strong><p>*WEB</p></strong>
 <p style="background-color:rgba(255,255,0)">
