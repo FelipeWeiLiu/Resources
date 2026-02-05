@@ -1,1 +1,12 @@
-OVERTHEWIRE-BANDIT系列Level 1 学习资料
+OVERTHEWIRE-BANDIT系列Level-1 学习资料
+
+//通过1个local能够同时建立数个SSH，SSH通道的本质是一个加密的会话。
+//bandit0, 1 ,2...属于数个被创建的不同会话但隶属于同一个local的SSH隧道。这个网站将每个SSH关卡设置为独立关卡，而关卡与关卡之间仅存在"互联关系"而非
+套娃关系。所以刻意禁止local SSH访问另一个local SSH。因此当你进入了一段bandit的SSH加密会话时，你无法通过"套娃"方式从这段SSH会话(bandit0)跳转到下一段 bandit1。
+这是服务端策略导致的问题，并非Linux的底层逻辑。
+
+层级:
+应用层---shell/scp/sftp/ssh(命令)
+逻辑层---SSH session/channel(隧道)---shell/命令/转发
+安全层---SSH connection---加密会话
+网络层---TCP连接---底层传输
