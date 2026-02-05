@@ -5,4 +5,28 @@
 //En el caso de que los visitantes o clientes acceden a un sitio web mediante un navegador que no entiende "scripts",
 demostrará todas las partes de códigos que contiene dentro de "<script>...</script>" como texto plano(纯文本) en la página web.
 
+**Etiquetas de comentario**
+<!--...-->
+//
+/*...*/
+
+**Etiqueta <NOSCRIPT>**
+<noscript>...</noscript>
+//Solo incluye códigos HTML
+
+**Terminación ;**
+//Al final de una sentencia(计算机术语，指编程语句), indica con un punto y coma ";"
+//Su uso no es obligatorio en el caso de que solo hay una sentencia al línea.
+Ejemplo
+let x=2
+let y=5
+
+//Es obligatorio usarlo cuando en una misma línea ocurren varias sentencias o cuando sentencias ocupa varias líneas
+Ejemplo caso 1
+let x=2; let y=5;
+Ejemplo caso 2
+let suma=
+    x+y;
+
+//No hay un límite máximo en longitud de las sentencias.
 
