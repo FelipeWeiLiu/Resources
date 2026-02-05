@@ -2,7 +2,7 @@
 //Para que cualquier navegador pueda conocer el formato de las letras, o diseños de una página web, es necesario estandarizar(将...标准化) unos lenguages de Markup.
 Hoy en día, como HTML, XHTML, SGML o XML, son los lenguajes estándares más utilizados en el mundo informático, para las aplicaciones web. Estos lenguajes
 de Markup nos permiten codificar los documentos o textos añadiendo etiquetas que contienen(包含) información adicional(额外的).
-//Estas etiquetas estructuran la parte documentaria página web y marcan la presentación hacia los visitantes(访客) y usuarios.Sin embargo, tenemos que tener en cuenta
-de que todas las etiquetas documentada se delegan en otro lenguaje llamado CSS(Cascade Style Sheet).
+//Estas etiquetas estructuran la parte codificada de la página web y marcan la presentación hacia los visitantes(访客) y usuarios.Sin embargo, tenemos que tener en cuenta
+que todas las etiquetas documentada se delegan en otro lenguaje llamado CSS(Cascade Style Sheet).
 //Una página web, existe mucha relación entre la estructura realizada por (X)HTML y el presentación(外观) o la estética(美学) realizada con CSS.
 **Página 11: El llenguatge de marques (X)HTML**
