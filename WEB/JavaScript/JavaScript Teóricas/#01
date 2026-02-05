@@ -2,5 +2,7 @@
 //Por razón de seguridad JavaScript Client no tiene acceso al sistema de ficheros local
 //No soporte de comunicación
 //JavaScript es un lenguaje Case Sensitive, refiere que distingue entre letras mayúsculas y minúsculas en el texto
+//En el caso de que los visitantes o clientes acceden a un sitio web mediante un navegador que no entiende "scripts",
+demostrará todas las partes de códigos que contiene dentro de "<script>...</script>" como texto plano(纯文本) en la página web.
 
 
