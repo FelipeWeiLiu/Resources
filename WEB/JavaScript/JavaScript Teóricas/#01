@@ -1,2 +1,6 @@
 **Introducción JavaScript**
-//
+//Por razón de seguridad JavaScript Client no tiene acceso al sistema de ficheros local
+//No soporte de comunicación
+//JavaScript es un lenguaje Case Sensitive, refiere que distingue entre letras mayúsculas y minúsculas en el texto
+
+
