@@ -1,5 +1,7 @@
 OVERTHEWIRE-BANDIT系列Level-1 学习资料
 
+通关流程:
+在进入了bandit0 SSH会话之后
 
 笔记:
 //通过1个local能够同时建立数个SSH，SSH通道的本质是一个加密的会话。
