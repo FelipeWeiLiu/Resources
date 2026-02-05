@@ -13,7 +13,7 @@ cat readme "password"
 //利用cash指令显示"readme"的内容，按照Level-1的提示，这将是通往 bandit1 的密码。
 exit
 ssh -p 2220 ssh bandit1@bandit.labs.overthewire.org
-//以2220端口进入名为bandit1的SSH会话并在密码栏粘贴刚刚从"readme"里解析出来的密码。
+//退出bandit0会话并以2220端口进入名为bandit1的SSH会话，输入或复制粘贴刚刚从"readme"里"cat"解析出来的密码。
 
 笔记:
 //通过1个local能够同时建立数个SSH，SSH通道的本质是一个加密的会话。
