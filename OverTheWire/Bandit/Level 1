@@ -10,7 +10,7 @@ Linux的目录结构: https://www.runoob.com/linux/linux-system-contents.html
 cd ~
 //"~"并不是Linux系统文件中的一部分，而是由shell解释器例如bash扩展的。
 cat readme "password"
-//利用cash指令显示"readme"的内容，按照Level-1的提示，这将是通往 bandit1 的密码。
+//利用cat指令显示"readme"的内容，按照Level-1的提示，这将是通往 bandit1 的密码。
 exit
 ssh -p 2220 ssh bandit1@bandit.labs.overthewire.org
 //退出bandit0会话并以2220端口进入名为bandit1的SSH会话，输入或复制粘贴刚刚从"readme"里"cat"解析出来的密码。
