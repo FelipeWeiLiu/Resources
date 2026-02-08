@@ -66,3 +66,12 @@ HTML区块 块元素以及行内元素
 常见块元素 <div> <p> <h1> <ul> <ol> <form>
 常见行元素 行元素不能包含块级元素
 <span> <a> <strong> <em> <img>
+
+<div>块级标签，无任何语意，用来组织内容的容器块。经常用于创建页面布局结构，创建不同部分，例如导航栏，中间内容区域 <div class="content">，页脚。
+<div class="">
+."类别名称" 用于快速创建<div class>标签,class后边跟类别名称
+#"类别名称"用于快速创建<div id>标签，井号后面跟id名称
+
+<span>用于包装内联选中文本，例如
+<span>这是一个标签<a href="#">click me</a></span>
+
