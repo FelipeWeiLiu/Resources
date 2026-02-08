@@ -7,3 +7,44 @@ color: aqua;
 h2在style中作为元素选择器，同理p, h1, h3...
 
 类选择器
+利用vscode的快捷输入法 h3.highlight可以快速创建h3的类选择器，效果如下
+<h3 class="highlight">这是一个类选择器</h3>
+同理，"#"用于创建id
+
+比方
+<style>
+h3 {
+background-color: yellow;
+}
+</style>
+</head>
+<body>
+<h3 class="highlight">这是被类选择器影响到的yellow文本</h3>
+<h3>这是一个不被类选择器影响的文本</h>
+</body>
+
+通用选择器选择所有元素,利用"*"
+
+例如
+<style>
+* {
+font-family: ''; //选择字体
+font-weight: boldaer; //把字体改粗
+}
+
+子元素选择器
+选择位于母元素内部的母元素，"嵌套"，利用一个大标签嵌套一个小标签
+输入快捷命令 .mother快速创建一个母元素
+</head>
+<style>
+.mother > .son {
+color: red;
+}
+</style>
+</head>
+<body>
+<div class="mother">
+<p class="son">这是一个子元素选择器示例</p>
+</div>
+<body>
+
