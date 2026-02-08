@@ -8,3 +8,61 @@ que todas las etiquetas documentadas se delegan en otro lenguaje llamado CSS(Cas
 **Página 11: El llenguatge de marques (X)HTML**
 
 Extensiones: Autorename Tag
+
+单标签用于没有内容的元素
+双标签用于有内容的元素
+head标签对中写文档的原信息
+
+在VScode中可以通过输入一个"!"来自动生成完整的html标签格式·
+打开auto save之后可以实时观察html文档更新  
+
+文本格式化标签
+<b>加粗 <i><em>斜体 <u>下划线 <s>删除线
+
+<ul>无序列表
+<ol>有序列表
+<li> 无序列表或有序列表中的list item
+
+<table>
+<table border="">
+<tr> table row 行
+<td> table data 列
+<th> table header 列标题
+
+格式
+<table>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+属性基本语法
+<开始标签 属性名="属性值">
+属性名用于标识属性
+属性值用于定义属性
+src表示路径
+属性名不区分大小写，属性值对大小写敏感
+
+class属性是类属性
+id定义元素唯一id
+style规定元素的行内样式
+
+<a>标签
+<a href="www.google.com" target="">这里输入文本内容</a>
+target属性定义链接的页面打开方式
+href hyper reference 链接
+
+把图片保存进工作文件夹之后可以直接从img src中提取路径，路径可以是相对路径也可以是绝对路径,ruta relativa y ruta absoluta
+<img src="" alt="" width="" height="">
+alt备用，当src无法加载出来时，浏览器将加载出alt指定文本 <hr>和<br>标签
+
+HTML区块 块元素以及行内元素
+常见块元素 <div> <p> <h1> <ul> <ol> <form>
+常见行元素 行元素不能包含块级元素
+<span> <a> <strong> <em> <img>
