@@ -82,7 +82,7 @@ HTML区块 块元素以及行内元素
 placeholder可以显示文本框的默认提示内容，例如输入账号密码界面时，密码文本框提示"require password"
 <input type="text" placeholder="require password">
 value规定值，已经在框内填好了
-radio用于单选框
+radio用于选择框,如果想要单选效果，则在几个选择款的type属性之后再加一个name属性
 
 例如做一个账号登陆界面
 <form>
@@ -91,9 +91,12 @@ radio用于单选框
 <label>/<span>密码:</label></span>
 <input type="text" placeholder="请输入密码">
 <label>请选择性别</label>
-<input type="radio">男
-<input type="radio">女
-<input type="radio">其它
+<input type="radio" name="gender">男
+<input type="radio" name="gender">女
+<input type="radio" name="gender">其它
 </form>
 <label>标签专门为<input>标签而设计
+<label for="idname">
+<input id="idname">
+强行将label与input联系起来，例如点击label的字体，因为for的作用将自动进入对应的id input界面，因为for通常跟id，所以同一个for id不能被多个label使用
 
