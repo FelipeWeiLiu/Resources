@@ -1,1 +1,9 @@
+元素选择器
+<style>
+h2 {
+color: aqua;
+}
+</style>
+h2在style中作为元素选择器，同理p, h1, h3...
 
+类选择器
