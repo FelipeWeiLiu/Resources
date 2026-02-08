@@ -48,3 +48,72 @@ color: red;
 </div>
 <body>
 
+包含选择器 后代选择器
+后代选择器不自动继承母元素和子元素的选择器，但是在样式层面后代元素可以继承母元素部分属性，不继承子元素属性。
+</head>
+<style>
+.mother > .son {
+color: red;
+}
+.mother p {
+color: brown;
+font-size: larger;
+}
+</style>
+</head>
+<body>
+<div class="mother">
+<p class="son">这是一个子元素选择器示例，颜色为red</p>
+<div>
+<p class="grandson">这是一个后代选择器,颜色为brown</p>
+</div>
+</div>
+</body>
+
+相邻元素选择器 兄弟选择器
+只选择同一级别下紧跟在选中元素之后的第一个p标签
+</head>
+<style>
+h3 + p {
+background-color: blue;
+}
+</style>
+</head>
+<body>
+<p>这是一个普通的p标签</p> //不被影响
+<h3这是一个相邻兄弟选择器示例</h3> //背景颜色将变成蓝色
+<p>这是另一个p标签</p> //背景颜色被影响变为蓝色
+</body>
+
+伪类选择器
+用于被选择的元素在特定状态下的表现
+例如:
+用户交互
+元素结构位置
+表单状态
+
+典型的用户交互伪类
+a:hover //鼠标悬停
+a:active //点击瞬间，状态
+input:focus //获得焦点
+button:disabled //被禁用
+a:first-child //选中第一个子元素
+a:nth-child() //选中第n个子元素
+
+例子
+<head>
+<style>
+#element:hover{
+background-color: blueviolet;
+}
+</style>
+</head>
+<body>
+<h3 id="element">这是一个伪类选择器</h3> //鼠标悬停时背景颜色变为紫色
+</body>
+
+伪元素选择器
+创建虚拟元素并且样式化它们，这个元素不实际存在
+::after
+::before
+在选中元素之后或者之前插入虚拟的内容
