@@ -74,4 +74,26 @@ HTML区块 块元素以及行内元素
 
 <span>用于包装内联选中文本，例如
 <span>这是一个标签<a href="#">click me</a></span>
+通常与JS和CSS一起使用
+
+表达 form (类似于wp中的forminator)
+<form>
+<input type="text"> 插入文本框
+placeholder可以显示文本框的默认提示内容，例如输入账号密码界面时，密码文本框提示"require password"
+<input type="text" placeholder="require password">
+value规定值，已经在框内填好了
+radio用于单选框
+
+例如做一个账号登陆界面
+<form>
+<label>/<span>用户名:</label>/</span>
+<input type="text" placeholder="请输入用户名">
+<label>/<span>密码:</label></span>
+<input type="text" placeholder="请输入密码">
+<label>请选择性别</label>
+<input type="radio">男
+<input type="radio">女
+<input type="radio">其它
+</form>
+<label>标签专门为<input>标签而设计
 
