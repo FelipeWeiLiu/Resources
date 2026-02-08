@@ -83,20 +83,33 @@ placeholder可以显示文本框的默认提示内容，例如输入账号密码
 <input type="text" placeholder="require password">
 value规定值，已经在框内填好了
 radio用于选择框,如果想要单选效果，则在几个选择款的type属性之后再加一个name属性
+password用于密码框隐藏密码
+checkbox 选择款，可以多选例如爱好类
+submit用于提交数据
 
 例如做一个账号登陆界面
 <form>
 <label>/<span>用户名:</label>/</span>
 <input type="text" placeholder="请输入用户名">
 <label>/<span>密码:</label></span>
-<input type="text" placeholder="请输入密码">
+<input type="password" placeholder="请输入密码">
+<br><br>
 <label>请选择性别</label>
 <input type="radio" name="gender">男
 <input type="radio" name="gender">女
 <input type="radio" name="gender">其它
+<br><br>
+<label>请选择爱好 </label>
+<input type="checkbox" name="hobby">声乐
+<input type="checkbox" name="hobby">舞蹈
+<input type="checkbox" name="hobby">美术
+<br><br>
+<input type="submit" value"上传"> //通过value来自定义上传按钮的名称
 </form>
+
 <label>标签专门为<input>标签而设计
 <label for="idname">
 <input id="idname">
 强行将label与input联系起来，例如点击label的字体，因为for的作用将自动进入对应的id input界面，因为for通常跟id，所以同一个for id不能被多个label使用
-
+<form action="URL">用于规定数据提交后上传的位置，一般就是API。
+API是程序之间的通讯方式，可以用来关联服务器前端和后端。也就是规定前端和后端之间的通讯通道
