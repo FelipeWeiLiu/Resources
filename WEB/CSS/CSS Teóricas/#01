@@ -1,0 +1,38 @@
+CSS Cascading Style Sheets 层叠样式表
+用于定义网页样式和布局的样式表语言，一般和html联合构建web前端页面的
+和html不同，html主要用于定义一个网站的结构，而CSS主要用于定义这个网站的外观和样式
+
+内联样式 Inline Styles
+直接将CSS样式放入HTML的元素标签中
+<h1 style="color: blue;">这是一个内联样式 </h1>
+
+内部样式表 Internal Stylesheet，将CSS代码直接放入html的文档头部之间<head></head>
+<style></style>标签用于直接在html文档中插入css，在HTML5中不需要进行额外的提前声明。一般放在头部，不推荐放进<body>
+</head>
+<style>
+#InternalS {
+color: green;
+}
+</style>
+</head>
+<body>
+<h id="Internal">这是一个内部样式表</h>
+</h>
+
+外部样式表 External Stylesheet
+在<head></head>中插入<link rel="stylesheet" href="paths.css"> //rel用来声明这是样式表
+用于将页面模板通过URL插入到多个网站子页面。
+
+三种导入方式的优先级 Inline Styles > Internal Stylesheet > External Stylesheet
+
+CSS基本语法
+选择器{
+属性1: 属性值1; //声明
+属性2: 属性值2;:
+}
+
+示例
+p{
+color: blue; //字体颜设置为蓝色
+font-size: 16px; //字体大小设置为16px
+}
