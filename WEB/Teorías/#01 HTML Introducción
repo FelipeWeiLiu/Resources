@@ -112,4 +112,6 @@ submit用于提交数据
 <input id="idname">
 强行将label与input联系起来，例如点击label的字体，因为for的作用将自动进入对应的id input界面，因为for通常跟id，所以同一个for id不能被多个label使用
 <form action="URL">用于规定数据提交后上传的位置，一般就是API。
-API是程序之间的通讯方式，可以用来关联服务器前端和后端。也就是规定前端和后端之间的通讯通道
+API是程序之间的通讯方式，可以用来关联服务器前端和后端。也就是规定前端和后端之间的通讯通道  
+<p align="center, left, right,justify">..</p>
+justify alineado.
