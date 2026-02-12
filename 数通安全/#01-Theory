@@ -58,9 +58,11 @@ https://msdn.itellyou.cn/
 //VMWARE IDE中插入光盘。
 //x86架构，早期英特尔32位系统cpu型号命名。
 
-**NTFS文件系统
+**NTFS文件系统与格式化
 //
-**FAT文件系统
+**FAT文件系统与格式化
+//
+**exFAT
 //
 
 **低级格式化
