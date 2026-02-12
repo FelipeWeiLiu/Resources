@@ -47,3 +47,5 @@
 **8uftp
 //应用程序，负责创建ftp传输层通道，用来共享文件。功能层面类似于FileZilla，只不过FileZilla用于SSH协议中的SFTP传输。
 
+VMWARE中创建虚拟机，windows系统选典型，Linux系统选高级、
+//windows的标准化程度更统一，而Linux各个版本差异大，更灵活，因此更多时候需要进行手动调试。
