@@ -59,7 +59,7 @@ target属性定义链接的页面打开方式
 href hyper reference 链接
 
 把图片保存进工作文件夹之后可以直接从img src中提取路径，路径可以是相对路径也可以是绝对路径,ruta relativa y ruta absoluta
-<img src="" alt="" width="" height="">
+<img src="" alt="" title="" width="" height="">
 img文件夹---img/nombre.jpg
 alt备用，当src无法加载出来时，浏览器将加载出alt指定文本 <hr>和<br>标签
 
