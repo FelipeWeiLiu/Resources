@@ -4,3 +4,11 @@
 //在Windows中这被称为"批处理文件"，在Windows中这些被批处理的命令称为DOS命令.
 //在Linux中这些被叫做Shell命令，因此被称为"Shell脚本"。
 //批处理的扩展名为".bat"。
+
+@echo off
+echo ===========
+echo Hello world
+echo ===========
+pause
+//@echo off屏蔽了执行过程，以达到让下面三个echo输出在cmd执行框里视觉上有更美观的效果。
+//在脚本中pause代表"暂停"，当命令执行完之后，遇到pause会暂停直到我们给出提示才进入下一步执行。
