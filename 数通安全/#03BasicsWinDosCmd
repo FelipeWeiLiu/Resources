@@ -51,3 +51,5 @@ shutdown [操作类型] [附加参数]
 -c "内容" //关机时的提示框消息
 -a //取消一切定时
 
+ren //rename
+mv //move
