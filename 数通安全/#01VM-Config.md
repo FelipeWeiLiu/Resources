@@ -116,3 +116,11 @@ https://msdn.itellyou.cn/
 >>//因为系统版本久远，不支持SHA-2数字签名, 没办法直接安装tools驱动，因此需要从"Microsoft Update Catalog"里下载"KB4474419"补丁，并使用"UltraISO"将它刻入ISO之后插入VM虚拟机中安装，重启虚拟机之后便能进行正常Tools驱动安装。  
 >>//在控制面板中关闭防火墙。  
 >>//关闭WINDOWS UPDATE。  
+
+## 基础命令  
+ftp://ip  
+//通过打开我的电脑，地址栏中输入，并访问FPT服务器,输入用户名和密码验证身份已访问FPT文件共享服务器。  
+services.mrc  
+//**服务管理窗口** 在快捷键"win+R"中输入，可用于停止Windows update服务。  
+gpedit.msc  
+//组策略编辑器 只有WIN 11 PRO版自带。
