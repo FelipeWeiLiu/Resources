@@ -14,6 +14,6 @@ echo Hello world
 echo ===========
 echo . //空一行
 pause //在脚本中pause代表"暂停"，当命令执行完之后，遇到pause会暂停直到我们给出提示才进入下一步执行。
-ping -n 10 127.0.0.1 >nul 2>nul
+ping -n 10 127.0.0.1 >nul 2>nul //-n (参数)，发送ping数据包的次数， ">nul" "2>nul" 代表将标准和报错参数目标地址改到nul内核并丢弃。
 
 //cmd中输入"color ?"以查看不同的颜色对应的十六进制位。
