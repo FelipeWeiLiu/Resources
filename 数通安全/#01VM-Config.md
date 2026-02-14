@@ -77,8 +77,7 @@ https://msdn.itellyou.cn/
 要想拿到物理地址就必须得到二级地址转换的信任，VM对它没有直接掌控权，也不会存在间接掌控权。`  
 
 ## 虚拟机部署 VMWare Workstation  
-**VMware Tools**  
-//驱动程序，vmware中的"GuestAdditions",在VM选项中插入。    
+//**VMware Tools**是驱动程序，vmware中的"GuestAdditions",在VM选项中插入。    
 //此虚拟机可能已被移动或复制: Linux选"我已移动该虚拟机", Windows选"我已复制该虚拟机"。  
 //VMWARE IDE中插入光盘。  
 //桌面图标在属性里面找。  
