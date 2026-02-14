@@ -4,9 +4,11 @@
 //在Windows中这被称为"批处理文件"，在Windows中这些被批处理的命令称为DOS命令.
 //在Linux中这些被叫做Shell命令，因此被称为"Shell脚本"。
 //批处理的扩展名为".bat"。
+//批处理脚本先后顺序很重要，从上往下严格执行每一条命令。
 
 @echo off
 color (参数)
+title (窗口标题)
 echo ===========
 echo Hello world
 echo ===========
