@@ -1,1 +1,6 @@
-
+echo "Log entry" > log.txt //覆盖写入
+echo "More logs" >> log.txt //追加写入
+type //浏览文件内容
+type file.txt | more //在文本内容太多容易造成刷屏的情况下，将file.txt的输出给改成翻页面的形式。
+//管道符的作用是让一个命令的输出变为下一个命令的输入，在这种语境下type file.name的输出将作为后面的more的输入状态并依次执行。
+如果没有管道符这里就会报错，因为type将把more当作它的参数部分之一。
