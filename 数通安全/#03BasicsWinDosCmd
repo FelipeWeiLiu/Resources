@@ -30,6 +30,7 @@ attrib +h test01 //给test01文件夹加了"h"(hide, hidden)，隐藏属性。�
 
 ## 系统高级命令工具
 fsutil //File System Utlity, 可直接操作NTFS文件系统的高级命令工具。同时作为一个很危险的命令，因为它可以调整系统底层机制，修改NTFS结构，控制USN日志，修改文件系统等。
+如果有人利用"fsutil file createnew d:/system.ini 46000000"这类恶意命令并配合"attrib"属性修改命令隐藏，可以用 "dir /a"或者在系统的"文件选项"中找到。
 
 ## 关联性命令
 assoc //修改文件扩展名关联性，关联性指某同一扩展名属性文件由系统那个程序打开。
