@@ -18,7 +18,8 @@ del *.txt // "*"代表所有，".txt"代表txt文件
 >> 附加输出
 > 覆盖输出
 echo "Log entry" > log.txt //覆盖写入。
-echo "More logs" >> log.txt //追加写入。
+echo "More logs" >> log.txt //追加写入。  
+">"是输出的重定向符号，可用来改变程序的目标位置。  
 
 ## 属性修改命令
 attrib //attrib(attribute)对文件或者文件夹的属性进行修改。
