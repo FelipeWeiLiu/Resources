@@ -47,33 +47,38 @@ ping -n 10 127.0.0.1 >nul 2>nul //-n (参数)，发送ping数据包的次数， 
 echo Congrat! The process has done.
 pause
 
-
-
 @echo off
-title MyScriptV1.0
-echo =========================
-echo  Welcome to Auto ShutDown
-echo =========================
+color 0a
+title MyScript1.0
+echo ================================
+echo     WELCOME TO AUTO-SHUTDOWN
+echo ================================
 echo .
-echo press to continue...
-pause
-echo ============================
-echo         Menu
-echo      1.Set shutdown time
-echo      2.Cancel
-echo      3.Exit
-echo =============================
+timeout /t 2 >nul /nobreak
+cls
+:Menu
+cls
+echo ====================================
+echo                 Menu
+echo         1.Set shutdown time
+echo         2.Cancel
+echo         3.Exit
+echo ====================================
 
-set /p option= Enter your choice:
-/*goto %options%*/
-if "%option%"=="1" goto 1
-if "%option%"=="2" goto 2
-if "%option%"=="3" goto 3
-
+set /p choice=Enter your choice:
+if "%choice%"=="1" goto 1
+if "%choice%"=="2" goto 2
+if "%choice%"=="3" goto 3
+echo Error number, please choice again...
+timeout /t 2 >nul /nobreak
+goto Menu
 :1
-set /p a= Set your ShutDown time Unit:"time_number"seconds  // /p 代表prompt，表示等待输入....在这里指等待输入变量a的值, 并且/p能够确保变量set中变量a的值是由用户输入的而非那句话本身。
+set /p t=Set your shutdown time unit/seconds:    // /p 代表prompt，表示等待输入....在这里指等待输入变量a的值, 并且/p能够确保变量set中变量a的值是由用户输入的而非那句话本身。
 shutdown -s -f -t %a% //去变量a在prompt后的值
+shutdown -s -f -t %t%
+goto Menu
 :2
 shutdown -a
+goto Menu
 :3
-exit
+Exit
