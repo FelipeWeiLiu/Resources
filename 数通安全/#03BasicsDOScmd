@@ -6,6 +6,9 @@ type file.txt | more //在文本内容太多容易造成刷屏的情况下，将
 copy con file.txt(扩展名) //con(console); copy <来源> <目标>; 因此此命令意思是将console设备(键盘)的输入内容复制到指定文本中。
 //ctrl+z并回车结束
 
+rd . /s/q
+//rd用于删除目录, /s作为递归删除参数 /q作为静默删除参数，其作用是在没有任何弹窗提示的情况下将某一文件或文件夹删除，用于提高递归删除/s的效率。
+
 del //删除文件
 del *.txt // "*"代表所有，".txt"代表txt文件
 
@@ -14,9 +17,8 @@ del *.txt // "*"代表所有，".txt"代表txt文件
 2> 错误输出
 >> 附加输出
 > 覆盖输出
-echo "Log entry" > log.txt //覆盖写入
-echo "More logs" >> log.txt //追加写入
+echo "Log entry" > log.txt //覆盖写入。
+echo "More logs" >> log.txt //追加写入。
 
-rd . /s/q
-//rd用于删除目录, /s作为递归删除参数 /q作为静默删除参数，其作用是在没有任何弹窗提示的情况下将某一文件或文件夹删除，用于提高递归删除/s的效率。
-
+attrib //attrib(attribute)对文件或者文件夹的属性进行修改。
+attrib +h test01 //给test01文件夹加了"h"(hide, hidden)，隐藏属性。可以通过系统的"文件夹选项"的查看中选项，对隐藏文件进行查看。
