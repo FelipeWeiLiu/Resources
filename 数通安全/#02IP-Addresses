@@ -57,3 +57,6 @@ E类(Class E): 240-254 (科研使用)
 
 ** DNS缓存(可被投毒)
 
+局域网实验
+ping对目标机连续发出探测包，然后探测包再被反弹(return)回来(回包)，就说明通讯正常。Reply from|Sent|Received|Lost
+ping -l //发出自定义大小的数据包探测
