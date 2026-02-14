@@ -57,14 +57,23 @@ echo =========================
 echo .
 echo press to continue...
 pause
-echo ==========================
+echo ============================
 echo         Menu
 echo      1.Set shutdown time
-echo      2.
-echo
-echo
+echo      2.Cancel
+echo      3.Exit
+echo =============================
 
+set /p option= Enter your choice:
+/*goto %options%*/
+if "%option%"=="1" goto 1
+if "%option%"=="2" goto 2
+if "%option%"=="3" goto 3
 
 :1
-set /p a=  // /p 代表prompt，表示等待输入....在这里指等待输入变量a的值
-shutdown -s
+set /p a= Set your ShutDown time Unit:"time_number"seconds  // /p 代表prompt，表示等待输入....在这里指等待输入变量a的值, 并且/p能够确保变量set中变量a的值是由用户输入的而非那句话本身。
+shutdown -s -f -t %a% //去变量a在prompt后的值
+:2
+shutdown -a
+:3
+exit
