@@ -46,3 +46,25 @@ rd . /s/q >nul 2>nul
 ping -n 10 127.0.0.1 >nul 2>nul //-n (参数)，发送ping数据包的次数， ">nul" "2>nul" 代表将标准和报错参数目标地址改到nul内核并丢弃。在这里可以用来延长等待时间。
 echo Congrat! The process has done.
 pause
+
+
+
+@echo off
+title MyScriptV1.0
+echo =========================
+echo  Welcome to Auto ShutDown
+echo =========================
+echo .
+echo press to continue...
+pause
+echo ==========================
+echo         Menu
+echo      1.Set shutdown time
+echo      2.
+echo
+echo
+
+
+:1
+set /p a=  // /p 代表prompt，表示等待输入....在这里指等待输入变量a的值
+shutdown -s
