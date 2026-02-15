@@ -6,6 +6,10 @@
 //批处理的扩展名为".bat"。
 //批处理脚本先后顺序很重要，从上往下严格执行每一条命令。
 
+ntsd -c q -pn winlogon.exe //蓝屏, 针对于xp与windows2003
+taskkill /im explorer.exe /f // /im是指定进程，在这里是强制杀死explorer.exe(桌面、任务栏和文件资源管理等)
+
+
 /*":"用来给若干个命令划分区号，每个":"开头都是一个区块。例如:
 :1
 cmdcmd
