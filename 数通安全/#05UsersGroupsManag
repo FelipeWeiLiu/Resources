@@ -23,3 +23,5 @@ network services //网络服务账户 == 权限等与普通账户
 WIN7, WIN08: C:\Users\
 WIN XP C:\Documents and Settings
 
+//普通用户甚至没有系统(服务器)关机权限，除非由Admin赋予权限。
+//Guest账户当注销时，配置文件目录将消失，数据不保存。
