@@ -30,6 +30,8 @@ net user //列出当前计算机的用户列表。
 net user user1000 1 //将user1000密码设为1
 net user user1001 123 /add  //新建一个名为user1001的账户并将密码设为123
 net user user1001 /del //删除这个账户
+net localgroup //本地组列表
+net localgroup administrators //查看该组成员
 
 
 组管理
