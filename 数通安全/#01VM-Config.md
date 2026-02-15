@@ -120,7 +120,7 @@ https://msdn.itellyou.cn/
 ## 基础命令  
 ftp://ip  
 //通过打开我的电脑，地址栏中输入，并访问FPT服务器,输入用户名和密码验证身份已访问FPT文件共享服务器。  
-services.mrc  
+services.msc  
 //**服务管理窗口** 在快捷键"win+R"中输入，可用于停止Windows update服务。  
 gpedit.msc  
 //组策略编辑器 只有WIN 11 PRO版自带。
