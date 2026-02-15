@@ -41,4 +41,3 @@ net user user1001 /del //删除这个账户
 4.Network //网络配置组
 5.print //打印机组
 6.Remote Desktop //远程桌面组
-
