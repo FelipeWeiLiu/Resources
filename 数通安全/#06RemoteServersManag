@@ -15,5 +15,8 @@ Telnet服务 services.msc
 //目标机中:通过win+r输入services.msc，找到并开启Telnet服务改为"自动"并启动。
 //目标机中:将TelnetClients组权限赋予这个账户
 //打开cmd，ping成功之后输入 telnet+目标机IP地址
-//输入账户及密码<
+//输入账户及密码
+
+查看本机端口号
+netstat -an // -a代表all，-n代表numeric，以数字形式呈现端口域名等。也就是查看本机所有的端口并以全数字形式呈现。
 
