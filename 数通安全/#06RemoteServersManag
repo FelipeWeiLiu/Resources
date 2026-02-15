@@ -23,3 +23,6 @@ Telnet服务 services.msc
 netstat -an // -a代表all，-n代表numeric，以数字形式呈现端口域名等。也就是查看本机所有的端口并以全数字形式呈现。23端口号是Telnet端口。
 
 //Telnet不加密，因此可以使用"中间人攻击"，通过监听手段获取账户密码。而在这种过程中难以察觉。现在常被SSH替代。
+
+WannaCry永恒之蓝
+//17年爆发的永恒之蓝勒索病毒通过445端口SMB(Server Massage Block)的文件共享服务入侵传播的。
