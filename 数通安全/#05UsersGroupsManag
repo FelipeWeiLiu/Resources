@@ -32,6 +32,10 @@ net user user1001 123 /add  //新建一个名为user1001的账户并将密码设
 net user user1001 /del //删除这个账户
 net localgroup //本地组列表
 net localgroup administrators //查看该组成员
+net localgroup administrastors user1001 /add  //把user1001添加进本地管理员组。
+//内置管理员账户要高于后add进管理组的账户，内置管理员账户可以将管理组账户权限移除，但是管理组账户没办法将内置管理员移除管理组。
+net localgroup CEO /add  //创建一个新分组，名为CEO
+net user user1001 active:yes/no //激活或禁用user1001
 
 
 组管理
