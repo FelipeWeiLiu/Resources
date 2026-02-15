@@ -30,3 +30,15 @@ net user //列出当前计算机的用户列表。
 net user user1000 1 //将user1000密码设为1
 net user user1001 123 /add  //新建一个名为user1001的账户并将密码设为123
 net user user1001 /del //删除这个账户
+
+
+组管理
+//以部门为单位，建立组。
+系统内置组
+1. Administrators //管理员组
+2.Guests //来宾组
+3.Users //普通用户组
+4.Network //网络配置组
+5.print //打印机组
+6.Remote Desktop //远程桌面组
+
