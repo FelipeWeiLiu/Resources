@@ -47,7 +47,7 @@ assoc .txt=txtfile //通过assoc重新将扩展名关联性改回来
 shutdown [操作类型] [附加参数]
 -s //Shut down, shutdown本质上是一种系统级关闭命令，因此按照设计思路来说，本质上想实现关机后面必须(再次)声明一次"-s"。
 -r //restart重启
--l //lof off，同logoff，注销
+-l //log off，同logoff，注销
 -f //force强制性...
 -t (参数) //时间，参数单位是秒
 -c "内容" //关机时的提示框消息
