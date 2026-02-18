@@ -12,7 +12,7 @@
 //右键选择标记后即可复制cmd窗口命令行
 
 命令行远程管理
-Telnet服务 services.msc
+Telnet服务(TCP 23) services.msc
 //Telnet服务端口号是23(默认)
 //目标机中:通过win+r输入services.msc，找到并开启Telnet服务改为"自动"并启动。
 //目标机中:将TelnetClients组权限赋予这个账户
