@@ -18,3 +18,4 @@ IPC$ 可进行空连接，访问用户列表，用户SID，组信息，共享列
 注册表在C盘，存放所有电脑软件的日志与注册信息
 
 运行 regedit (register edit) 打开注册表编辑器
+services.msc服务管理窗口
