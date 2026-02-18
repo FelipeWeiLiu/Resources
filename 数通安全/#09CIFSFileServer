@@ -5,3 +5,10 @@ CIFS共享协议在win+r的"运行"界面中输入"\\+IP_Adress" (UNC Universal 
 当一个用户通过本地NTFS登陆后，仅受本地NTFS权限影响，而当这个用户通过远程登陆，将受到CIFS和NTFS的共同影响并取交集。
 
 whoami /user 用来看自己的设备ID
+
+共享文件时，在共享名后面加一个"$"符号，说明这是隐藏共享。
+"\\IP_Adress\filename$"
+
+net share 列出电脑共享文件夹
+
+IPC$ 可进行空连接，访问用户列表，用户SID，组信息，共享列表，登录会话信息
