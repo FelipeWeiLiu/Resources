@@ -1,0 +1,3 @@
+CIFS (Common Internet File System)
+FTP协议是全球通用的，CIFS是由微软开发的，微软全系系统都自带CIFS。
+在文件夹属性的贡献权限中，更改包括读取，完全控制权限包括更改和读取。
