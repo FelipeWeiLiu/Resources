@@ -1,6 +1,5 @@
 CIFS (Common Internet File System)
 FTP协议是全球通用的，CIFS是由微软开发的，微软全系系统都自带CIFS。
 在文件夹属性的贡献权限中，更改包括读取，完全控制权限包括更改和读取。
-CIFS共享协议在win+r的"运行"界面中输入"\\+IP_Adress"
+CIFS共享协议在win+r的"运行"界面中输入"\\+IP_Adress" (UNC Universal Naming Convention地址)
 当一个用户通过本地NTFS登陆后，仅受本地NTFS权限影响，而当这个用户通过远程登陆，将受到CIFS和NTFS的共同影响并取交集。
-
