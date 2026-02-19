@@ -6,6 +6,8 @@ NTFS权限是为了实现不同用户访问不同对象(针对文件夹)的权�
 FAT Windows
 NTFS Windows
 EXT linux中常见
++HTFS Mac中常见
+exFAT 为了通用型制造出来的格式化
 分区不建立文件系统是无法存储资料的
 
 NTFS格式化
