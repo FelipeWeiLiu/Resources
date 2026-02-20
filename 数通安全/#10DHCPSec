@@ -1,7 +1,7 @@
 DHCP(Dynamic Host Configuration Protocol)
 Dynamic动态 Static静态
 傻瓜型交换机 管理型交换机
-//管理型交换机通过身份绑定机制可最大程度防御DHCP Flood攻击, ARP欺骗, IP欺骗等攻击手段。
+//管理型交换机通过身份绑定机制(动态白名单)可最大程度防御DHCP Flood攻击, ARP欺骗, IP欺骗等攻击手段。
 DHCP服务器
 协议，规则。每一种规则都有漏洞。
 一个设备想要正常上网需要四大参数: IP, 子网掩码, 网关, DNS #02
