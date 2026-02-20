@@ -1,8 +1,9 @@
 DHCP(Dynamic Host Configuration Protocol)
+安全永远取决于：实际配置，而不是理论机制
 Dynamic动态 Static静态
 傻瓜型交换机 管理型交换机
 //管理型交换机通过身份绑定机制(动态白名单)可最大程度防御DHCP Flood攻击, ARP欺骗, IP欺骗等攻击手段。
-DHCP服务器
+//DHCP Snooping(??????????????????????)
 协议，规则。每一种规则都有漏洞。
 一个设备想要正常上网需要四大参数: IP, 子网掩码, 网关, DNS #02
 DHCP协议自动分配IP地址，为了能够让社会除IT人士外群体更方便更快速的让设备与网络对接。
@@ -34,3 +35,10 @@ DHCP租约过程
 因此这里的"request"实际上就是建立在一个"必然"被客户机"选择"到的IP参数之下，再向服务器发出其余三大参数的"request"请求的过程。*/
 4. 由服务器发送DHCP ACK (Acknowledgment确认)广播包
 //服务器再发送一个ACK广播包确认租约，并建立一张租约列表(IP+MAC，租约时间以及确认信息).后提供网卡详细参数: IP, 子网掩码, 网关, DNS，租期等
+
+
+DHCP常见攻击
+第一种攻击方式 DHCP Flood 
+//伪造大量MAC请求IP
+第二种攻击方式 DHCP欺骗/非法DHCP
+//攻击者在同一局域网内伪造一个DHCP服务器接收 DHCP Discovery并回复伪造的DHCP Offer
