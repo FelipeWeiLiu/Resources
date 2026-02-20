@@ -4,7 +4,7 @@ DHCP(Dynamic Host Configuration Protocol)
 一个设备想要正常上网需要四大参数: IP, 子网掩码, 网关, DNS #02
 DHCP协议自动分配IP地址，为了能够让社会除IT人士外群体更方便更快速的让设备与网络对接。
 Dynamic动态 Static静态
-傻瓜型交换机 管理型(三层交换机)交换机
+傻瓜型交换机 管理型交换机(三层交换机)
 //管理型交换机通过身份绑定机制(动态白名单)可最大程度防御DHCP Flood攻击, ARP欺骗, IP欺骗等攻击手段。
 //DHCP Snooping(??????????????????????)
 
@@ -42,4 +42,5 @@ DHCP常见攻击
 第一种攻击方式 DHCP Flood 
 //伪造大量MAC请求IP
 第二种攻击方式 DHCP欺骗/非法DHCP
-//攻击者在同一局域网内伪造一个DHCP服务器接收 DHCP Discovery并回复伪造的DHCP Offer
+//攻击者在同一局域网内伪造一个DHCP服务器接收 DHCP Discovery并响应伪造的DHCP Offer。
+//通过在交换机里拒绝任何除DHCP服务器以外的人发送Offer包。
