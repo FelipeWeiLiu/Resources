@@ -7,3 +7,5 @@ vmware中自带DHCP并且默认开启的，因此在进行DHCP部署实验时有
 
 ipconfig /release 释放IP
 ipconfig /renew 重新发送Discovery包, 当IP已被分配之后，再输入/renew,相当于发送request包续约。
+
+改为手动配置一个地址(Static)，并且确认之后，也会释放原IP。
