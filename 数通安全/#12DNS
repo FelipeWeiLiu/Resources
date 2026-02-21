@@ -1,3 +1,5 @@
 DNS(Domain Name Service域名服务)
 为客户机提供域名解析服务
 中大型公司不信任互联网DNS服务器，因此会选择自己搭建一台DNS服务器。
+例子"www.sina.com.cn"，严格意义上来说"sina.com.cn"才是域名,而"www"是主机名。
+"主机名.域名"称为FQDN(Fully Qualified Domain Name完全限定域名)，是全球唯一的。
