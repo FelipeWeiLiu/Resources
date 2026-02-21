@@ -2,3 +2,5 @@
 插入ISO镜像光盘后进入安装可选的WINDOWS组件，并在网络中找到动态主机配置协议(DHCP)
 作为DHCP服务器，必须配有静态(Static)IP
 DHCP在开始，管理工具中
+vmware中自带DHCP并且默认开启的，因此在进行DHCP部署实验时有几率进入vmware DHCP的网段，为了解决这个问题，
+我们可以进入vmware的edit中手动关闭内置DHCP。
