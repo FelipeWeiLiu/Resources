@@ -1,1 +1,3 @@
-DNS(Domain Name Server)
+DNS(Domain Name Service域名服务)
+为客户机提供域名解析服务
+中大型公司不信任互联网DNS服务器，因此会选择自己搭建一台DNS服务器。
