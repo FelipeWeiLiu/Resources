@@ -5,3 +5,9 @@ DNS(Domain Name Service域名服务)
 "主机名.域名"更严格来说被称为FQDN(Fully Qualified Domain Name完全限定域名)，是全球唯一的。
 主机名可以是服务器的DNS名字
 因此，申请域名的时候直接申请一次后面的域名部分就可以，前面的主机名可以按照需求自行规划。
+
+域名采用分层管理，呈树根式而并非平面式。
+根"."
+顶级域名: aero, com, net, oarg, edu...
+二级域名: cctv, ibm....
+三级域名: mail, www.....
