@@ -37,7 +37,7 @@ DNS解析分类
 //已知地址，解析域名
 
 A记录是正向解析的一种，除此之外还有AAAA记录(IPv6)以及CNAME记录。
-CNAME(Canonical Name别名):域名不同但是解析出来的IP一样。
+CNAME(Canonical Name别名):域名不同但是解析出来的IP一样, 在nslookup中被标记为Aliases。
 
 公司内置DNS服务器(设置转发器)
 1. 看缓存
