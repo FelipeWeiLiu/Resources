@@ -82,3 +82,5 @@ DNS工具安装方式与#11的DHCP一样
 
 当你在nslookup正向解析一个域名时，如果域名未填写完整，在解析结果中将出现一个 域名.localdomain的结果
 所谓的localdomain是系统自动帮你补全了域名，但是没有以域名本身形式呈现在窗口而是以localdomain的形式。是系统为了补全域名而生成的。
+
+释放客户机本地缓存 ipconfig /flushdns
