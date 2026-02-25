@@ -5,5 +5,10 @@ HTTPS(HyperText Transfer Protocol Secure Default TCP 443)
 HTTP客户端访问一个HTTPS地址时，在按下回车键的瞬间，将向Defaul默认TCP 443端口发送了访问请求。访问HTTP地址同理。
 
 HTTP(WEB)服务器发布软件(在一个网页注册好域名之后还需要通过发布软件公布在公网之上)
-微软: IIS(Internet Information Service) //可以发布HTTP网站和FTP站点
-Linux: Apache/LAMP (LAMPP: Linux, Apache, MySQL/MariaDB, PHP)
+微软: 
+IIS(Internet Information Service) //可以发布HTTP网站和FTP站点
+
+Linux: 
+1. Apache/LAMP (LAMPP: Linux, Apache, MySQL/MariaDB, PHP)
+2. Tomcat
+3. nginx
