@@ -1,2 +1,4 @@
 HTTP(HyperText Transfer Protocol)
 HTTPS(HyperText Transfer Protocol Secure)
+浏览器专业名称叫做HTTP客户端
+浏览器通过解析HTTP语言将它所描述的一切呈现在客户端上，因此只有服务端没有客户端是不行的，双方都要满足一个规则(协议)才能相互交互。
