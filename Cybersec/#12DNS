@@ -83,7 +83,7 @@ DNS工具安装方式与#11的DHCP一样
 存根区域叫做根域
 
 释放本地机DNS缓存 ipconfig /flushdns
-查看本地机DNS缓存 inconfig /displaydns
+查看本地机DNS缓存 ipconfig /displaydns
 
 //在nslookup过程中，客户机在对DNS进行一个域名递归查询正向解析的同时还会向提供DNS服务的服务器IP地址进行一次递归查询的反向解析。
 而为了让反向解析中，给DNS服务器取一个名字(不取的话默认Unknown)，我们需要在正向解析中创建"主机"，之后在反向解析区域创建PTR(Pointer Record)并选中在正向解析区域中创建的DNS服务器名字。
