@@ -126,4 +126,4 @@ justify alineado.
 </select>
 
 <textarea cols="50" rows="8"></textarea>
-<form action="URL">
+<form action="email.php">
