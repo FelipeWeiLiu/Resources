@@ -127,3 +127,4 @@ justify alineado.
 
 <textarea cols="50" rows="8"></textarea>
 <form action="email.php">
+<input type="reset" value="">
