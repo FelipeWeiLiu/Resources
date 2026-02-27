@@ -124,3 +124,6 @@ justify alineado.
 <option>Proyecto2</option>
 <option>Proyecto3</option>
 </select>
+
+<textarea cols="50" rows="8"></textarea>
+<form action="URL">
