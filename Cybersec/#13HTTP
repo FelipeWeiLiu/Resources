@@ -18,4 +18,6 @@ phpstudy
 XAMPP (XAMPP: Cross-platform, Apache, MySQL/Maria, Php, Perl), LAMPP是XAMPP在Linux下的控制脚本名称
 //仅推荐做测试使用
 
-14:40
+IIS
+通过开始菜单插入，进入"应用程序服务"，"Internet信息服务"中，然后安装"万维网服务"(www服务器)插件。
+D盘改E
