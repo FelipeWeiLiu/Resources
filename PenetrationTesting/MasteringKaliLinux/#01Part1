@@ -46,3 +46,11 @@ CDN工作流程
 静态边缘站点
 /* 用于处理静态资源: 例如不受访客变化而影响的请求: 静态网络站点的访问，HTML,JS...
 这些资源可以被长时间保存在边缘节点的硬盘或内存中，供多个用户重复下载。*/
+
+Web应用防火墙WAF(Web Application Firewall)
+
+策略，技术与过程 TTP(Tactics, Techniques and Procedures)
+Tactics:指定目标与计划。
+Techniques:用什么技术手段来达成。
+Procedures:具体的操作细节与过程。
+
