@@ -19,6 +19,7 @@ head标签对中写文档的原信息
 文本格式化标签
 <b>加粗 <i><em>斜体 <u>下划线 <s>删除线
 
+<marquee>移动标签</marquee>
 <ul>无序列表
 <ol>有序列表
 <li> 无序列表或有序列表中的list item
