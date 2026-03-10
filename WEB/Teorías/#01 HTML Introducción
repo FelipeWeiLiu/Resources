@@ -9,6 +9,8 @@ que todas las etiquetas documentadas se delegan en otro lenguaje llamado CSS(Cas
 
 Extensiones: Autorename Tag
 
+head标签是给浏览器看的，而body标签是给客户看的。
+
 单标签用于没有内容的元素
 双标签用于有内容的元素
 head标签对中写文档的原信息
