@@ -3,4 +3,6 @@
 
 向后锁进tab，向前锁进shift tab
 注释 ctrl+/
-img src="./"代码提示，图片提示等
+img src="./" alt="" title=""代码提示，图片提示等
+audio src="" controls
+video src=""
