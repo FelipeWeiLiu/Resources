@@ -10,3 +10,8 @@ ctl+d 将光标所在行向下复制一行
 img src="./" alt="" title=""代码提示，图片提示等 target="_blank"新页面中打开
 audio src="" controls
 video src=""
+
+select 下滑菜单
+option
+option
+option selected 作为默认选择项
