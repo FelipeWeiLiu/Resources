@@ -37,3 +37,8 @@ cols="30" rows="10" 文本框大小
   用户名：
   <input type="text">
 </label>
+
+<button type=""></button>
+submit 提交按钮 传输数据至网站后端数据库
+reset 一键重制
+button 普通按钮，配合js使用
