@@ -4,3 +4,10 @@ p{
 color: red;
 font-size: 20px;
 }
+
+引入方式
+内部样式 interna
+外部样式 externa
+行内样式
+
+<link rel="stylesheet" href="./my.css">
