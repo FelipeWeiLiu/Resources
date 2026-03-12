@@ -10,4 +10,6 @@ font-size: 20px;
 外部样式 externa
 行内样式
 
+<style></style>
 <link rel="stylesheet" href="./my.css">
+<div style="color: red; font-size:20px;">
