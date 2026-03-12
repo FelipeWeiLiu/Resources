@@ -16,6 +16,7 @@ option
 option
 option selected 作为默认选择项
 
+文本框
 textarea name="" id="" 连接后端使用的
 cols="30" rows="10" 文本框大小
 
