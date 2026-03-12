@@ -29,3 +29,11 @@ cols="30" rows="10" 文本框大小
 <input type="text" id="username">
 
 简单写法
+<label>
+<input type="radio">女
+</label>
+
+<label>
+  用户名：
+  <input type="text">
+</label>
