@@ -1,1 +1,6 @@
 CSS Cascading Syle Sheets
+
+p{
+color: red;
+font-size: 20px;
+}
