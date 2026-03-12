@@ -1,9 +1,11 @@
 父子集关系，嵌套式（一个包着一个，代码窗锁进）
 兄弟关系，并列式（一个在一行第二个平级写）
 
+截图软件snipaste
 向后锁进tab，向前锁进shift tab
 注释 ctrl+/
 ctl+d 将光标所在行向下复制一行
+
 
 img src="./" alt="" title=""代码提示，图片提示等 target="_blank"新页面中打开
 audio src="" controls
