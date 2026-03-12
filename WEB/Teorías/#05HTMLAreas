@@ -38,6 +38,7 @@ cols="30" rows="10" 文本框大小
   <input type="text">
 </label>
 
+form标签是表单区域标签，对子标签进行统一管理。
 <button type=""></button>
 submit 提交按钮 传输数据至网站后端数据库
 reset 一键重制
