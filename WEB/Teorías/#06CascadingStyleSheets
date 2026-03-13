@@ -9,3 +9,4 @@ font-size: 20px;
 外部样式 externa <link rel="stylesheet" href="./my.css">
 行内样式 <div style="color: red; font-size:20px;">
 
+line-height: ;
