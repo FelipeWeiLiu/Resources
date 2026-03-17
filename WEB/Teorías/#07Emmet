@@ -12,3 +12,4 @@ div>p=<div><p></p></div>
 
 span*3=<span></span><span></span><span></span>
 
+div{内容}=<div>内容</div>
