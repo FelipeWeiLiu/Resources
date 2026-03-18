@@ -13,3 +13,10 @@ div>p=<div><p></p></div>
 span*3=<span></span><span></span><span></span>
 
 div{内容}=<div>内容</div>
+
+a{
+height: 80px;
+text-align: center;
+line_height: 80;
+}
+当字体间距与行高相等，则内容居中。
