@@ -59,3 +59,4 @@ div {
   width: 300px;      /* 必须有固定宽度 */
   margin: 0 auto;    /* 左右 auto */
 }
+//auto由屏幕分辨率以及浏览器决定，而margin的左auto和右auto默认得一样，因此被分配的也一样导致居中。
