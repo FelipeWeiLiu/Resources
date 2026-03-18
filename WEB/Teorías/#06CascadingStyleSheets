@@ -24,3 +24,8 @@ line_height: 80;
 E:first-child
 E:last-child
 E:nth-child(N)
+
+伪元素选择器 //用于创建子元素
+E::before
+E::after
+content""属性设置伪元素内容
