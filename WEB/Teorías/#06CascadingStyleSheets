@@ -18,3 +18,9 @@ text-align: center;
 line_height: 80;
 }
 当字体间距与行高相等，则内容居中。
+
+结构伪类选择器
+//不用在css中输入class或者id组，而是直接选择一个父元素中的自元素
+E:first-child
+E:last-child
+E:nth-child(N)
