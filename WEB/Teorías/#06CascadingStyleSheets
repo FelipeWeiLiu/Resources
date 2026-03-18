@@ -10,3 +10,10 @@ font-size: 20px;
 行内样式 <div style="color: red; font-size:20px;">
 
 line-height: ;
+
+a{
+height: 80px;
+text-align: center;
+line_height: 80;
+}
+当字体间距与行高相等，则内容居中。
