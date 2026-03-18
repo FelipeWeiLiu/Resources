@@ -12,6 +12,7 @@ font-size: 20px;
 line-height: ;
 
 a{
+display: block; //将行内样式转化为块级样式
 height: 80px;
 text-align: center;
 line_height: 80;
