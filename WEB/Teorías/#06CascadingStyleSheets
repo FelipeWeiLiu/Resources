@@ -60,3 +60,8 @@ div {
   margin: 0 auto;    /* 左右 auto */
 }
 //auto由屏幕分辨率以及浏览器决定，而margin的左auto和右auto默认得一样，因此被分配的也一样导致居中。
+
+li{
+list-style: none;
+}
+//去掉列表的项目符号
