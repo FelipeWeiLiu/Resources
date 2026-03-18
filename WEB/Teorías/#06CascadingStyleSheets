@@ -30,6 +30,7 @@ E::before
 E::after
 content""属性设置伪元素内容
 
+内边距
 * {
   box-sizing: border-box;
 }
@@ -45,3 +46,4 @@ div {
   border: 10px solid black;
 }
 内容区域会自动缩小来适配，而不会向外扩张。
+
