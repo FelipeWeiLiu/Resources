@@ -11,6 +11,7 @@ font-size: 20px;
 
 line-height: ;
 
+
 a{
 display: block; //将行内样式转化为块级样式
 height: 80px;
@@ -19,16 +20,19 @@ line_height: 80;
 }
 当字体间距与行高相等，则内容居中。
 
+
 结构伪类选择器
 //不用在css中输入class或者id组，而是直接选择一个父元素中的自元素
 E:first-child
 E:last-child
 E:nth-child(N)
 
+
 伪元素选择器 //用于创建子元素
 E::before
 E::after
 content""属性设置伪元素内容
+
 
 内边距
 * {
@@ -47,4 +51,11 @@ div {
 }
 内容区域会自动缩小来适配，而不会向外扩张。
 
+
 margin: 0 auto; // 自适应居中
+要让margin auto生效必须满足
+
+div {
+  width: 300px;      /* 必须有固定宽度 */
+  margin: 0 auto;    /* 左右 auto */
+}
