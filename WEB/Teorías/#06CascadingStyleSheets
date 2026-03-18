@@ -29,3 +29,19 @@ E:nth-child(N)
 E::before
 E::after
 content""属性设置伪元素内容
+
+* {
+  box-sizing: border-box;
+}
+优点：
+更容易控制布局（不会被 padding 撑大）
+计算更直观
+做响应式布局更稳定
+
+div {
+  box-sizing: border-box;
+  width: 200px;
+  padding: 20px;
+  border: 10px solid black;
+}
+内容区域会自动缩小来适配，而不会向外扩张。
