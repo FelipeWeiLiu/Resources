@@ -1,0 +1,87 @@
+<div class="faq-container">
+
+  <!-- 左边目录（可选） -->
+  <div class="faq-sidebar">
+    <h3>Categorías</h3>
+    <ul>
+      <li>Hardware</li>
+      <li>Red</li>
+      <li>BIOS</li>
+      <li>Otros</li>
+    </ul>
+  </div>
+
+  <!-- 右边内容（你粘贴图1内容的地方🔥） -->
+  <div class="faq-content">
+
+    <h3>Lista de incidencias</h3>
+
+    <div class="faq-box">
+      <!-- 🔥 这里直接粘贴你Word里的内容 -->
+      <p>Aquí puedes pegar todo tu contenido...</p>
+    </div>
+
+  </div>
+
+</div>
+
+
+/* 整体布局 */
+.faq-container {
+  width: 1100px;
+  margin: 40px auto;
+  display: flex;
+  gap: 40px;
+}
+
+/* 左边分类 */
+.faq-sidebar {
+  width: 250px;
+}
+
+.faq-sidebar h3 {
+  color: #1c3870;
+  margin-bottom: 15px;
+}
+
+.faq-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-sidebar li {
+  padding: 8px 0;
+  cursor: pointer;
+  color: #333;
+}
+
+.faq-sidebar li:hover {
+  color: #1c3870;
+}
+
+/* 右边内容 */
+.faq-content {
+  flex: 1;
+}
+
+.faq-content h3 {
+  font-size: 28px;
+  color: #1c3870;
+  border-bottom: 2px solid #00a4ff;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+/* 内容框🔥 */
+.faq-box {
+  background: #f8f9fb;
+  padding: 20px;
+  border-radius: 8px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* 段落 */
+.faq-box p {
+  margin-bottom: 10px;
+}
