@@ -1,87 +1,70 @@
-<div class="faq-container">
+<div class="faq-container-simple">
 
-  <!-- 左边目录（可选） -->
-  <div class="faq-sidebar">
-    <h3>Categorías</h3>
-    <ul>
-      <li>Hardware</li>
-      <li>Red</li>
-      <li>BIOS</li>
-      <li>Otros</li>
-    </ul>
+  <h3>Lista de incidencias</h3>
+
+  <!-- Hardware -->
+  <div class="faq-group">
+    <h4>Hardware</h4>
+    <div class="faq-box">
+      <p>Hardware-componentes</p>
+      <p>Hardware-periféricos</p>
+      <p>Hardware-BIOS</p>
+    </div>
   </div>
 
-  <!-- 右边内容（你粘贴图1内容的地方🔥） -->
-  <div class="faq-content">
-
-    <h3>Lista de incidencias</h3>
-
+  <!-- Red -->
+  <div class="faq-group">
+    <h4>Problemas de la red</h4>
     <div class="faq-box">
-      <!-- 🔥 这里直接粘贴你Word里的内容 -->
-      <p>Aquí puedes pegar todo tu contenido...</p>
+      <p>Modelo OSI</p>
+      <p>Capa 1: Capa Física</p>
+      <p>Capa 2: Capa Enlace</p>
+      <p>...</p>
     </div>
+  </div>
 
+  <!-- 你可以继续加 -->
+  <div class="faq-group">
+    <h4>Otros</h4>
+    <div class="faq-box">
+      <p>Contenido aquí...</p>
+    </div>
   </div>
 
 </div>
 
-
-/* 整体布局 */
-.faq-container {
-  width: 1100px;
+.faq-container-simple {
+  width: 900px;
   margin: 40px auto;
-  display: flex;
-  gap: 40px;
 }
 
-/* 左边分类 */
-.faq-sidebar {
-  width: 250px;
-}
-
-.faq-sidebar h3 {
-  color: #1c3870;
-  margin-bottom: 15px;
-}
-
-.faq-sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.faq-sidebar li {
-  padding: 8px 0;
-  cursor: pointer;
-  color: #333;
-}
-
-.faq-sidebar li:hover {
-  color: #1c3870;
-}
-
-/* 右边内容 */
-.faq-content {
-  flex: 1;
-}
-
-.faq-content h3 {
+/* 主标题 */
+.faq-container-simple h3 {
   font-size: 28px;
   color: #1c3870;
   border-bottom: 2px solid #00a4ff;
   padding-bottom: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-/* 内容框🔥 */
+/* 每个分组 */
+.faq-group {
+  margin-bottom: 30px;
+  border-left: 4px solid #1c3870;
+  padding-left: 15px;
+}
+
+/* 分组标题🔥 */
+.faq-group h4 {
+  font-size: 20px;
+  color: #1c3870;
+  margin-bottom: 10px;
+}
+
+/* 内容框 */
 .faq-box {
   background: #f8f9fb;
-  padding: 20px;
+  padding: 15px 20px;
   border-radius: 8px;
   line-height: 1.6;
-  font-size: 15px;
-}
-
-/* 段落 */
-.faq-box p {
-  margin-bottom: 10px;
 }
