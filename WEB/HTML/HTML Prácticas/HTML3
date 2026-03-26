@@ -1,45 +1,61 @@
-<div class="faq-container-simple">
+<div class="faq-container">
 
   <h3>Lista de incidencias</h3>
 
-  <!-- Hardware -->
+  <!-- 分类 -->
   <div class="faq-group">
     <h4>Hardware</h4>
-    <div class="faq-box">
-      <p>Hardware-componentes</p>
-      <p>Hardware-periféricos</p>
-      <p>Hardware-BIOS</p>
+
+    <!-- 问答 1 -->
+    <div class="faq-item">
+      <h5>¿Qué hacer si el ordenador no enciende?</h5>
+      <p>
+        Primero, comprueba la fuente de alimentación, el cable de corriente
+        y el botón de encendido. Si el problema continúa, revisa la placa base
+        y la memoria RAM.
+      </p>
+    </div>
+
+    <!-- 问答 2 -->
+    <div class="faq-item">
+      <h5>¿Qué hacer si el teclado o el ratón no funcionan?</h5>
+      <p>
+        Comprueba la conexión USB o Bluetooth, prueba otro puerto y reinicia
+        el equipo. Si sigue fallando, puede tratarse de un problema de drivers
+        o del propio periférico.
+      </p>
     </div>
   </div>
 
-  <!-- Red -->
+  <!-- 分类 -->
   <div class="faq-group">
     <h4>Problemas de la red</h4>
-    <div class="faq-box">
-      <p>Modelo OSI</p>
-      <p>Capa 1: Capa Física</p>
-      <p>Capa 2: Capa Enlace</p>
-      <p>...</p>
-    </div>
-  </div>
 
-  <!-- 你可以继续加 -->
-  <div class="faq-group">
-    <h4>Otros</h4>
-    <div class="faq-box">
-      <p>Contenido aquí...</p>
+    <div class="faq-item">
+      <h5>¿Por qué puedo navegar con la IP pero no con la URL?</h5>
+      <p>
+        Normalmente es un problema de DNS. La conexión a Internet funciona,
+        pero el sistema no puede resolver el nombre de dominio.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h5>¿Qué capas del modelo OSI revisar?</h5>
+      <p>
+        Se recomienda revisar desde la capa física hasta la capa de aplicación:
+        cableado, enlace, IP, puertos, DNS y navegador.
+      </p>
     </div>
   </div>
 
 </div>
 
-.faq-container-simple {
+.faq-container {
   width: 900px;
   margin: 40px auto;
 }
 
-/* 主标题 */
-.faq-container-simple h3 {
+.faq-container h3 {
   font-size: 28px;
   color: #1c3870;
   border-bottom: 2px solid #00a4ff;
@@ -47,24 +63,37 @@
   margin-bottom: 30px;
 }
 
-/* 每个分组 */
+/* 分类 */
 .faq-group {
-  margin-bottom: 30px;
-  border-left: 4px solid #1c3870;
-  padding-left: 15px;
+  margin-bottom: 35px;
 }
 
-/* 分组标题🔥 */
 .faq-group h4 {
-  font-size: 20px;
+  font-size: 22px;
   color: #1c3870;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  border-left: 4px solid #1c3870;
+  padding-left: 10px;
 }
 
-/* 内容框 */
-.faq-box {
+/* 每个问题答案块 */
+.faq-item {
   background: #f8f9fb;
   padding: 15px 20px;
   border-radius: 8px;
-  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* 问题 */
+.faq-item h5 {
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+/* 答案 */
+.faq-item p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
 }
