@@ -1,2 +1,19 @@
-Private //私有的，尽可以通过workspace界面进行修改，任何其它脚本无法进行数据规则乱改
-Public //公共的，其它脚本之间可以相互调动
+private //私有的，尽可以通过workspace界面进行修改，任何其它脚本无法进行数据规则乱改
+public //公共的，其它脚本之间可以相互调动
+
+Debug.Log(); //进行测试, 并在Console中返回值
+
+C = A + B; 
+Debug.Log("Number is" + C);
+
+
+
+public int bread = 3;
+public int water = 1;
+private int Cost;
+
+void start()
+{
+  cost = bread + water;
+  Debug.Log("The cost was" + cost)
+}
