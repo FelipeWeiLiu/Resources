@@ -18,3 +18,5 @@ void start()
   cost = bread + water;
   Debug.Log("The cost was" + cost)
 }
+
+cinemachine (camara)
