@@ -1,3 +1,5 @@
+cinemachine (camara)
+
 private //私有的，尽可以通过workspace界面进行修改，任何其它脚本无法进行数据规则乱改
 public //公共的，其它脚本之间可以相互调动
 在没声明时，默认为私有
@@ -13,10 +15,20 @@ public int bread = 3;
 public int water = 1;
 private int Cost;
 
-void start()
+void Start()
 {
   cost = bread + water;
-  Debug.Log("The cost was" + cost)
+  Debug.Log("The cost was" + cost);
 }
 
-cinemachine (camara)
+
+
+void Start()
+{
+  ShowResult();  //声明调用 ShowResult 函数
+  Debug.Log("The number is" + C);
+}
+void ShowResult()
+{
+  C = A + B;
+}
