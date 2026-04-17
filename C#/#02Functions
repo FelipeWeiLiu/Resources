@@ -1,0 +1,3 @@
+void Start(){}
+void OnMouseDown(){}
+void Update(){}
