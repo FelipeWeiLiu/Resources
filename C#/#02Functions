@@ -2,3 +2,6 @@ void Start(){}  //游戏开始时运行的函数
 void OnMouseDown(){} //当鼠标点击时，函数执行
 OnMouseUp(){} //当鼠标松开时，执行函数
 void Update(){}
+OnCollisionEnter2D(){} //物体刚碰撞的一瞬间，函数执行
+OnCollisionStay2D(){} //物体一直接触时，函数执行
+OnCollisionExit2D(){} //物体分开的一瞬间，函数执行
