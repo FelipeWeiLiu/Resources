@@ -1,0 +1,15 @@
+Example1:
+public void Results()
+{
+    if(number1 > number2)
+    {
+        Debug.Log("Number1 is greater than Number2");
+    }
+    else if (number1 == number2) //单等号会被当做布尔赋值，因此使用双等号
+    {
+        Debug.Log("Number1 is equal to Number 2");
+    }
+    else
+        {
+        Debug.Log("Number1 is less than Number2");
+    }
