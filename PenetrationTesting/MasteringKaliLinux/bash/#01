@@ -1,1 +1,2 @@
 systemctl list-unit-files --type=service --state=enabled -all// -用来写段参数 --用来写长参数, 列出所有已启用服务
+systemctl disable --now <nameoftheseservice>  //用于禁用<指定服务>。
