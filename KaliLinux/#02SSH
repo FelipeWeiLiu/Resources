@@ -4,8 +4,15 @@ XShell
 
 
 ** SHELL **
+
 1. cd /etc/ssh
 //进入系统配置目录的ssh文件夹
 2. vim sshd_config
 //修改ssh设置，"PermitRootLogin prohibit-password"改为"PermitRootLogin yes", 一般情况下远程操控
-，操控者只能以普通用户权限进行远程登陆后再垂直提权，更改此配置后将可以直接以root进行远程操控。
+，操控者只能以普通用户权限进行远程登陆后再垂直提权，更改此配置后将可以直接以root进行远程操控。适合NAT实验环境下使用。
+//password authentication 在 no 的状态下，强制要求进行 SSH密钥登陆，哪怕在成功输入密码的情况下也禁止进行远程操控。
+3. service ssh start
+4. systemctl enabled ssh
+//设置ssh服务开机自启
+
+
