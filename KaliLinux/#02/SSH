@@ -1,0 +1,11 @@
+** INFO **
+XShell
+//专业SSH客户端工具
+
+
+** SHELL **
+1. cd /etc/ssh
+//进入系统配置目录的ssh文件夹
+2. vim sshd_config
+//修改ssh设置，"PermitRootLogin prohibit-password"改为"PermitRootLogin yes", 一般情况下远程操控
+，操控者只能以普通用户权限进行远程登陆后再垂直提权，更改此配置后将可以直接以root进行远程操控。
