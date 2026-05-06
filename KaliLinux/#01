@@ -1,18 +1,19 @@
 Kali Tools: https://tools.kali.org/tools-listing
 
-Directory
+** DIRECTORY **
 /etc
 //存储系统主要配置的目录
 
 /etc/apt
 //主要存储软件源的目录
 
-SHELL
-apt
+** SHELL **
+apt-get / apt
 //Advanced Packaging Tool的简称，安装包管理工具，可用于软件包的安装，删除，清理等。
+//apt-get clean用于清理安装包缓存
 
 cat
 //查看文件内容
 
 vim
-//编辑器
+//文本编辑器, 按"Esc"键并输入 ":wq"保存退出。
