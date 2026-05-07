@@ -7,7 +7,9 @@ XShell
 1. apt-get install kali-desktop-gnome
 2. 选择gdm3主题
 3. update-alternatives --config x-session-manager
-4. reboot
+4. 选择编号1的主题
+5. reboot
+更多主题 https://extensions.gnome.org/
 
 
 ** SHELL **
