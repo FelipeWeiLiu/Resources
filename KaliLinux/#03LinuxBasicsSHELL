@@ -1,0 +1,11 @@
+** LINUX BASICS *
+/* Shell 分为 Bash, Zsh以及Fish，Bash是常用的linux shell */
+
+
+** SHELL **
+free -m
+//以mb为单位查看内存使用情况
+
+top
+//查看CPU进程
+
