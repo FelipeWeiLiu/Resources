@@ -13,7 +13,6 @@ XShell
 
 
 ** SHELL **
-
 1. cd /etc/ssh
 //进入系统配置目录的ssh文件夹
 2. vim sshd_config
