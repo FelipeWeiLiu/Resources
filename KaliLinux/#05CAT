@@ -1,0 +1,30 @@
+** SHELL **
+1. touch 1.txt
+2. cat > 1.txt
+这是覆盖内容
+//ctrl+d
+3. cat >> 1.txt
+//ctrl+d
+这是追加内容
+
+more +x
+//从x行开始查看
+
+less -p kali /etc/passwd
+//在/etc/passwd中查询kali相关文件
+
+head -n x /etc
+//查看从头部开始前x行的参数
+
+tail -n x /etc
+//从头部到尾部最后x行
+
+-f
+实时监听(日志)的参数
+
+file
+//查看文件类型
+//file /var/log/* log下所有文件以及目录全部分析查看
+
+which
+//显示文件位置
