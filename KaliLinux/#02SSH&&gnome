@@ -3,6 +3,13 @@ XShell
 //专业SSH客户端工具
 
 
+** gnome **
+1. apt-get install kali-desktop-gnome
+2. 选择gdm3主题
+3. update-alternatives --config x-session-manager
+4. reboot
+
+
 ** SHELL **
 
 1. cd /etc/ssh
@@ -15,4 +22,7 @@ XShell
 4. systemctl enabled ssh
 //设置ssh服务开机自启
 
-
+dbpg
+//Debian Package, 底层安装工具
+//dpkg-reconfigure 用于重新配置Debian软件包
+//dpkg：负责真正安装 .deb 文件, 而apt：负责联网下载、解决依赖、调用 dpkg
