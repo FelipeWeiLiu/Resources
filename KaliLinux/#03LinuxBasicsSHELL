@@ -17,3 +17,8 @@ chsh
 //指定系统使用哪种shell
 // chsh --shell /bin/bash
 
+uname --all
+//用于查看系统信息和内核，uname -r用于单独查看内核
+
+netstat
+//查看系统进程
