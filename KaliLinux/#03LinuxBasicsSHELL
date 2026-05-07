@@ -1,5 +1,6 @@
 ** LINUX BASICS *
-/* Shell 分为 Bash, Zsh以及Fish，Bash是常用的linux shell */
+/* Shell 分为 Bash, Zsh, Dash以及Fish，Bash是常用的linux shell */
+
 
 
 ** SHELL **
@@ -8,4 +9,11 @@ free -m
 
 top
 //查看CPU进程
+
+echo $SHELL
+//查看目前使用的shell
+
+chsh
+//指定系统使用哪种shell
+// chsh --shell /bin/bash
 
