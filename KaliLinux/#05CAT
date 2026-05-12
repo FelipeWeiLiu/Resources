@@ -27,4 +27,4 @@ file
 //file /var/log/* log下所有文件以及目录全部分析查看
 
 which
-//显示文件位置
+//显示命令，可执行文件位置，在Linux中可以自定义shell。
