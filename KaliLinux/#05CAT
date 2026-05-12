@@ -11,7 +11,7 @@ more +x
 //从x行开始查看
 
 less -p kali /etc/passwd
-//在/etc/passwd中查询kali相关文件
+//在/etc/passwd中查询kali相关文件,只能查看文件内容不能查看目录
 
 head -n x /etc
 //查看从头部开始前x行的参数
