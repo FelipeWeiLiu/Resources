@@ -1,6 +1,7 @@
 ** LINUX BASICS *
 /* Shell 分为 Bash, Zsh, Dash以及Fish，Bash是常用的linux shell */
-
+/* status = 当前情况 / 结果
+state  = 当前所处阶段 / 生命周期位置 */
 
 
 ** SHELL **
