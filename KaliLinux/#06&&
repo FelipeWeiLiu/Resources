@@ -23,3 +23,6 @@ echo hey > welcome
 echo hey2 >> welcome
 //在welcome文件夹中追加hey2内容，最终输出为 hey hey2.
 
+SIGTERM - 终止进程，但允许它提前完成一些清理任务
+SIGKILL——终止进程——不做任何事后清理。
+SIGSTOP - 停止/暂停进程
