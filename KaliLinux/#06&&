@@ -1,0 +1,16 @@
+SHELL OPERATORS
+
+command &
+//在后台运行command命令,此命令可以让linux同时进行多个进程，不影响命令实时控制。
+//nmap 192.168.1.0/24 &
+
+jobs
+[1]+ Running sleep 100 &
+//查看后台进程，[1]是任务编号，running运行中
+
+fg
+//把任务拉回前台，因为后台进程没办法进行交互。
+
+kill %1
+//结束后台进程编号1
+
