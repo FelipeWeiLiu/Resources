@@ -14,3 +14,5 @@ fg
 kill %1
 //结束后台进程编号1
 
+command1 && command2 && command3
+//先执行command1，在执行command2，最后command3
