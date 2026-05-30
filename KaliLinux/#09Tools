@@ -1,0 +1,11 @@
+wget+URL
+//wget命令 用来从指定的URL下载文件。且稳定。
+
+python3 -m http.server
+//通过python3的模块进行http server运行,可以在文件所属本地机运行http服务器。后由客户机访问并传输数据。
+通过ctrl+c关闭服务
+
+wget http://IP:PORT//MY_FILE
+
+通过top查看进程，并通过kill PID杀死指定PID的进程
+
