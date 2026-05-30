@@ -14,3 +14,15 @@ Password:
 user2@linux2:~$ pwd
 user2@:/home/user2$
 //使用目标用户env环境。
+
+rwx(owner) rwx(group) rwx(other)
+r (read)= 4
+w (write)= 2
+x (execute)= 1
+rwxrwxrwx=777
+chmod 777
+
+常见例子
+rwxr-xr-x	755	所有者可以做所有事情，其他人可以阅读和执行
+rw-r--r--	644	主人能读写，其他人只能读
+rwx------	700	只有所有者有权限访问
