@@ -16,3 +16,10 @@ kill %1
 
 command1 && command2 && command3
 //先执行command1，在执行command2，最后command3
+
+echo hey > welcome
+//创建一个welcome.txt并输入hey，cat后得出输出值为hey。
+
+echo hey2 >> welcome
+//在welcome文件夹中追加hey2内容，最终输出为 hey hey2.
+
