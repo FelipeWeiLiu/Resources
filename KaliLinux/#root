@@ -3,3 +3,14 @@ su
 //切换用户。默认为 root。
 sudo su 
 //以管理员权限执行一次用户切换，因为缺少用户名字，因此默认用户为root。
+
+tryhackme@linux2:~$ su user2
+Password:
+user2@linux2:/home/user1$
+//env环境变量部分继承user1
+
+tryhackme@linux2:~$ su -l user2
+Password:
+user2@linux2:~$ pwd
+user2@:/home/user2$
+//使用目标用户env环境。
