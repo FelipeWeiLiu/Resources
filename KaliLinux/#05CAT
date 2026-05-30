@@ -45,4 +45,10 @@ grep -R "PRETTY_NAME" /etc/
 grep: /etc/sudoers: Permission denied
 /etc/os-release:PRETTY_NAME="Ubuntu"
 /* 在/etc目录下对各个子目录进行递归式查询，查询信息"PRETTY_NAME", Permission denied是由于权限不足的原因，
-提权至root即可，因此"PRETTY_NAME"输出代表本机为Linux Ubuntu
+提权至root即可，因此"PRETTY_NAME"输出代表本机为Linux Ubuntu */
+
+grep "THM" access.log
+13.127.130.212 - - [04/May/2021:08:35:26 +0000] "GET THM{ACCESS} lang=en HTTP/1.1" 
+404 360 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"
+//The flag is "THM{ACCESS}"
+
