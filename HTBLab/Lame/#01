@@ -1,3 +1,5 @@
 git clone https://github.com/AutoRecon/AutoRecon
-//从git中复制下载到此linux电脑
+//从git中复制下载AutoRecon自动化渗透测试工具到此linux电脑
 
+sudo python3 /home/kalifelipe/tools/AutoRecon/autorecon.py 10.129.11.29 -o /home/kalifelipe/HTB/Lame
+//以py3的环境运行autorecon.py脚本，后面跟上攻击目标服务器的IP以及Output参数 -o 将其保存至绝对路径下Lame文件夹。
