@@ -1,5 +1,27 @@
 git clone https://github.com/AutoRecon/AutoRecon
 //从git中复制下载AutoRecon自动化渗透测试工具到此linux电脑
 
+
+方法1强行安装(新版Kali的py保护机制 PEP668)
+python3 -m pip install -r requirements.txt --break-system-packages (强行安装)
+
+//虚拟环境python，一套独立的python环境
+//系统环境python，系统py环境是针对全局env设定。
+
+PEP668 dependency hell（依赖地狱）
+程序 A 要：Flask 2.x程序 B 要：Flask 1.x系统环境里只能装：一个Flask就冲突。
+现实中：装工具 A：pip install flask==2 可能导致：工具 B 崩。
+安装缺少的py依赖(AutoRecon)，否则提示报错。
+
+
+方法2先安装VirtualEnvironment
+apt install python3-venv -y
+python3 -m venv venv
+//-m module，创建虚拟环境
+source venv/bin/activate
+//激活并进入独立py环境
+pip install -r requirements.txt
+
+
 sudo python3 /home/kalifelipe/tools/AutoRecon/autorecon.py 10.129.11.29 -o /home/kalifelipe/HTB/Lame
 //以py3的环境运行autorecon.py脚本，后面跟上攻击目标服务器的IP以及Output参数 -o 将其保存至绝对路径下Lame文件夹。
