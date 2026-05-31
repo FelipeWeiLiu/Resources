@@ -4,4 +4,5 @@ show options
 show targets
 set targets
 set RHOST destine_IP
-exploit
+exploit / run
+//exploit针对exploit模块, run 针对整个框架
