@@ -1,2 +1,12 @@
 Searchsploit smb, telnet..
 tmux
+ctrl+b 控制上下左右
+ctrl+% 左右分屏
+ctrl+" 上下分屏、
+
+nano ~/.tmux.conf
+//进入tmux编辑
+set -g mouse on
+//设置分屏鼠标滚轮
+tmux source-file ~/.tmux.conf
+//刷新设置
