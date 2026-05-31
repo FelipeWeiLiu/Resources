@@ -3,3 +3,5 @@ search + 搜索内容以及版本号
 show options
 show targets
 set targets
+set RHOST destine_IP
+exploit
