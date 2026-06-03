@@ -1,0 +1,12 @@
+协议要求 数据格式
+HTTP--HTTPS (HTTP+SSL)
+
+TCP/IP 5
+应用层的协议: HTTP, HTTPS, DNS, Telnet, FTP, SMB, RDP...
+传输层的协议: TCP, UDP, RTP, SCTP, SPX, ATP, IL...
+网络层的协议: IP, ICMP, IGMP, RIP...
+数据链路层的协议: 主要为MAC子层协议，例如以太网
+物理层: 主要为电信号，例如线路，无线电，光纤等
+
+TCP (Transmission COntrol Protocol)
+UDP (User Datagram Protocol)
