@@ -12,6 +12,10 @@ TCP (Transmission COntrol Protocol)
 UDP (User Datagram Protocol)、
 
 抓包软件
+应用层抓包
 Burpsuit (bp)
-fiddler charles
+fiddler
+charles (MAC OS)
+
+更底层更全面的抓包工具
 Wireshark
