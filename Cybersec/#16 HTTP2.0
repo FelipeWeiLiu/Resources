@@ -1,5 +1,5 @@
-协议要求 数据格式
 HTTP--HTTPS (HTTP+SSL)
+请求协议和响应协议
 
 TCP/IP 5
 应用层的协议: HTTP, HTTPS, DNS, Telnet, FTP, SMB, RDP...
@@ -9,4 +9,9 @@ TCP/IP 5
 物理层: 主要为电信号，例如线路，无线电，光纤等
 
 TCP (Transmission COntrol Protocol)
-UDP (User Datagram Protocol)
+UDP (User Datagram Protocol)、
+
+抓包软件
+Burpsuit (bp)
+fiddler charles
+Wireshark
