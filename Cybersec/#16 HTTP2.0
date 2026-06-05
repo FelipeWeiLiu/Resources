@@ -39,11 +39,6 @@ RESULT 302 为Redirect重定向，在渗透测试中一般代表需经过身份�
 2. POST请求
 将数据投递，发送至服务器
 
-HTTP-Session
-
-
-HTTP-Cookie
-
 Post-Redirect-Get (PRG模式)
 浏览器在刷新时，通常会重新发送当前页面的最后一条请求信息。
 1.POST /checkout
@@ -63,6 +58,11 @@ POST /pay(302)
 GET /receipt(200)
 get一般代表获取请求，post代表提交请求，因此将get作为当前页面的屏障即最后一条请求，信息刷新后不会对订单或登录提交产生任何影响。
 
+
+HTTP-Session
+
+
+HTTP-Cookie
 
 抓包软件
 应用层抓包
