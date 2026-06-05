@@ -2,14 +2,30 @@ HTTP--HTTPS (HTTP+SSL)
 请求协议和响应协议
 
 TCP/IP 5
-应用层的协议: HTTP, HTTPS, DNS, Telnet, FTP, SMB, RDP...
+应用层的协议: HTTP, HTTPS, SOAP, DNS, Telnet, FTP, SMB, RDP...
 传输层的协议: TCP, UDP, RTP, SCTP, SPX, ATP, IL...
 网络层的协议: IP, ICMP, IGMP, RIP...
 数据链路层的协议: 主要为MAC子层协议，例如以太网
 物理层: 主要为电信号，例如线路，无线电，光纤等
 
 TCP (Transmission COntrol Protocol)
-UDP (User Datagram Protocol)、
+UDP (User Datagram Protocol)
+
+HTTP简介
+
+
+HTTP请求
+1. GET请求
+
+2. POST请求
+
+HTTP-Session
+
+HTTP-Cookie
+
+
+
+
 
 抓包软件
 应用层抓包
