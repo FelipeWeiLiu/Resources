@@ -46,6 +46,10 @@ Post-Redirect-Get (PRG模式)
 3.GET /success (作为当前页面)
 
 (非PRG模式)
+刷新后重复执行POST逻辑，导致提交多次POST请求。
+POST /checkout HTTP/1.1 (200)
+product=iphone
+quantity=1
 
 
 在BP抓包中看到这两种请求参数，一般就可以判断出这个网站使用了PRG模式，
