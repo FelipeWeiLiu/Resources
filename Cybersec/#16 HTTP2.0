@@ -1,5 +1,10 @@
-HTTP--HTTPS (HTTP+SSL)
-请求协议和响应协议
+HTTP(HyperText Transfer Protocol Default TCP 80)
+HTTPS(HyperText Transfer Protocol Secure Default TCP 443)
+非默认TCP端口，可以写: 8080, 8081, 8082...
+浏览器专业名称叫做HTTP客户端
+浏览器通过解析HTTP语言将它所描述的一切呈现在客户端上，因此只有服务端没有客户端是不行的，双方都要满足一个规则(协议)才能相互交互。
+HTTP客户端访问一个HTTPS地址时，在按下回车键的瞬间，将向Default默认TCP 443端口发送了访问请求。访问HTTP地址同理。
+
 
 TCP/IP 5
 应用层的协议: HTTP, HTTPS, SOAP, DNS, Telnet, FTP, SMB, RDP...
