@@ -24,7 +24,14 @@ HTTP请求
 3.停机
 4.拒绝通讯
 RESULT 200 为标准响应，代表一切正常
-RESULT 302 为Redirect重定向
+RESULT 302 为Redirect重定向，在渗透测试中一般代表需经过身份验证，或权限不足，
+被重定向至登陆验证界面。
+
+301	永久重定向（Moved Permanently）
+302	临时重定向（Found）
+303	重定向后强制 GET
+307	临时重定向且保持请求方法
+308	永久重定向且保持请求方法
 
 1. GET请求
 获取服务器资源
@@ -37,8 +44,11 @@ HTTP-Session
 
 HTTP-Cookie
 
-
-
+Post-Redirect-Get (PRG模式)
+浏览器在刷新时，通常会重新发送当前页面的最后一条请求信息。
+1.POST /checkout
+2.302 Redirect
+3.GET /success (作为当前页面)
 
 
 抓包软件
