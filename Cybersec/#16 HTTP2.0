@@ -27,6 +27,8 @@ RESULT 200 为标准响应，代表一切正常
 RESULT 302 为Redirect重定向，在渗透测试中一般代表需经过身份验证，或权限不足，
 被重定向至登陆验证界面。
 
+
+HTTP 300状态码 (Result)
 301	永久重定向（Moved Permanently）
 302	临时重定向（Found）
 303	重定向后强制 GET
