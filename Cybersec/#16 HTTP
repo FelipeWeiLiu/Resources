@@ -68,8 +68,8 @@ AJAX 的核心机制是在网页不刷新的情况下向服务器请求或提交
 GET /user/profile?id=1001 HTTP/1.1
 Host: example.com
 Refere: http://example.com (客户端发送请求的当前界面的URL)
-Accept-Encoding: gzip, deflate (客户端)
-User-Agent: Mozilla/5.0
+Accept-Encoding: gzip, deflate (客户端向服务器指定其支持的压缩格式)
+User-Agent: Mozilla/5.0 (客户端自报信息，例如使用的操作系统，浏览器版本等)
 Cookie: sessionid=abc123Accept: application/json
 Connection: Keep Alive
 
