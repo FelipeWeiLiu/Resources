@@ -65,6 +65,14 @@ AJAX 的核心机制是在网页不刷新的情况下向服务器请求或提交
 后台会发送请求并让服务器返回结果，页面不会刷新。实际上搜索栏里的推荐词机制(搜cyber，没按回车自动出现cybersecurity, Cyber Attack)
 就是由AJAX机制实现的。
 
+GET /user/profile?id=1001 HTTP/1.1
+Host: example.com
+Refere: http://example.com (客户端发送请求的当前界面的URL)
+Accept-Encoding: gzip, deflate (客户端)
+User-Agent: Mozilla/5.0
+Cookie: sessionid=abc123Accept: application/json
+Connection: Keep Alive
+
 HTTP 300状态码 (Result)
 301	永久重定向（Moved Permanently）
 302	临时重定向（Found）
