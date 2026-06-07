@@ -5,17 +5,6 @@ HTTPS(HyperText Transfer Protocol Secure Default TCP 443)
 浏览器通过解析HTTP语言将它所描述的一切呈现在客户端上，因此只有服务端没有客户端是不行的，双方都要满足一个规则(协议)才能相互交互。
 HTTP客户端访问一个HTTPS地址时，在按下回车键的瞬间，将向Default默认TCP 443端口发送了访问请求。访问HTTP地址同理。
 
-
-TCP/IP 5
-应用层的协议: HTTP, HTTPS, SOAP, DNS, Telnet, FTP, SMB, RDP...
-传输层的协议: TCP, UDP, RTP, SCTP, SPX, ATP, IL...
-网络层的协议: IP, ICMP, IGMP, RIP...
-数据链路层的协议: 主要为MAC子层协议，例如以太网
-物理层: 主要为电信号，例如线路，无线电，光纤等
-
-TCP (Transmission COntrol Protocol)
-UDP (User Datagram Protocol)
-
 HTTP简介
 应用层协议，协议规则让其更加关注于内容本身，传输过程为明文传输，导致安全性较差。
 并且HTTP是无状态协议，这代表每一次HTTP请求都是独立的，每一次都必须再携带一次身份信息，
