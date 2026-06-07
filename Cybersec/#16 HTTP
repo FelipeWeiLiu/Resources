@@ -66,12 +66,6 @@ GET /receipt(200)
 get一般代表获取请求，post代表提交请求，因此将get作为当前页面的屏障即最后一条请求，信息刷新后不会对订单或登录提交产生任何影响。
 
 
-HTTP-Session
-
-
-HTTP-Cookie
-
-
 AJAX (Asynchronous JavaScript And XML)
 1. Fetch API
 2. XMLHttpRequest
@@ -87,6 +81,16 @@ Accept-Encoding: gzip, deflate (客户端向服务器指定其支持的压缩格
 User-Agent: Mozilla/5.0 (客户端自报信息，例如使用的操作系统，浏览器版本等)
 Cookie: sessionid=abc123Accept: application/json
 Connection: Keep Alive
+
+HTTP-Session
+
+
+HTTP-Cookie
+
+
+
+HTTP响应
+
 
 HTTP 300状态码 (Result)
 301	永久重定向（Moved Permanently）
