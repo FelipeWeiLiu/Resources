@@ -85,8 +85,14 @@ HTTP-Session
 HTTP-Cookie
 
 
- AJAX (Asynchronous JavaScript And XML)
-AJAX 的核心机制是在网页不刷新的情况下向服务器请求或提交数据
+AJAX (Asynchronous JavaScript And XML)
+1. Fetch API
+2. XMLHttpRequest
+AJAX 的核心机制是在网页不刷新的情况下向服务器请求或提交数据，早期没有AJAX技术的网站，
+在登陆账号与密码后页面会自动刷新，整个页面白一下，服务器返回新页面。在使用AJAX技术后在登陆账号与密码时，
+后台会发送请求并让服务器返回结果，页面不会刷新。实际上搜索栏里的推荐词机制(搜cyber，没按回车自动出现cybersecurity, Cyber Attack)
+就是由AJAX机制实现的。
+
 
 抓包软件
 应用层抓包
