@@ -81,6 +81,11 @@ Accept-Encoding: gzip, deflate (客户端向服务器指定其支持的压缩格
 User-Agent: Mozilla/5.0 (客户端自报信息，例如使用的操作系统，浏览器版本等)
 Cookie: sessionid=abc123Accept: application/json
 Connection: Keep Alive
+Cache-Control: no-store (完全禁止缓存)
+/ no-cache (缓存管理: 可缓存但每次使用缓存前必须向服务器验证) 
+/ private (允许客户端缓存私人信息，但为避免隐私泄露禁止共享缓存)
+/ public (允许浏览器缓存，并允许共享缓存)
+
 
 HTTP-Session
 
