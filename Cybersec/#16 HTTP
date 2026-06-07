@@ -84,6 +84,10 @@ HTTP-Session
 
 HTTP-Cookie
 
+
+ AJAX (Asynchronous JavaScript And XML)
+AJAX 的核心机制是在网页不刷新的情况下向服务器请求或提交数据
+
 抓包软件
 应用层抓包
 Burpsuit (bp)
