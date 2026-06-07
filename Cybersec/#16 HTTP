@@ -91,6 +91,7 @@ PAGETYPE:
 QID:
 USERID:
 //作为客户端浏览器下次请求的cookie发送至服务求，进行身份或数据验证等。
+
 Keep-Alive: timeout=5, max=100 (同一TCP隧道最长重复使用时间5秒，最多使用次数100次，这两种限制相互独立存在)
 
 HTTP-Session
