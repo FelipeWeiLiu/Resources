@@ -85,9 +85,16 @@ Cache-Control: no-store (完全禁止缓存)
 / no-cache (缓存管理: 可缓存但每次使用缓存前必须向服务器验证) 
 / private (允许客户端缓存私人信息，但为避免隐私泄露禁止共享缓存)
 / public (允许浏览器缓存，并允许共享缓存)
+Expires: (缓存的过期时间，即时过期代表重新刷新相同页面时，浏览器会再次请求并加载一次页面内容)
+X-UA-Compatible: (浏览器兼容的模式)
+PAGETYPE:
+QID:
+USERID:
+//作为客户端浏览器下次请求的cookie发送至服务求，进行身份或数据验证等。
 
 
 HTTP-Session
+
 
 
 HTTP-Cookie
