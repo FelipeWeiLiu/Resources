@@ -101,6 +101,11 @@ HTTP协议本身属于无状态协议，假设在一个页面中登陆账号，�
 Session Cookie最大的特点是，运行浏览器后数据将保存至分配给浏览器那部分的RAM内存中。关闭浏览器后数据清零与之相匹配的是Persistent Cookie，其
 数据将直接存入硬盘作为长期存在的内容。
 
+Set-Cookie: PHPESSID=16b154f7ed.....(SSID采用32位16进制)
+
+当服务器生成并分配了一个session ID给客户时同时在tmp中生成一个对应的暂时文件用于保存客户端http请求的状态。
+
+
 
 HTTP-Cookie
 
