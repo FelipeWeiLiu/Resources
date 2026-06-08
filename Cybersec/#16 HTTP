@@ -95,7 +95,11 @@ USERID:
 Keep-Alive: timeout=5, max=100 (同一TCP隧道最长重复使用时间5秒，最多使用次数100次，这两种限制相互独立存在)
 
 HTTP-Session
-
+HTTP协议本身属于无状态协议，假设在一个页面中登陆账号，单论HTTP协议是无法保持登陆状态并在下次HTTP请求中让服务器记住自己的。
+因为前面提到过每次HTTP请求都是独立的。Session存在最大的作用是为了保存HTTP的状态。在用户发出HTTP请求时，由Session服务器
+创建一个Session ID，通过Set-cookie发送至客户端(Cookie), 再由客户端浏览器将Session ID保存至Cookie，后续HTTP请求自动携带Cookie。
+Session Cookie最大的特点是，运行浏览器后数据将保存至分配给浏览器那部分的RAM内存中。关闭浏览器后数据清零与之相匹配的是Persistent Cookie，其
+数据将直接存入硬盘作为长期存在的内容。
 
 
 HTTP-Cookie
