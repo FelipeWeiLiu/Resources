@@ -6,8 +6,9 @@ Model OSI (Open System Interconnection)
 5.网络层
 6.数据链路层
 7.物理层
-//理想架构，在实际情况中表示层与会话层被应用层吞并为同一层。
-TCP/IP 5 分层模型
+//理想架构，架构师在设计时先思考出此模型，后在代入协议后，在实际情况中将表示层与会话层被应用层吞并为同一层。
+
+TCP/IP5层协议簇
 应用层的协议: HTTP, HTTPS, SOAP, DNS, Telnet, FTP, SMB, RDP...
 传输层的协议: TCP, UDP, RTP, SCTP, SPX, ATP, IL...
 网络层的协议: IP, ICMP, IGMP, RIP...
@@ -16,6 +17,19 @@ TCP/IP 5 分层模型
 //于实际应用中诞生的架构，其OSI7层模型中的表示层与会话层被吞并为应用层。
 //分层的目的是为了降低整个通讯过程的复杂性，把复杂的东西分层简单化，各个层级分工合作各司其职，其关系为下级层面为上级层面提供服务。
 
+四层协议模型
+1.应用层
+2.传输层
+3.网络层
+4.网络接口层
+
+传输封装过程
+|TCP/UDP头(传输层)|HelloWorld!(应用层)
+传输过程中由传输层检查信息来源应用层的端口号。
+TCP/UDP头-源端口号8000，
+
+
+IP (Internet Protocol)
 
 
 TCP (Transmission Control Protocol)
