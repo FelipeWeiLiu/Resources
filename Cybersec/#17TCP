@@ -15,10 +15,8 @@ TCP报文结构
 //32bits, 序列号以byte为基本单位，标识每个基本单位的编号，用于让接收方在接受以及进行排序时更加方便数据重组和解析。
   3.1.TCP将字节流分配位置:
   Byte1 = H; Byte2 = e; Byte3 = l; Byte4 = l; Byte5 = o;
-
   3.2.TCP以Byte为单位对每个单位的字节流进行编号用于排序。(Sequence Number)
   Byte1(Seq:1000)  Byte2(Seq:1001)  Byte3(Seq:1002)  Byte4(Seq:1003)  Byte5(Seq:1004)
-
   3.3.接收方接收
   TCP段A
   Seq=1000
@@ -29,7 +27,6 @@ TCP报文结构
   TCP段C
   Seq=1005
   Length=6;
-
   3.4.编号排序与顺序重组
   A:1000~1002 (Hel)
   B:1003~1004 (lo)
