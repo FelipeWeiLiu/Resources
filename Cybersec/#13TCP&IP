@@ -25,13 +25,17 @@ TCP/IP5层协议簇
 
 传输封装过程
 MAC子层(数据链路层)|IP包头(网络层)|TCP/UDP头(传输层)|HelloWorld!(应用层)|FCS Frame Check Sequence(数据链路层)
+TCP/UDP|HelloWorl 段
+IP|TCP/UDP|HelloWorld IP包
+MAC|IP|TCP/UDP|HelloWorld|FCS 帧(Frame), MAC帧头, FCS帧尾
+
 
 传输过程中由传输层检查信息来源应用层的端口号。
 只有应用层的进程才有端口号的概念。
 TCP/UDP头-源端口号8000，目标端口号。传输层负责完成进程与进程之间的通讯。
 IP包头包含源IP地址以及目标IP地址。网络层负责完成点到点之间的通讯。
 交换机在数据链路层工作，因此不具备任何关于网络层，传输层以及应用层功能。
-
+交换机不认识IP地址，只认识MAC地址。因此它根据MAC地址转发数据。
 
 IP (Internet Protocol)
 
