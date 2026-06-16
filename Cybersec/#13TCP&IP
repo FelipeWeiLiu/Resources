@@ -30,12 +30,14 @@ IP|TCP/UDP|HelloWorld IP包
 MAC|IP|TCP/UDP|HelloWorld|FCS 帧(Frame), MAC帧头, FCS帧尾，帧校验序列。
 FCS帧为功能类似于哈希算法中的摘要，用于验证消息的完整性以及是否遭到篡改。
 
+Socket是介于应用层与传输层之间的API。
 传输过程中由传输层检查信息来源应用层的端口号。
 只有应用层的进程才有端口号的概念。
 TCP/UDP头-源端口号8000，目标端口号。传输层负责完成进程与进程之间的通讯。
 IP包头包含源IP地址以及目标IP地址。网络层负责完成点到点之间的通讯。
 交换机在数据链路层工作，因此不具备任何关于网络层，传输层以及应用层功能。
 交换机不认识IP地址，只认识MAC地址。因此它根据MAC地址转发数据。
+
 
 IP (Internet Protocol)
 
@@ -44,6 +46,8 @@ TCP (Transmission Control Protocol)
 提供可靠数据传输
 可靠性高，能够保证数据包正确到达目标主机，代价是牺牲传输效率。包头长度通常比UDP高。
 TCP在传输数据时会和目标机建立连接，并且自带目标数据重传机制。(面向连接服务)
+TCP三次握手
+
 
 UDP (User Datagram Protocol)
 传输过程不一定可靠
