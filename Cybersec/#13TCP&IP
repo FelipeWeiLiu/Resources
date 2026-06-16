@@ -27,7 +27,7 @@ TCP/IP5层协议簇
 MAC子层(数据链路层)|IP包头(网络层)|TCP/UDP头(传输层)|HelloWorld!(应用层)|FCS Frame Check Sequence(数据链路层)
 TCP/UDP|HelloWorl 段
 IP|TCP/UDP|HelloWorld IP包
-MAC|IP|TCP/UDP|HelloWorld|FCS 帧(Frame), MAC帧头, FCS帧尾
+MAC|IP|TCP/UDP|HelloWorld|FCS 帧(Frame), MAC帧头, FCS帧尾，帧校验序列。
 FCS帧为功能类似于哈希算法中的摘要，用于验证消息的完整性以及是否遭到篡改。
 
 传输过程中由传输层检查信息来源应用层的端口号。
