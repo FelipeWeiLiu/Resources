@@ -28,7 +28,7 @@ MAC子层(数据链路层)|IP包头(网络层)|TCP/UDP头(传输层)|HelloWorld!
 TCP/UDP|HelloWorl 段
 IP|TCP/UDP|HelloWorld IP包
 MAC|IP|TCP/UDP|HelloWorld|FCS 帧(Frame), MAC帧头, FCS帧尾
-
+FCS帧为功能类似于哈希算法中的摘要，用于验证消息的完整性以及是否遭到篡改。
 
 传输过程中由传输层检查信息来源应用层的端口号。
 只有应用层的进程才有端口号的概念。
