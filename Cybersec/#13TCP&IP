@@ -27,13 +27,13 @@ TCP/IP5层协议簇
 |TCP/UDP头(传输层)|HelloWorld!(应用层)
 传输过程中由传输层检查信息来源应用层的端口号。
 TCP/UDP头-源端口号8000，目标端口号。传输层负责完成进程与进程之间的通讯。
-
+只有应用层的进程才有端口号的概念。
 
 IP (Internet Protocol)
 
 
 TCP (Transmission Control Protocol)
-
+可靠性高，能够保证数据包正确到达目标主机，代价是牺牲传输效率。包头长度通常比UDP高。
 
 UDP (User Datagram Protocol)
-
+不保证数据包能否到达目标主机，性能与效率比TCP高。包头长度通常没有TCP高。
