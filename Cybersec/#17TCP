@@ -36,6 +36,7 @@ TCP报文结构
   C:1005~1010 (World)
   Hello World
 4. 确认号(Acknowledgment Number)
-//32bits, 
+/* 32bits, 用于确认接收方已发送的数据是否顺利到达，同时标识并告知发送方，"期望"下次收到的字节流数据中，
+字节的开始发送位置。是TCP协议中其高可靠性以及丢包重传机制的核心。 */
 5.报头长度 (Header Length)
 //4bits, 
