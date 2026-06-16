@@ -1,1 +1,2 @@
-
+cat /etc/*-release
+// 查看Linux发行版和版本信息
