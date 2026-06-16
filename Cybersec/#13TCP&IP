@@ -26,7 +26,7 @@ TCP/IP5层协议簇
 传输封装过程
 |TCP/UDP头(传输层)|HelloWorld!(应用层)
 传输过程中由传输层检查信息来源应用层的端口号。
-TCP/UDP头-源端口号8000，
+TCP/UDP头-源端口号8000，目标端口号。传输层负责完成进程与进程之间的通讯。
 
 
 IP (Internet Protocol)
