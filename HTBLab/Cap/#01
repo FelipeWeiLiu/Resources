@@ -1,2 +1,5 @@
 cat /etc/*-release
 // 查看Linux发行版和版本信息
+
+uname -a
+内核、主机名、架构等系统信息。
