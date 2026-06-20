@@ -16,6 +16,8 @@ linux-kemel-exploits
 /* 以二进制为格式的可执行文件，当root或其他权限级用户赋予某可执行文件SUID权限后，在某低权限用户拥有此文件的执行特权的情况下，
 运行此文件的过程中，实际上是临时以文件配置者的权限运行此文件。 */
 
+//被赋予SUID权限位的文件，其程序的权限格式以rwx变为rws，以cp命令为例子，通过which查询到cp的绝对路径，再以chmod u+s /usr/bin/cp 为cp程序赋予SUID权限位
+
 find / -perm -u=s -type f 2>/dev/null
 /* 用于查询系统中拥有SUID权限位的程序，命令逐层拆解: 调用find程序，在/根目录下，以find的参数-perm筛选出, -u = s Oowner(user)为SUID权限位，并且-type为参数f的可执行普通文件,
 并过滤掉标准错误码2的输出。 */
