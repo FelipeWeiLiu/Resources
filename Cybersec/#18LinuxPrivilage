@@ -1,1 +1,19 @@
+通过在Github上搜索CVE编号来查找可利用的Exploit脚本
 
+非漏洞提权检测脚本
+Linpeas
+LinuEnum
+BeRoot
+Linux-smart-enumeration
+
+漏洞提权检测脚本
+Linpeas
+linux-exploit-suggester-2
+linux-kemel-exploits
+
+非漏洞提权(常见于Linux账户配置不当)
+利用SUID二进制文件进行提权
+/* 以二进制为格式的可执行文件，当root或其他权限级用户赋予某可执行文件SUID权限后，在某低权限用户拥有此文件的执行特权的情况下，
+运行此文件的过程中，实际上是临时以文件配置者的权限运行此文件。 */
+
+漏洞提权
