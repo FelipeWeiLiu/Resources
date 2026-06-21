@@ -25,6 +25,9 @@ UPG (User Private Group)
 
 whoami
 uname
+netstat -anpt
+// 用于查看当前系统所有 TCP 网络连接、监听端口，并显示对应的进程 PID 和程序名。 
+// -anpt = all(Sockets), numeric, program, TCP.
 w //当前登录用户
 last //最后登录用户
 
