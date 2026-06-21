@@ -16,6 +16,12 @@ Linpeas
 linux-exploit-suggester-2
 linux-kemel-exploits
 
+Users and groups
+cat /etc/passwd
+cat /etc/group
+UPG (User Private Group)
+//在linux中，创建一个普通用户后，会在group里面同时创建一个以这个用户名字为名字的组，是为了权限配置的灵活性。
+
 非漏洞提权(常见于Linux账户配置不当)
 利用SUID二进制文件进行提权
 /* 以二进制为格式的可执行文件，当root或其他权限级用户赋予某可执行文件SUID权限后，在某低权限用户拥有此文件的执行特权的情况下，
