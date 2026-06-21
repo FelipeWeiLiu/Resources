@@ -7,6 +7,7 @@ grupos=1000(felipetest),4(adm),20(dialout),24(cdrom),
 
 uid Linux中为用户唯一标识:
 root uid=0
+systems 1~999
 felipetest uid=1000
 felipetest2 uid=1001
 
