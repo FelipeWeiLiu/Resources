@@ -1,0 +1,14 @@
+uid=1000(felipetest)
+gid=1000(felipetest)
+grupos=1000(felipetest),4(adm),20(dialout),24(cdrom),
+25(floppy),27(sudo),29(audio),30(dip),44(video),
+46(plugdev),100(users),101(netdev),102(scanner),
+112(bluetooth),117(lpadmin),119(wireshark),123(kaboxer)
+
+uid Linux中为用户唯一标识:
+root uid=0
+felipetest uid=1000
+felipetest2 uid=1001
+
+/* gid为Linux中组的id标识，主组gid=1000, 在Linux中用户可以同时属于多个group，但是只有一个主组，
+也就是主要所属主，在多数情况下linux中默认每个不同用户都有一个同名的私有主组。*/
