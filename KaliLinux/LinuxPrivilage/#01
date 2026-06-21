@@ -17,6 +17,7 @@ linux-exploit-suggester-2
 linux-kemel-exploits
 
 Users and groups
+0~1000, no login (系统级用户)，不能够登录shell，因此不能够进行交互。
 cat /etc/passwd
 cat /etc/group
 UPG (User Private Group)
