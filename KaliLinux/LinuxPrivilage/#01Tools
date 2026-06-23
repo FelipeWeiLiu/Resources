@@ -1,3 +1,4 @@
 
+一键收集脚本
 ./LinEnum.sh -r report -e /tmp/ -t #-e
 在tmp生成信息收集数据的文件
