@@ -60,3 +60,7 @@ openssl passwd -1 -salt 1*2*3 abcd
 /* salt值第一点是为了防止不同客户因为巧合使用相同密码，并影响黑客在入侵进数据库之后破解相同密码用户的效率。
 第二点是为了防止密码本查询，攻击者通过查询密码词典的哈希值对应的密码实现数据盗取。第三点是增加暴力破解的成本。 */
 漏洞提权
+
+利用Kali爆破Shadow密码
+需要将passwd以及shadow文件一起合并上传至kali
+unshadow passwd shadow > FIlE
