@@ -64,3 +64,9 @@ openssl passwd -1 -salt 1*2*3 abcd
 利用Kali爆破Shadow密码
 需要将passwd以及shadow文件一起合并上传至kali
 unshadow passwd shadow > FIlE
+
+felipetest:$y$j9T$o2Kz/GdR62.0hB44QCE091$nmXIKl2bg4mqV5ZGmHhvSsXwcH4Z7Teh0HvBofhcMP.:1000:1000:felipetest,,,:/home/felipetest:/usr/bin/zsh
+$y$算法标识：yescrypt
+j9T参数/成本配置
+o2Kz/GdR62.0hB44QCE091 //salt
+nmXIKl2bg4mqV5ZGmHhvSsXwcH4Z7.. 最终密码哈希结果
