@@ -71,3 +71,4 @@ j9T参数/成本配置
 o2Kz/GdR62.0hB44QCE091 //salt
 nmXIKl2bg4mqV5ZGmHhvSsXwcH4Z7.. 最终密码哈希结果
 rm ~/.john/john.pot
+john --show <target>
