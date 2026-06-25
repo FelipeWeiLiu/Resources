@@ -10,6 +10,9 @@ sudo提权和SUID提权的本质差别在于SUID提权是由文件权限配置�
 Real UID 表示启动程序的用户身份。
 Effective UID 用于表示在执行此进程时本质上是由哪个身份所对应的权限执行。
 
+felipetest ALL=(root) NOPASSWD: /usr/bin/find
+//所有主机都可以利用felipetest用户，以root身份并且在使用sudo时不需要密码，来执行find程序。
+
 当调用sudo时，进行密码验证实际上不是liux内核规定的，而是由sudo程序规定的，sudo程序的执行流程:
 sudo cat /etc/sudoers
 felipetest调用sudo; 输入密码后由sudo程序确认，sudo程序会读取/etc/sudoers列表, 并发现允许，那么启动cat程序
