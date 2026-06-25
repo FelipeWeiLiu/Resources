@@ -23,3 +23,4 @@ Effective UID = 0 (root)
 
 ls -l | grep sudo
 sudoers文件默认权限 -r--r----- ,此时应该由chmod为users添加一个u+w权限，变为: -rw-r-----
+然后可以更改成 %sudo ALL=(ALL:ALL)  NOPASSWD: ALL
