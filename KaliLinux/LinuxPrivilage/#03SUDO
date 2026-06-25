@@ -7,9 +7,6 @@ sudo提权和SUID提权的本质差别在于SUID提权是由文件权限配置�
 在使用sudo时先通过/etc/sudoers对身份进行参考和验证，后在验证成功之后执行sudo命令的时候，sudo以高权限执行某一程序时，
 实际上也是因为它拥有高权限用户富裕的SUID权限位。
 
-ls -l | grep sudo
--r--r----- 
-
 /* CHATGPT
 | UID           | 含义                    |
 | ------------- | --------------------- |
@@ -25,3 +22,5 @@ felipetest调用sudo; 输入密码后由sudo程序确认，sudo程序会读取/e
 Real UID = 1000 (felipetest)
 Effective UID = 0 (root)
 
+ls -l | grep sudo
+sudoers文件默认权限 -r--r----- ,此时应该由chmod为users添加一个u+w权限，变为: -rw-r-----
