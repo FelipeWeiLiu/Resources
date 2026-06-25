@@ -6,3 +6,20 @@ sudo提权和SUID提权的本质差别在于SUID提权是由文件权限配置�
 实际上也是因为它拥有高权限用户富裕的SUID权限位。
 
 ls -l | grep sudo
+-r--r----- 
+
+/* CHATGPT
+| UID           | 含义                    |
+| ------------- | --------------------- |
+| Real UID      | **这个进程是谁启动的**（身份）     |
+| Effective UID | **这个进程现在用谁的权限做事**（权限） |
+*/
+
+当调用sudo时，进行密码验证实际上不是liux内核规定的，而是由sudo程序规定的，sudo程序的执行流程:
+sudo cat /etc/sudoers
+felipetest调用sudo; 输入密码后由sudo程序确认，sudo程序会读取/etc/sudoers列表, 并发现允许，那么启动cat程序
+
+此时sudo程序启动了一个暂时被赋予root权限的cat程序:
+Real UID = 1000 (felipetest)
+Effective UID = 0 (root)
+
