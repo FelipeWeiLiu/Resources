@@ -2,9 +2,17 @@
 1.系统级别定时任务
 /etc/crontab
 ***** 用户名称(用于指定谁执行)
+
 2.用户级别定时任务
 /var/spool/cron/username
 *****
+
+
 当满足:
 1.属root或其它系统级用户创建的某定时任务
-2.在定时任务中有指定脚本
+2.在定时任务中有指定脚本(定时备份数据库，日志文件等), 并且普通用户拥有编写权限
+
+crontab -e
+tailf /var/log/cron (Centos)
+tail -f /var/log/
+journalctl -u cron
