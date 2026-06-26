@@ -1,2 +1,7 @@
 在linux中，/sbin/nologin 本质上是一个sbin系统级二进制可执行程序，执行后弹窗出一种特殊的不可登录的SHELL，当用户尝试使用
 nologin shell登录时，系统会自动拒绝登录 (在/etc/passwd中查看)
+
+当用户通过shell登陆时，shell会优先读取passwd配置表中的环境变量来执行登陆程序，因此当某个用户在passwd中被配置了nologin路径，
+当系统阅读配置表时在对应用户后阅读并执行了nologin路径下的nologin程序之后，就会触发这个禁止登陆程序然后执行退出。
+
+nologin决定用户是否能够登录bash
