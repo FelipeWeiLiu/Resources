@@ -16,3 +16,5 @@ crontab -e
 tailf /var/log/cron (Centos)
 tail -f /var/log/
 journalctl -u cron
+
+通过在定时任务脚本中加入恶意命令提权
