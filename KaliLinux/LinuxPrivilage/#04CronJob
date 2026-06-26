@@ -1,1 +1,5 @@
-
+定时任务提权
+1.系统级别定时任务
+/etc/crontab
+2.用户级别定时任务
+/var/spool/cron/username
