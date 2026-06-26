@@ -27,7 +27,7 @@ sudoers文件默认权限 -r--r----- ,此时应该由chmod为users添加一个u+
 
 sudo bash -p提权
 
-内建命令(SHELL BUILTIN)需满足:可修改SHELL当前状态;
+内建命令(SHELL BUILTIN)需满足:可修改SHELL当前状态; 这些命令都由SHELL自身执行，而不是通过新执行/etc二进制文件目录下的可执行程序。
 例如pwd; cd; export; alias; history等，虽然都是命令，
 但本身并不属于可执行程序，属于shell内建命令，因此没有办法使用which在/usr/bin目录下找到。
 除此之外我们也可以使用type命令代替which对Linux命令的类型和路径进行查看。
