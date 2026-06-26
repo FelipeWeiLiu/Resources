@@ -1,1 +1,2 @@
-在linux中，/sbin/nologin
+在linux中，/sbin/nologin 本质上是一个sbin系统级二进制可执行程序，执行后弹窗出一种特殊的不可登录的SHELL，当用户尝试使用
+nologin shell登录时，系统会自动拒绝登录 (在/etc/passwd中查看)
