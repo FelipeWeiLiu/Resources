@@ -26,3 +26,8 @@ sudoers文件默认权限 -r--r----- ,此时应该由chmod为users添加一个u+
 然后可以更改成 %sudo ALL=(ALL:ALL)  NOPASSWD: ALL
 
 sudo bash -p提权
+
+内建命令需满足:可修改SHELL当前状态;
+例如pwd; cd; export; alias; history等，虽然都是命令，
+但本身并不属于可执行程序，属于shell内建命令，因此没有办法使用which在/usr/bin目录下找到。
+我们可以使用type命令进行查看
