@@ -4,6 +4,10 @@ getcap -r / 2>/dev/null
 
 在把root权限拆成多个capabilities分支后，又将状态拆散成三个分支，也就是eip。指定一个程序在什么时候可以调用某capability权限。
 eip
-effective有效集合
-Inheritable可继承集合
-permitted许可集合
+effective有效集合 (当前生效权限)
+用于指定程序目前生效的capability，由服务器管理员指定某capability当前情况下生效与否。
+Inheritable可继承集合 ()
+
+permitted许可集合 (权限上限)
+用于指定一个进程最多能够拥有哪几个capability(由管理员配置并指定的cap)
+
