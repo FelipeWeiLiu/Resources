@@ -6,8 +6,8 @@ getcap -r / 2>/dev/null
 eip
 effective有效集合 (当前生效权限)
 用于指定程序目前生效的capability，由服务器管理员指定某capability当前情况下生效与否。
-Inheritable可继承集合 ()
-
+Inheritable可继承集合 (权限继承)
+指定当前程序在执行一个新权限的时候是否能够调用，或者调用哪一个capability用于继承给新进程。
 permitted许可集合 (权限上限)
 用于指定一个进程最多能够拥有哪几个capability(由管理员配置并指定的cap)
 
