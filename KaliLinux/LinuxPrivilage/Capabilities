@@ -11,3 +11,5 @@ Inheritable可继承集合 (权限继承)
 permitted许可集合 (权限上限)
 用于指定一个进程最多能够拥有哪几个capability(由管理员配置并指定的cap)
 
+https://geek-blogs.com/blog/linux-capabilities/
+提权
