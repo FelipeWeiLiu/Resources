@@ -26,11 +26,11 @@ TCP报文结构
   Length=2;
   TCP段C
   Seq=1005
-  Length=6;
+  Length=5;
   3.4.编号排序与顺序重组
   A:1000~1002 (Hel)
   B:1003~1004 (lo)
-  C:1005~1010 (World)
+  C:1005~1009 (World)
   Hello World
 4. 确认号(Acknowledgment Number)
 /* 32bits, 用于确认接收方已发送的数据是否顺利到达，同时标识并告知发送方，"期望"下次收到的字节流数据中，
