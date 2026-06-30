@@ -56,5 +56,5 @@ Fin结束标志, FIN = 1,标识数据发送完成，请求关闭连接。*/
 TCP报文结构
 Source Port: 54400，源端口，由客户端监听的端口
 Destination Port: 80，目标端口，由服务端监听的端口
-Stream index:
-TCP Segment Len:
+[Stream index: TCP流编号](Wireshark内置提示，TCP Stream编号，每建立一次TCP握手与一次即一次字节流。)
+  [TCP Segment Len:]
