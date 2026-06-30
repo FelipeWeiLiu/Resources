@@ -64,3 +64,30 @@ Sequence Number: 1 (Relative sequence number, 相对序列号)
 其相对序列号从0开始计数 */
 Sequence Number (raw真实序列号): 1395312869
 客户端以及服务端之间产生的序列号是没有任何关联的。它们都各自产生自己的序列号。
+
+设Client与Server成功建立TCP连接
+Client SN(1)=0x532ac8e5
+Client Src Port=49465
+Dst Port=443
+517 bytes
+//发送数据
+
+Server SN(1)=0xf25d09dd
+Server Src Port=443
+Dst Port=49465
+Server Ack=532ACAEA
+//确认收到
+//字节数比对不相等之后，会触发丢包重传机制，将整个数据包进行重传。
+//ACK算法，SN + DataBytes = Hex Number
+
+Server SN(2)=0xf25d09dd
+Server Src Port=443
+Dst Port=49465
+1452 Bytes
+//发送数据
+
+Client SN(2)= Server ACK or Client SN(1) + 517Bytes
+Client Src Port=49465
+Dst Port=443
+Ack=Server SN(2) + 1452 Bytes = 0xf25d0f89
+//确认收到
