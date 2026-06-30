@@ -61,5 +61,5 @@ Destination Port: 80，目标端口，由服务端监听的端口
 [TCP Segment Len:](表示传输数据，单位字节)
 Sequence Number: 1 (Relative sequence number, 相对序列号) 
 /* 1代表TCP隧道建立成功后发送的第一个报文，相对于raw真实序列号，Wireshark添加这个是为了人类方便记忆。在TCP建立三次握手的过程中，
-其相对序列号默认为0 */
+其相对序列号从0开始计数 */
 Sequence Number (raw真实序列号): 1395312869
