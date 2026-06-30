@@ -56,5 +56,10 @@ Fin结束标志, FIN = 1,标识数据发送完成，请求关闭连接。*/
 TCP报文结构
 Source Port: 54400，源端口，由客户端监听的端口
 Destination Port: 80，目标端口，由服务端监听的端口
-[Stream index: TCP流编号](Wireshark内置提示，TCP Stream编号，每建立一次TCP握手与一次即一次字节流。)
-  [TCP Segment Len:]
+[Wireshark内置提示，不是报文内容]
+[Stream index: TCP流编号](TCP Stream编号，每建立一次TCP握手与一次即一次字节流。)
+[TCP Segment Len:](表示传输数据，单位字节)
+Sequence Number: 1 (Relative sequence number, 相对序列号) 
+/* 1代表TCP隧道建立成功后发送的第一个报文，相对于raw真实序列号，Wireshark添加这个是为了人类方便记忆。在TCP建立三次握手的过程中，
+其相对序列号默认为0 */
+Sequence Number (raw真实序列号): 1395312869
