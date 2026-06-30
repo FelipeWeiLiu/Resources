@@ -65,6 +65,10 @@ Sequence Number: 1 (Relative sequence number, 相对序列号)
 Sequence Number (raw真实序列号): 1395312869
 客户端以及服务端之间产生的序列号是没有任何关联的。它们都各自产生自己的序列号。
 
+SN (Seq):标记本文段中第一个字节在整个字节流中的位置，设ISN初始序列号为1000，字节分割长度为100，则Seq为1000，Next Seq为1000+100，
+那么Ack则是1099+1, 期望下次从Seq=1100开始。实际上在这个过程中已经把Seq 1000中的第1000位字节算进去了(999~1100=999+1+100)
+
+
 设Client与Server成功建立TCP连接
 Client SN(1)=0x532ac8e5
 Client Src Port=49465
@@ -78,7 +82,7 @@ Dst Port=49465
 Server Ack=532ACAEA
 //确认收到
 //字节数比对不相等之后，会触发丢包重传机制，将整个数据包进行重传。
-//ACK算法，Client SN(1) + DataBytes = Hex Number/Dec Number
+//接收方ACK等于发送方的Next Seq，Client SN(1) + DataBytes = Hex Number/Dec Number + 1
 
 Server SN(2)=0xf25d09dd
 Server Src Port=443
@@ -91,3 +95,11 @@ Client Src Port=49465
 Dst Port=443
 Ack=Server SN(2) + 1452 Bytes = 0xf25d0f89
 //确认收到
+
+实际案例
+Src Port=21
+Dst Port=54411
+Seq=97
+Next Seq=97
+Ack=70
+通过此判断，此TCP报文为纯Ack包，不携带任何数据(Next Seq-Seq=0), Ack=70 (期望下次收到的TCP Next Seq)
