@@ -78,7 +78,7 @@ Dst Port=49465
 Server Ack=532ACAEA
 //确认收到
 //字节数比对不相等之后，会触发丢包重传机制，将整个数据包进行重传。
-//ACK算法，SN + DataBytes = Hex Number
+//ACK算法，Client SN(1) + DataBytes = Hex Number/Dec Number
 
 Server SN(2)=0xf25d09dd
 Server Src Port=443
