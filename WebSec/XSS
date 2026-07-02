@@ -1,9 +1,9 @@
 XSS (Cross-Site Scripting)
 
-反射型XSS
+反射型XSS (非持久形XSS)
 /* 将XSS代码注入进URL参数中，以该URL作为一次HTTP/S请求递交至服务端，服务端在经过解析后，将此恶意代码
 作为HTTP/S响应再返回至HTTP客户端解析，执行并生效。
 那么利用这一点，攻击者可以将一个带有恶意信息的URL发送给"受害者"，当受害者打开此URL时，此URL参数将会作为一次HTTP/S GET, POST请求，
-发送至服务端，再有服务端进行响应并反射回受害者HTTP客户端执行此恶意脚本，以完成攻击。此攻击手段常用于窃取受害者的Cookie与Session ID。属于
-社会工程学(Social Engineering)的一种。*/
+发送至服务端不经过服务器存储，再由服务端进行响应并反射回受害者HTTP客户端执行此恶意脚本，以完成攻击。
+此攻击手段常用于窃取受害者的Cookie与Session ID。属于社会工程学(Social Engineering)的一种。*/
 
