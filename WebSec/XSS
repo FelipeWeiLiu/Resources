@@ -21,3 +21,6 @@ XSS (Cross-Site Scripting)
 
 未经验证的跳转型XSS
 /* 主要发生在服务器跳转重定向中。 */
+
+BOM (Browser Object Model)浏览器对象模型
+//实现JS与浏览器进行交互的编程API
