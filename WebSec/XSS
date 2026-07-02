@@ -14,4 +14,4 @@ XSS (Cross-Site Scripting)
 
 基于字符集的XSS
 /*一种XSS的变体形式，可以利用字符编码来绕过正常的服务器的编码层面过滤。这种攻击一般基于某网站没有明确指定meta标签的charset。
-<meta charset="utf-8">。*/
+<meta charset="utf-8">， 主要体现在浏览器以及服务器的字符串编译差异。*/
