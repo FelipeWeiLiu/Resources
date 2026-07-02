@@ -1,0 +1,5 @@
+XSS (Cross-Site Scripting)
+
+反射型XSS
+将XSS代码注入进URL参数中，以该URL作为一次HTTP/S请求递交至服务端，服务端在经过解析后，将此恶意代码
+作为HTTP/S响应再返回至HTTP客户端解析，执行并生效。
