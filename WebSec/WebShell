@@ -5,5 +5,7 @@ WebShell是一个网站上常常被黑客利用并攻击的重点防范范围之
 Webshell的运行需满足以上两个条件:
 1. 目标服务器需开放如Apache，IIS等的WEB服务
 2. Webshell程序文件需被植入服务器的网站可访问的文件目录中
+3. Webshell需要拥有足够的权限
+4. 此WEB服务的前后端语言类执行环境需要能够对此Webshell兼容
 
 
