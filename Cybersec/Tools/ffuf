@@ -1,0 +1,1 @@
+ffuf -w <wordlist.txt> -u <https://example.com/FUZZ>
