@@ -1,1 +1,0 @@
-Destroy(collision.gameObject); //销毁与之碰撞的游戏对象
