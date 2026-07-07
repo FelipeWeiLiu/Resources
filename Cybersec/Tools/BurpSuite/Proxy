@@ -1,0 +1,6 @@
+代理模块
+Open browser
+//从BP打开浏览器
+
+Intercep On/Off
+//On状态下，拦截从loca发送的http/s请求,通过Forward放行后，此http请求将到达目标服务器，如果drop丢弃，则此包失效。
