@@ -1,9 +1,11 @@
-请求行
+请求行:
 GET(方法) /(URL, 访问根目录的初始文件) HTTP/1.1 (语言版本)
-请求头
+请求头:
 HOST(首部字段名) : www.baidu.com (值)
 ...
 Cookie: BID...
+请求数据:
+
 
 
 GET /sugrec?&prod=pc_his&from=pc_web&json=1&imod=2&sid=63144_67861_
