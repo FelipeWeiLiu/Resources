@@ -3,3 +3,11 @@ FUZZ名词译为"绒毛，模糊"，在技术机术语里代表"猜测"或者"�
 
 
 ffuf -w <wordlist.txt> -u <https://example.com/FUZZ>
+
+测试空白网站的办法: 目录扫描
+网站URL的基本格式:
+http://www.xxx.com/image/1.png
+http://(协议)
+www.xxx.com. 三级域名(子域).二级域名(子域).顶级域名.(根域)
+image 文件夹名
+1.png 文件名
