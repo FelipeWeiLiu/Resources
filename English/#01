@@ -1,0 +1,96 @@
+Non-qualifying vulnerabilities
+Any hypothetical flaw or best practices without exploitable PoC
+Self reflected injections (i.e., html/xss injection that can't impact others)
+Mixed content warnings
+Denial of Service (DoS) attacks that cause degradation of services
+Social engineering of any kind
+Presence of autocomplete attribute on web forms
+TLS / SSL
+Attacks requiring MITM or physical access to victim's device
+Issues that require unlikely user interaction
+Low impact or low-severity Cross-Site Request Forgery (CSRF) attacks
+Invalid or missing SPF (Sender Policy Framework), DKIM, DMARC records
+Disclosure of information without direct security impact (e.g. stack traces, path disclosure, directory listings, software versions, IP disclosure, 3rd party secrets)
+Information disclosure of public or non-protected information (e.g. code in a public repository, server banners, etc.), or information disclosed outside of Telenor's control (e.g. a personal, non-employee repository; a list from a previous infodump; etc.)
+HTTP Strict Transport Security Header (HSTS)
+Subdomain takeover without a full working PoC
+Blind SSRF without direct impact (e.g. DNS pingback)
+Lack of rate-limiting, brute-forcing or captcha issues
+Disclosed / Misconfigured API Key without exploitable PoC or business impact
+Password reset token leak on trusted third-party website via Referer header (e.g. Google Analytics, Facebook…)
+Stolen secrets, credentials or information gathered from a third-party asset that we have no control over
+Exposed secrets, credentials or information on an asset under our control that are not applicable to the program’s scope
+Recently disclosed 0-day vulnerabilities (less than 30 days since patch release)
+Ability to spam users (email / SMS / direct messages flooding) except through Telenor services.
+Vulnerabilities affecting outdated browsers or platforms
+CSV injection
+Task Hijacking
+Crashing your own application
+Lack of client-side protections on mobile binaries: SSL pinning/binary protection/code obfuscation/jailbreak detection/root detection/anti-debugging controls/ etc
+Lack of encryption on internal databases/preference files on mobile device
+Exploits that are only possible on Android versions that are not currently supported at the time of the emission of the vulnerability report
+Exploits that are only possible on IOS versions that are not currently supported at the time of the emission of the vulnerability report
+Exploits that are only possible on a jailbroken/rooted device
+Generic Android or iOS vulnerabilities
+
+
+
+Non-qualifying vulnerabilities
+Any hypothetical(假设) flaw(任何假设性的漏洞) or best practices without exploitable(可利用的) PoC
+//没有利用证明（PoC）的假设性漏洞。只有假设，没有有效的Payload, 报错以及任何证据。
+Self reflected(自反射（只影响自己）) injections (i.e.(也就是说), html/xss injection that can't impact others)
+Mixed content warnings
+Denial of Service (DoS) attacks that cause degradation(性能下降) of services
+Social engineering of any kind
+Presence(存在) of autocomplete(自动填补) attribute(属性) on web forms
+TLS / SSL
+Attacks requiring MITM(中间人攻击) or physical access to victim's device
+Issues that require unlikely user interaction (用户交互)
+Low impact or low-severity(低影响) Cross-Site Request Forgery (CSRF) attacks
+Invalid or missing SPF(邮件发送策略) (Sender Policy Framework), DKIM(邮件签名), DMARC(邮件认证策略) records
+Disclosure(泄露) of information without direct security impact (e.g. stack traces, path disclosure, directory listings, software versions, IP disclosure, 3rd party secrets)
+Information disclosure of public or non-protected information (e.g. code in a public repository, server banners, etc.), or information disclosed outside of Telenor's control (e.g. a personal, non-employee repository; a list from a previous infodump; etc.)
+HTTP Strict Transport Security Header (HSTS)
+Subdomain takeover(子域名接管) without a full working PoC
+Blind SSRF without direct impact (e.g.(例如) DNS pingback)
+Lack of rate-limiting(速率限制), brute-forcing or captcha(验证码) issues
+Disclosed(暴露) / Misconfigured(配置错误) API Key without exploitable(可利用的) PoC or business impact(业务影响)
+Password reset token(令牌) leak(泄露) on trusted third-party website via(通过) Referer header(http Referer头) (e.g.(例如) Google Analytics, Facebook…)
+Stolen secrets, credentials(凭据:用户名、密码、Token 等) or information gathered(收集) from a third-party asset(第三方资产) that we have no control over(不受我们控制的)
+Exposed(暴露的) secrets, credentials or information on an asset under our control(由我们控制的) that are not applicable(适用) to the program’s scope(范围)
+Recently disclosed(公开披露) 0-day vulnerabilities (less than 30 days since patch(补丁) release(发布))
+Ability to spam(发送垃圾信息) users (email / SMS / direct messages flooding) except through(通过) Telenor services.
+Vulnerabilities affecting outdated(过时的) browsers or platforms
+CSV injection
+Task Hijacking(劫持)
+Crashing(使...崩溃) your own application
+Lack of client-side(客户端) protections on mobile binaries: SSL pinning/binary protection/code obfuscation/jailbreak detection/root detection/anti-debugging controls/ etc
+Lack of encryption on internal databases/preference files(配置文件) on mobile device
+Exploits that are only possible on Android versions that are not currently supported at the time of the emission(提交) of the vulnerability report
+Exploits that are only possible on IOS versions that are not currently supported at the time of the emission of the vulnerability report
+Exploits that are only possible on a jailbroken(越狱)/rooted device
+Generic Android or iOS vulnerabilities
+
+
+exploit利用、漏洞利用
+exploitable可利用的
+disclosure泄露
+exposed暴露
+credentials凭据
+secrets密钥、敏感信息
+impact影响
+scope测试范围
+asset资产
+applicable适用的
+supported官方支持的
+outdated已过时的
+mitigation缓解措施
+protection防护
+bypass绕过
+hijacking劫持
+flooding洪泛、刷屏
+degradation性能下降
+brute force暴力破解
+rate limiting速率限制
+proof of concept (PoC)	概念验证
+business impact	业务影响
