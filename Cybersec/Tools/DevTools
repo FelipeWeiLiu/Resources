@@ -1,0 +1,12 @@
+Elements/Inspectors 元素检查
+用于实时查看，修改网页和调试网页的布局。在网安中常用于DOM，XSS，修改客户端限制，观察JS等。
+
+Network 网络监控
+分析网页加载时请求的资源，查看资源的加载信息。API，AJAX，FETCH等。
+
+Console/Source JS调试
+通过控制台直接执行js代码，输出以及调试信息，通过断点，监视变量等功能调试js的逻辑错误。
+
+Performance 性能分析
+
+Styles/Design Mode 样式编辑器
