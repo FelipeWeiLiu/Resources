@@ -109,7 +109,7 @@ HTTP-Session (保存在服务器端的)
 在进行http，https传输时，除第一次外，尽量以session id进行身份验证，这样就能保证账户与密码最大限度的不在网络隧道中进行传输 */
 
 
-HTTP-Cookie (保存在客户端的)
+HTTP-Cookie (保存在客户端的) 在DevTools中的Application里查看。
 //HTTP Cookie分Session Cookie 与 Persistent Cookie
 //Session Cookie最大的特点是，运行浏览器后数据将保存至分配给浏览器那部分的RAM内存中。关闭浏览器后数据清零与之相匹配的是Persistent Cookie，其
 //数据将直接存入硬盘作为长期存在的内容。
