@@ -119,6 +119,9 @@ HTTP-Cookie (保存在客户端的) 在DevTools中的Application里查看。
 输入服务器账号和密码后，由服务器对身份进行校验，当账号或密码正确时，服务器会在白名单中生成一串Session ID用于后续校验并发送保存至客户端
 的Cookie中用于下次HTTP请求。当账号或密码错误时，服务器不对白名单做任何调整或更新，由于未在session ID白名单中找到对应Cookie，
 也就导致输入错误的账号和密码没有办法通过服务器的白名单session ID校验，进而判断为登陆失败。
+同理，当客户端获取到进入白名单的Session ID(Cookie)，并且知道Web Socket的前提条件下，以真实且有效的cookie替换掉浏览器客户端的原有cookie之后，
+发送HTTP请求后，将通过身份校验并直接绕过账号和密码的登陆界面。这是由于前面提到过HTTP协议是无状态的，并没有记忆，因此它不会主动去校验客户端操作用户究竟是谁，
+而是根据Cookie以及Session ID进行校验。
 
 HTTP响应 (HTTP Response)
 Content-type: text/html (告诉客户端资源类型，取决于服务器准备返回什么数据)
