@@ -27,3 +27,26 @@ GPO Group Policy Objects 组策略
 林 Forest 属于一个或多个AD域所组成的整体，是比域更高一级的结构。例如一家公司有多个分公司。
 例如 Forest: stucom.local, 
 子域: corsega.stucom.local, pelai.stucom.local则同属为一个林，其作用是让多个域之间能够共享更高一级的AD基础设施。
+
+树 Tree 则可以代表分公司之间的不同业务，例如
+AD，林，树(子域)，域，OU (Organization Unit, 组织单位)
+
+例如:
+AD (Tencent Active Directory)
+Forest:
+Forest Root Domain: tengxun.com
+Tree 1: wx.com
+  Tree 1 Root Domain1: wx.com
+  Domain2: shanghai.wx.com
+  Domain3: beijing.wx.com
+Tree 2: qq.com
+  Tree 2 Root Domain1: qq.com
+  Domain2: shanghai.qq.com
+  Domain3: beijing.qq.com
+
+OU (Organization Unit)
+Domain: shanghai.wx.com
+OU 1: IT Department
+User: Alice
+User2: Alexander
+Group: IT-Administrators
