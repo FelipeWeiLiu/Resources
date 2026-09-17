@@ -8,4 +8,5 @@
 工作组: 不可用
 
 域的组成
-1. 域控制器(域控， DC, Domain Controller)
+1. 域控制器(域控， DC, Domain Controller): 拥有域最高级别权限
+2. 成员机: 普通成员
