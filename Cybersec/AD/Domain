@@ -50,3 +50,8 @@ OU 1: IT Department
 User: Alice
 User2: Alexander
 Group: IT-Administrators
+
+OU: Servers
+Computer: FILE-SRV01
+Computer: WEB-SRV01
+Computer: DB-SRV01
