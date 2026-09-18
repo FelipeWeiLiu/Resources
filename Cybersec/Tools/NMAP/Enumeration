@@ -21,3 +21,6 @@ nmap -p445 --script smb2-security-mode 10.112.171.137
 
 nmap -p445 --script smb-os-discovery 10.112.171.137
 //对目标端口服务主机信息暴露出来的信息进行枚举
+
+nmap --script vuln 10.112.171.137
+//也可以直接调用Nmap漏洞检测脚本库，针对目标进行高危漏洞扫描（覆盖SMB、HTTP、SQL等常见服务漏洞）。
