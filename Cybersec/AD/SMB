@@ -5,3 +5,8 @@ SMB 执行文件/共享资源访问
 
 AD = 谁是谁、谁有什么权限
 SMB = 怎么访问 Windows 网络资源
+
+在较老的WINDOWS中SMB通过NetBios来跑:
+SMB -> NetBIOS -> TCP 139
+
+现代逐渐演变成TCP 445 SMB协议，而不再依赖NetBIos了
