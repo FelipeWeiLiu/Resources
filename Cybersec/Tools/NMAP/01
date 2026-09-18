@@ -1,1 +1,12 @@
+nmap -sS
+//使用tcp的syn对端口进行扫描, 通过tcp SYN/ACK包以及RST包来判断端口是否关闭，
+在这过程中nmap与服务器不建立完整连接，因此对目标服务器的系统影响较小。
 
+nmap -sT ip
+//使用TCP扫描
+
+nmap -sU ip
+//使用UDP扫描
+
+nmap -sV ip -p 端口号/端口范围
+//对服务版本进行识别
