@@ -1,12 +1,17 @@
+445/tcp  microsoft-ds (SMB)
+
+由于历史问题，在较老的WINDOWS中SMB通过NetBios来跑:
+SMB -> NetBIOS -> TCP 139
+而现代逐渐演变成TCP 445 SMB协议，不再依赖NetBIos了
+因此
+139/tcp  netbios-ssn
+445/tcp  microsoft-ds
+两者可能都和SMB有关系
+
 AD 域环境通常高度依赖 SMB，尤其是域控上的 SYSVOL、NETLOGON 和很多管理操作。
 
 AD 决定身份和权限
 SMB 执行文件/共享资源访问
 
 AD = 谁是谁、谁有什么权限
-SMB = 怎么访问 Windows 网络资源
-
-在较老的WINDOWS中SMB通过NetBios来跑:
-SMB -> NetBIOS -> TCP 139
-
-现代逐渐演变成TCP 445 SMB协议，而不再依赖NetBIos了
+SMB = 怎么访问 Windows 网络资
