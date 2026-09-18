@@ -11,8 +11,11 @@ nmap -sU <IP>
 nmap -sV <IP> -p <PORT>
 //对服务版本进行识别
 
+nmap -sV -p445 10.112.171.137
+
 
 nmap -p445 --script smb-protocols <IP>
 //对目标SMB协议的版本进行枚举
 
 nmap -p445 --script smb2-security-mode 10.112.171.137
+//对目标网站smb3协议的安全配置情况进行枚举
