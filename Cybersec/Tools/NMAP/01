@@ -2,11 +2,17 @@ nmap -sS
 //使用tcp的syn对端口进行扫描, 通过tcp SYN/ACK包以及RST包来判断端口是否关闭，
 在这过程中nmap与服务器不建立完整连接，因此对目标服务器的系统影响较小。
 
-nmap -sT ip
+nmap -sT <IP>
 //使用TCP扫描
 
-nmap -sU ip
+nmap -sU <IP>
 //使用UDP扫描
 
-nmap -sV ip -p 端口号/端口范围
+nmap -sV <IP> -p <PORT>
 //对服务版本进行识别
+
+
+nmap -p445 --script smb-protocols <IP>
+//对目标SMB协议的版本进行枚举
+
+nmap -p445 --script smb2-security-mode 10.112.171.137
