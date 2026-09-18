@@ -1,5 +1,7 @@
 445/tcp  microsoft-ds (SMB)
 
+microsoft-ds = 注册服务名
+SMB = 实际协议
 由于历史问题，在较老的WINDOWS中SMB通过NetBios来跑:
 SMB -> NetBIOS -> TCP 139
 而现代逐渐演变成TCP 445 SMB协议，不再依赖NetBIos了
