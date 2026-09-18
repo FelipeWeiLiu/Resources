@@ -15,4 +15,4 @@ nmap -O <IP>
 //识别操作系统版本(需要root)
 
 nmap --script vuln <IP>
-// 利用NSE脚本引擎对端口进行漏洞扫描
+// 调用Nmap漏洞检测脚本库，针对目标进行高危漏洞扫描（覆盖SMB、HTTP、SQL等常见服务漏洞）。
