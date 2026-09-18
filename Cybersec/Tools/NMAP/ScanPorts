@@ -16,3 +16,9 @@ nmap -O <IP>
 
 nmap --script vuln <IP>
 // 调用Nmap漏洞检测脚本库，针对目标进行高危漏洞扫描（覆盖SMB、HTTP、SQL等常见服务漏洞）。
+
+nmap -oN result.txt <IP>
+//对扫描结果以文本格式进行输出
+
+nmap -oX result.xml <IP>
+//对扫描结果以XML格式进行输出
