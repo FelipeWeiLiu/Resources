@@ -34,3 +34,9 @@ previously gained... 之前获取到的。。。
 you may need to list all of the sessions to find your target here.   
 list all of the sessions = 列出所有会话
 target 目标
+
+Verify that we have escalated to NT AUTHORITY\SYSTEM. Run getsystem to confirm this. Feel free to open a dos shell via the command 'shell' and run 'whoami'. 
+This should return that we are indeed system. Background this shell afterwards and select our meterpreter session for usage again.   
+Feel free to... 可以直接 / 如果愿意的话可以
+via... 通过。。。
+we are indeed(确实, 的确) SYSTEM 我们当前确实是 SYSTEM 身份。
