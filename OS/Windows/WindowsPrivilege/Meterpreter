@@ -1,4 +1,7 @@
 线程和进程区别: 进程是“正在运行的程序实例”，线程是“进程里面真正执行代码的工作单元”。
+Meterpreter 是运行在某个进程里的代码，而它的线程可以运行在不同的宿主进程里
+并可以使用与进程 Primary Token 不同的 Impersonation Token。
+
 chrome.exe
 PID = 4320
 
@@ -10,7 +13,7 @@ Process (进程)
 ├── 文件和句柄
 └── Threads (线程)
 
-而Thread线程则是包括在进程中，真正被CPU调去执行指令的东西
+而Thread线程则是包括在进程中，真正被CPU调去执行指令的东西，也就是执行单元
 chrome.exe
 │
 ├── Thread 1 → 处理界面
