@@ -7,19 +7,17 @@ PID = 4320
 
 进程可以想象成一整个容器:
 Process (进程)
-│
-├── 内存
-├── 权限 / Token
-├── 文件和句柄
-└── Threads (线程)
+    1.内存
+    2.权限 / Token
+    3.文件和句柄
+    4.Threads (线程)
 
 而Thread线程则属于某进程容器中的执行单元，也就是真正被CPU调去执行指令的东西。
 chrome.exe
-│
-├── Thread 1 -> 处理界面
-├── Thread 2 -> 网络请求
-├── Thread 3 -> JavaScript
-└── Thread 4 -> 后台任务
+    Thread 1 -> 处理界面
+    Thread 2 -> 网络请求
+    Thread 3 -> JavaScript
+    Thread 4 -> 后台任务
 
 
 Meterpreter必须依附在目标机器的某个PID中运行
@@ -45,6 +43,7 @@ PID 2000
 User = Administrator
 │
 └── Meterpreter
+
 继续向下延申，则:
 Process
 Primary Token = Administrator
@@ -55,7 +54,6 @@ Primary Token = Administrator
       │
       └── Impersonation Token (模拟令牌)
             = SYSTEM
-
 
 
 
