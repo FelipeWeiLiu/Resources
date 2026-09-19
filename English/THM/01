@@ -30,3 +30,7 @@ Sort of outline(概述) 大致概述一下
 If you haven't already, background the previously gained shell
 background a session 将当前进程挂到后台处理
 previously gained... 之前获取到的。。。
+
+you may need to list all of the sessions to find your target here.   
+list all of the sessions = 列出所有会话
+target 目标
