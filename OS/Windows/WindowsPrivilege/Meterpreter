@@ -21,29 +21,8 @@ chrome.exe
 ├── Thread 3 -> JavaScript
 └── Thread 4 -> 后台任务
 
+
 Meterpreter必须依附在目标机器的某个PID中运行
-设:PID 2000
-someprogram.exe
-User = Administrator
-
-则someprogram.exe
-PID 2000
-User = Administrator
-│
-└── Meterpreter
-
-Thread Impersonation Token 模拟令牌
-
-Process
-Primary Token = Administrator
-│
-├── Thread A
-│
-└── Meterpreter Thread
-      │
-      └── Impersonation Token (模拟令牌)
-            = SYSTEM
-
 在默认情况下，Threads使用进程的Primary Token，但还有一种情况，线程也可以拥有自己的Impersonation Token，、
 因此会出现:
 Process
@@ -55,6 +34,29 @@ Primary Token = Administrator
 └── Thread 2
     └── Impersonation Token = SYSTEM
 线程1正在以Admin身份执行，而线程2则以System身份
+
+
+设:PID 2000
+someprogram.exe
+User = Administrator
+
+则someprogram.exe
+PID 2000
+User = Administrator
+│
+└── Meterpreter
+继续向下延申，则:
+Process
+Primary Token = Administrator
+│
+├── Thread A
+│
+└── Meterpreter Thread
+      │
+      └── Impersonation Token (模拟令牌)
+            = SYSTEM
+
+
 
 
                      Windows
