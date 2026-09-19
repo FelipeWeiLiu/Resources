@@ -1,1 +1,35 @@
+Windows 权限模型的基本概念
+1.访问令牌 Access Token
+当用户登录或进程启动时，系统会为其创建一个访问令牌。这个令牌包含了用户的安全标识符、所属的组以及拥有的特权。
+系统资源（如文件、注册表键、进程）的访问请求，最终都由这个令牌来决定是否被授予。
+2.访问控制列表 Access Control List
+每个可保护的系统资源都有一个ACL，其中包含了一系列访问控制项。ACE明确了哪个用户或组（通过SID标识）对该资源拥有何种权限（如读、写、执行、完全控制）。
 
+
+安全上下文 Security Context
+Windows用于判断当前进程，线程现在是以什么身份运行的，属于哪些组，拥有哪些特权，能访问什么资源等的一整套完整信息。
+安全上下文:
+PID 3004
+spoolsv.exe
+User = NT AUTHORITY\SYSTEM
+spoolsv.exe
+   │
+   └── Security Context
+        │
+        ├── User SID
+        │    └── NT AUTHORITY\SYSTEM
+        │
+        ├── Group SIDs
+        │    ├── Administrators
+        │    └── 其他组
+        │
+        ├── Privileges
+        │    ├── SeDebugPrivilege
+        │    ├── SeImpersonatePrivilege
+        │    └── ...
+        │
+        ├── Integrity Level
+        │    └── System
+        │
+        └── 其他限制信息
+通过这套信息，windows通常会保存到Access Token中，用来作为windows权限判断的参考和依据
