@@ -33,3 +33,44 @@ spoolsv.exe
         │
         └── 其他限制信息
 通过这套信息，windows通常会保存到Access Token中，用来作为windows权限判断的参考和依据
+
+Process
+│
+├── PID
+├── 程序代码
+├── 内存
+├── 打开的文件/句柄
+│
+└── Primary Access Token
+      │
+      ├── User SID
+      ├── Group SID
+      ├── Privileges
+      └── Integrity Level
+
+spoolsv.exe
+PID = 3004
+        │
+        ▼
+Primary Token
+        │
+        ▼
+NT AUTHORITY\SYSTEM
+
+
+Process
+  │
+  │ “我要打开 secret.txt”
+  ▼
+Windows 内核
+  │
+  ├── 看进程/线程的 Security Context
+  │
+  └── 看文件 ACL
+          │
+          ▼
+      进行 Access Check
+          │
+      ┌───┴────┐
+      ▼        ▼
+    Allow     Deny
