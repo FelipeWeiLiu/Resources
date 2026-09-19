@@ -1,1 +1,75 @@
+线程和进程区别: 进程是“正在运行的程序实例”，线程是“进程里面真正执行代码的工作单元”。
+chrome.exe
+PID = 4320
 
+进程可以想象成一整个容器，分:
+Process (进程)
+│
+├── 内存
+├── 权限 / Token
+├── 文件和句柄
+└── Threads (线程)
+
+而Thread线程则是包括在进程中，真正被CPU调去执行指令的东西
+chrome.exe
+│
+├── Thread 1 → 处理界面
+├── Thread 2 → 网络请求
+├── Thread 3 → JavaScript
+└── Thread 4 → 后台任务
+
+Meterpreter必须依附在目标机器的某个PID中运行
+设:PID 2000
+someprogram.exe
+User = Administrator
+
+则someprogram.exe
+PID 2000
+User = Administrator
+│
+└── Meterpreter
+
+Thread Impersonation Token 模拟令牌
+
+Process
+Primary Token = Administrator
+│
+├── Thread A
+│
+└── Meterpreter Thread
+      │
+      └── Impersonation Token (模拟令牌)
+            = SYSTEM
+
+在默认情况下，Threads使用进程的Primary Token，但还有一种情况，线程也可以拥有自己的Impersonation Token，、
+因此会出现:
+Process
+Primary Token = Administrator
+│
+├── Thread 1
+│   └── Administrator
+│
+└── Thread 2
+    └── Impersonation Token = SYSTEM
+线程1正在以Admin身份执行，而线程2则以System身份
+
+
+                     Windows
+                        │
+          ┌─────────────┴─────────────┐
+          │                           │
+      Process A                   Process B
+      普通用户                     spoolsv.exe
+          │                       PID 3004
+          │                       SYSTEM
+          │                           │
+   Primary Token                 Primary Token
+   = 普通用户                    = SYSTEM
+          │
+          │
+   Meterpreter
+          │
+   SYSTEM impersonation
+          │
+          ▼
+当前操作可以表现为 SYSTEM
