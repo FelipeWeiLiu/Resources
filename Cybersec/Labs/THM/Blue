@@ -20,3 +20,6 @@ sessions -u <shell session ID>
 
 sessions -i <Meterpreter session ID>
 
+meterpreter > shell
+
+meterpreter > ps
