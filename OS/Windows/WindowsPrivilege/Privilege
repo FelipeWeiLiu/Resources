@@ -32,7 +32,7 @@ spoolsv.exe
         │    └── System
         │
         └── 其他限制信息
-通过这套信息，windows通常会保存到Access Token中，用来作为windows权限判断的参考和依据
+windows通常会将这套信息保存到Access Token中，用来作为windows权限判断的参考和依据
 
 Process
 │
