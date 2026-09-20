@@ -52,7 +52,7 @@ spoolsv.exe
 PID = 3004
         │
         ▼
-Primary Token
+Primary Access Token
         │
         ▼
 NT AUTHORITY\SYSTEM
