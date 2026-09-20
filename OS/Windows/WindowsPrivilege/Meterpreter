@@ -1,6 +1,7 @@
 线程和进程区别: 进程是“正在运行的程序实例”，线程是“进程里面真正执行代码的工作单元”。
 Meterpreter 是运行在某个进程里的代码，而它的线程可以运行在不同的宿主进程里
 并可以使用与进程 Primary Token 不同的 Impersonation Token。
+PID（Process ID） 是“这个进程自己的编号”；PPID（Parent Process ID） 是“创建这个进程的父进程的 PID”。
 
 chrome.exe
 PID = 4320
