@@ -23,3 +23,5 @@ sessions -i <Meterpreter session ID>
 meterpreter > shell
 
 meterpreter > ps
+
+meterpreter > migrate <PID>
