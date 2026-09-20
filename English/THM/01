@@ -40,3 +40,8 @@ This should return that we are indeed system. Background this shell afterwards a
 Feel free to... 可以直接 / 如果愿意的话可以
 via... 通过。。。
 we are indeed(确实, 的确) SYSTEM 我们当前确实是 SYSTEM 身份。
+
+far left最左边
+
+Find a process towards the bottom of this list that is running at NT AUTHORITY\SYSTEM and write down the process id
+toward the bottom 靠近底部
