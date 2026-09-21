@@ -27,7 +27,7 @@ nmap -oX result.xml <IP>
 //对扫描结果以XML格式进行输出
 
 nmap -Pn -sC -sV -oN <PATH> <IP>
-对开放端口做更详细的服务和脚本枚举。
+/* 对开放端口做更详细的服务和脚本枚举。
 -Pn跳过主机发现（Host Discovery）。默认情况下，Nmap 会先判断目标“是否在线”，例如通过 ICMP、TCP 探测。
 使用 Nmap 默认 NSE 脚本集。
--sC 相当于：--script=default 会对发现的服务做一些常规枚举
+-sC 相当于：--script=default 会对发现的服务做一些常规枚举 */
