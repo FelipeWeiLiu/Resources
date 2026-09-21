@@ -25,3 +25,5 @@ nmap -oN result.txt <IP>
 
 nmap -oX result.xml <IP>
 //对扫描结果以XML格式进行输出
+
+nmap -Pn -sC -sV -oN nmap/initial $IP //常规扫描,IP为靶机IP
