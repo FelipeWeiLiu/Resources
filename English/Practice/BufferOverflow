@@ -1,7 +1,7 @@
-SMB is a protocol used to share files in Windows, the previously version SMBv1 is vulnerable to eternal blue via the design threat. That as a result of heap buffer overflow when SMBv1 process the request from TRANSACTION2. 
-
-When the service of windows SMB parses codes crafted by the Hacker, doesn't need to verify the lenght of the content, and that is possible to cause datas from buffer overflow and overwrite others memories area.
-
-Furthermore, the hacker could control the especific region of the overwrite and inject the malicious shellcode into the system kernel by hijacking the process of the program execution.
-
-When this trheat is triggered, the malicious code will execute as a System privilege, the hacker finally will get whole access and control of the objective server. (gain full control of the target system)
+SMB is a protocol used to share files in Windows, the previously version SMBv1 is vulnerable to eternal blue via the design threat. 
+That as a result of heap buffer overflow when SMBv1 process the request from TRANSACTION2. When the service of windows SMB parses codes 
+crafted by the Hacker, doesn't need to verify the lenght of the content, and that is possible to cause datas from buffer overflow 
+and overwrite others memories area. Furthermore, the hacker could control the especific region of the overwrite and inject 
+the malicious shellcode into the system kernel by hijacking the process of the program execution. When this trheat is triggered, 
+the malicious code will execute as a System privilege, the hacker finally will get whole access and control of the objective server. 
+(gain full control of the target system)
