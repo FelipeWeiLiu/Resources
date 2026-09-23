@@ -1,2 +1,3 @@
 locate .nse|grep smb
 对nmap的smb相关脚本进行查询
+.nse是nmap的后缀格式
