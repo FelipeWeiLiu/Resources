@@ -7,3 +7,7 @@ To identify what is in scope and out of scope.
 2. In a penetration test, you are not testing everything you can find.
 3. You are testing only what has been explicitly authorized.
 4. Fundamentally, in the context of information gathering, scoping answers one simple question.
+
+Think and mind what am I allowed to collect information about. Such as: what systems, what network that I can target etc.
+
+Common types of targets (常见的攻击目标)
