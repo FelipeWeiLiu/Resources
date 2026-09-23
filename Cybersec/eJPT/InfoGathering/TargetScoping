@@ -1,1 +1,9 @@
 Scope 在渗透测试中常指授权范围
+Target Scoping 渗透测试目标授权范围
+
+To identify what is in scope and out of scope.
+
+1. Target scoping is the process of defining exactly what systems, networks or applications you are allowed to test.
+2. In a penetration test, you are not testing everything you can find.
+3. You are testing only what has been explicitly authorized.
+4. Fundamentally, in the context of information gathering, scoping answers one simple question.
