@@ -4,8 +4,8 @@ Information gathering or reconnaissance
 
 不同阶段的信息收集
 1.Passive Information Gathering (被动信息收集)
-通过开源信息，例如互联网上公开可用的信息来搜集target的信息。例如在被动信息收集阶段我们确定了目标web服务的IP地址
-
+通过开源信息，例如互联网上公开可用的信息来搜集target的信息。例如在被动信息收集阶段我们确定了目标web服务的IP地址。
+IP， 域名，域所有权信息，电子邮件地址，社交媒体资料，子域名等。
 
 2.Active Information Gathering (主动信息收集)
 通过与目标进行直接互动，从而获取更具体的信息，例如在被动信息收集姐u但我们获得到了一个授权范围的IP时，进一步对端口进行扫描以获取正在运行的准确服务。
