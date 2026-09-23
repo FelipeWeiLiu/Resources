@@ -1,0 +1,2 @@
+locate .nse|grep smb
+对nmap的smb相关脚本进行查询
