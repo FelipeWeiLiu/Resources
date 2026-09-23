@@ -11,3 +11,6 @@ To identify what is in scope and out of scope.
 Think and mind what am I allowed to collect information about. Such as: what systems, what network that I can target etc.
 
 Common types of targets (常见的攻击目标)
+Domain-Based Targets
+1. Prymary Domain
+2. Subdomains
