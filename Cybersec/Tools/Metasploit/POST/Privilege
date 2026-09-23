@@ -1,0 +1,2 @@
+run post/multi/recon/local_exploit_suggester
+Metasploit后渗透模块，主要用途: 找出target可能适用的本地提权漏洞
