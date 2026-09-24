@@ -114,3 +114,9 @@ Step 4 Document and organize our findings
         Record domains, IPs, and ports
         Prepare information for enumeration
         Avoid(避免) repeating work later
+
+Keys
+1. Target scoping defines what you are allowed to test
+2. Passive recon comes before active recon
+3. Reconnaissance is about collecting meaningful(有意义，有价值的) data
+4. A structure approach inproves results and efficiency
