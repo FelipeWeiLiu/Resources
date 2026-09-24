@@ -30,7 +30,7 @@ b. Subdomains explicitly listed in scope
 c. External systems owned by third parties
 d. Internal systems owned by the company
 
-In this question the answer should be "c". Testing third parties' external systems is out of scope 
+In this question the answer should be "d". Testing third parties' external systems is out of scope 
 beacuse clients can not authorize the permission for testing properties from third parties.
 
 
