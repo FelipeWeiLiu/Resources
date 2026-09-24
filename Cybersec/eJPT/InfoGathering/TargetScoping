@@ -95,3 +95,22 @@ Service Enumeration         Website Footprinting
 Organize Findings
         ↓
 Proceed to Enumeration & Exploitation
+
+Step 1 Define the target
+        Identify the domain, IP address, or network range
+        Confirm what is in scope
+
+Step 2 Perform passive reconnaissance
+        Gather public information
+        Identify potential attack surfaces
+        Build initial understanding of the target
+
+Step 3 Perform active reconnaissance
+        Discover live hosts
+        Identify open ports
+        Detect exposed services
+
+Step 4 Document and organize our findings
+        Record domains, IPs, and ports
+        Prepare information for enumeration
+        Avoid repeating work later
