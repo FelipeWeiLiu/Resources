@@ -48,15 +48,11 @@ sitemap.xml / sitemaps.xml 常见于word press网站中
 后续浏览器方便自己进行抓取，分析并建立索引，而不是有需要时临时找URL地址。
 
 网站管理员
-↓
-创建 sitemap.xml
-↓
-告诉搜索引擎网站有哪些公开 URL
-↓
-搜索引擎发现 URL
-↓
-Crawling 抓取
-↓
-Indexing 建立索引
-↓
-用户搜索时可能看到这个页面
+1.创建 sitemap.xml
+2.告诉搜索引擎网站有哪些公开 URL
+3.搜索引擎发现 URL
+4.Crawling 抓取
+5.Indexing 建立索引
+6.用户搜索时可能看到这个页面
+
+mozilla add ons(for firefox, plugins) 
