@@ -55,4 +55,12 @@ sitemap.xml / sitemaps.xml 常见于word press网站中
 5.Indexing 建立索引
 6.用户搜索时可能看到这个页面
 
-mozilla add ons(for firefox, plugins) 
+linux在mozilla add ons(for firefox, plugins) 
+加入Builtwith插件，用于识别一个网站使用了哪些技术栈和第三方服务。
+例如Web 服务器：Nginx、Apache， CMS：WordPress、Drupal
+前端框架：React、Vue
+CDN：Cloudflare
+分析工具：Google Analytics
+广告/追踪组件 等
+这个工具本质上是通过某网站在网络上公开暴露的数据，例如HTML源码 ，JavaScript文件，Cookie，
+页面里的特定路径等进行分析。
