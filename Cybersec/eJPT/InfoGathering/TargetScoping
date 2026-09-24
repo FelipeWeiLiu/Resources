@@ -11,6 +11,17 @@ To identify what is in scope and out of scope.
 Think and mind what am I allowed to collect information about. Such as: what systems, what network that I can target etc.
 
 Common types of targets (常见的攻击目标)
-Domain-Based Targets
-1. Prymary Domain
-2. Subdomains
+
+1.Domain-Based Targets
+1.1.Prymary Domain
+1.2Subdomains
+
+2.IP-Based Targets
+2.1 A single IP address 192.168.1.10 (Particular host)
+2.2 A network range: 192.168.1.0/24
+
+3. Application-Based Targets
+3.1 A specific web application
+3.2 A login portal or API endpoint(端点)
+
+
