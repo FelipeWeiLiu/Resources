@@ -61,3 +61,12 @@ Such as:
 Live hosts, open ports, running services and network responses
 Active information gathering olny make sense when you identify the target, like what is use for, how it wokrs etc.
 We always start with passive reconnaissance before moving to active reconnaisance
+
+Goals during information gathering:
+To build a map of the target:
+1. Domains and subdomains
+2. IP addresses
+3. Hosting infrastructure
+4. Technologies and services
+5. Open ports
+6. Publicly exposed information
