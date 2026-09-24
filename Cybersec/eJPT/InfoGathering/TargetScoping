@@ -24,4 +24,20 @@ Common types of targets (常见的攻击目标)
 3.1 A specific web application
 3.2 A login portal or API endpoint(端点)
 
+Which of the following is considered ‘out of scope’ in a typical penetration test?
+a. Network ranges provided in the rules of engagement
+b. Subdomains explicitly listed in scope
+c. External systems owned by third parties
+d. Internal systems owned by the company
 
+In this question the answer should be "c". Testing third parties' external systems is out of scope 
+beacuse clients can not authorize the permission for testing properties from third parties.
+
+
+Why does proper scoping matter in information gathering during penetration testing?
+a. It reduces the numbers of tools necessary for testing 
+b. It simplifies  reporting by excluding findings 
+c. It allows any interaction with third parties services
+d. It ensures only relevant information is collected, preventing a noisy dataset.
+
+In that question the answer should be "d", 
