@@ -70,3 +70,28 @@ To build a map of the target:
 4. Technologies and services
 5. Open ports
 6. Publicly exposed information (公开可获取的信息)
+
+Define Target Scope
+        ↓
+Passive Reconnaissance
+        ↓
+ ┌─────────────────────────────┐
+ ↓                             ↓
+Active Reconnaissance       Passive Recon
+ ↓                             ↓
+Host Discovery              Domains & Subdomains
+ ↓                             ↓
+Port Scanning               DNS Records
+ ↓                             ↓
+Basic Service Identification Whois Data
+ ↓                             ↓
+Service Enumeration         Website Footprinting
+                               ↓
+                         OSINT / Technical Intel
+                               ↓
+                         Technology Fingerprinting
+
+        ↓
+Organize Findings
+        ↓
+Proceed to Enumeration & Exploitation
