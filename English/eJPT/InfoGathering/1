@@ -8,6 +8,9 @@ Increased legal liability and potential unauthorized access
 legal liability = 法律责任
 potential = 潜在的
 
+It prevents legal issues associated with testing unauthorized targets
+associated with = 与……相关的
+
 Enhanced chances of detecting all vulnerabilities
 Enhanced = 增强的 / 提高的
 
@@ -26,3 +29,12 @@ budget allocation = 预算分配
 
 Why is it important to adhere to the scope defined in a penetration test?
 adhere to... = 遵守
+
+It allows testers to operate without any restrictions
+to operate = 进行操作 / 开展测试
+without any restrictions = 没有任何限制
+
+It ensures maximum efficiency by covering multiple systems at once
+maximum efficiency = 最高效率
+by covering = 覆盖
+at once = 同时 / 一次性
