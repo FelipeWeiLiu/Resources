@@ -29,6 +29,11 @@ Allow: /
 //其它位于根目录下的路径全部都可以抓取
 除了根据robots.txt中明文禁止的两个网站路径以外，其余的根目录下所有路径都将以http response的方式进行返回。并最终建立索引。
 
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+Disallow: /wp-content/uploads/wpo-plugins-tables-list.json
+
 robots.txt是一种“抓取策略”，且这种机制需建立在与各个爬虫"合作"之上，不遵守此规则的爬虫依然可以无视robots.txt的内容并对根目录下所有的路径进行抓取，
 再建立索引。值得一提的是由于规则的设计初衷，本身就不需要对外屏蔽，因此其他人依旧能够使用浏览器直接访问根目录下disallow参数下的路径。
 搜索引擎能够访问到此路径下的页面或者数据以及是否抓取页面的信息是两种概念。
