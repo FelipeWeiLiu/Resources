@@ -49,3 +49,15 @@ exclude = 排除
 Include all subdomains regardless of specification
 regardless of = 不管 / 无论
 specification = 指定 / 明确说明
+
+Primarily uses open source intelligence
+Primarily uses = 主要使用
+
+Collects information without alerting the target
+alerting the target = 惊动目标 / 让目标察觉
+
+Involves sending queries to a target to gather data
+sending queries = 发送查询 / 请求
+
+Does not involve direct probing of target systems
+direct probing = 直接探测
