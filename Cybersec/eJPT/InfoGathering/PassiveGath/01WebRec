@@ -1,1 +1,38 @@
-Website Recon and footprinting(信息收集)
+Website Recon and footprinting(足迹)
+Obtain the IP address
+
+whatis host
+return: host -DNS lookup utility
+
+host example.com
+//to perform with dnslookup
+
+return:
+example.com has address 104.21.44.180
+example.com has address 172.67.202.99
+
+这两个IP为cloud flare边缘节点地址，而并非源IP
+That is because this website is behind a Cloud Flare, a firewall flash proxy
+or some form of proxy.
+
+Robots Exclusion Protocol 爬虫排除协议
+
+robots.txt文件通常是当搜索引擎访问网站时，网站用于告知爬虫(Google等搜索引擎)，不要抓取某路径下的信息。
+由于robots.txt设计的初衷是为了让任何爬虫都能够很轻松的读取名单上的规则因此是完全公开的。
+
+User-agent: *
+//这组规则适用于所有爬虫
+Disallow: /admin/
+Disallow: /backup/
+//不要抓取admin以及backup的任何信息
+Allow: /
+//其它位于根目录下的路径全部都可以抓取
+除了根据robots.txt中明文禁止的两个网站路径以外，其余的根目录下所有路径都将以http response的方式进行返回。并最终建立索引。
+
+robots.txt是一种“抓取策略”，且这种机制需建立在与各个爬虫"合作"之上，不遵守此规则的爬虫依然可以无视robots.txt的内容并对根目录下所有的路径进行抓取，
+再建立索引。值得一提的是由于规则的设计初衷，本身就不需要对外屏蔽，因此其他人依旧能够使用浏览器直接访问根目录下disallow参数下的路径，
+搜索引擎能够访问到此路径下的页面或者数据以及是否抓取页面的信息是两种概念。
+
+Crawling（抓取） = 去访问网页、拿内容
+Indexing（建立索引） = 把拿到的内容分析后加入搜索数据库
+Ranking（排名） = 用户搜索时决定哪些结果排前面
