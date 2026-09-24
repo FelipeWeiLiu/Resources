@@ -56,7 +56,7 @@ sitemap.xml / sitemaps.xml 常见于word press网站中
 6.用户搜索时可能看到这个页面
 
 linux在mozilla add ons(for firefox, plugins) 
-加入Builtwith插件，用于识别一个网站使用了哪些技术栈和第三方服务。
+加入Builtwith或者Wappalyzer插件，用于识别一个网站使用了哪些技术栈和第三方服务。
 例如Web 服务器：Nginx、Apache， CMS：WordPress、Drupal
 前端框架：React、Vue
 CDN：Cloudflare
