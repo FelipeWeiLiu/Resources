@@ -43,7 +43,7 @@ Indexing（建立索引） = 把拿到的内容分析后加入搜索数据库
 Ranking（排名） = 用户搜索时决定哪些结果排前面
 
 
-sitemap.xml / sitemaps.xml
+sitemap.xml / sitemaps.xml 常见于word press网站中
 网站主动给搜索引擎提供的一份URL清单，提前将所有页面可能要用到的URL链接放入清单。作为"地图"用于告诉浏览器，方便浏览器提前发现和抓取页面
 后续浏览器方便自己进行抓取，分析并建立索引，而不是有需要时临时找URL地址。
 
