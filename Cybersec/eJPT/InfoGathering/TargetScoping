@@ -41,3 +41,21 @@ c. It allows any interaction with third parties services
 d. It ensures only relevant information is collected, preventing a noisy dataset.
 
 In that question the answer should be "d", 
+
+The methodology of reconaissance
+1. Passive
+1.1. No direct connection tp target servers
+1.2 Low risk of detection
+1.3 Usually performed first
+
+Examples:
+Domain resgistration information, DNS records, public website content, 
+publicly available email addresses, search enginee results
+
+
+2. Active
+2.1 Sends traffic to the target
+2.2 Increased visibility
+2.3 Typically performed after passive recon
+Such as:
+Live hosts, open ports, running services and network responses
