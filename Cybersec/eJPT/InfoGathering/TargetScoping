@@ -59,3 +59,5 @@ publicly available email addresses, search enginee results
 2.3 Typically performed after passive recon
 Such as:
 Live hosts, open ports, running services and network responses
+Active information gathering olny make sense when you identify the target, like what is use for, how it wokrs etc.
+We always start with passive reconnaissance before moving to active reconnaisance
