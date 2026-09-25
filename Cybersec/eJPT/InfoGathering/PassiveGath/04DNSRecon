@@ -8,11 +8,14 @@ DNS信息侦察
 3.MX 记录
   邮件服务器
 4.NS 记录
-  域名使用哪些 DNS 服务器
+  DNS服务器，也就是域名使用哪些DNS服务器
 5.TXT 记录
   可能包含 SPF、验证信息等
 6.CNAME
   某个域名是否指向另一个域名
 7.子域名
+8. SOA
+  这个 DNS 区域的“主控和管理信息”，也就是负责此DNS区域(zone)的权威解析
+
 
 dnsrecon -d example.com
