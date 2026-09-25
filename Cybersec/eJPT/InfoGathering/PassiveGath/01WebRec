@@ -69,3 +69,4 @@ CDN：Cloudflare
 页面里的特定路径等进行分析。
 
 HTTrack 允许从互联网下载网站到本地目录 
+sudo apt-get install webhttrack
