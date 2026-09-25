@@ -1,0 +1,17 @@
+Footprinting with Netcraft
+Footprinting 足迹收集 / 信息摸底
+
+Netcraft用于信息收集，在给出相对的域名后，netcraft会对网站背后的一些公开信息进行收集。例如:
+1.网站使用的 Web Server
+  例如 Apache、Nginx、IIS
+2.操作系统信息
+  有时能看到服务器可能使用的 OS
+3.Hosting / ISP
+  网站托管在哪个服务商
+4.IP 地址
+5.DNS / Nameserver
+6.SSL/TLS 证书信息
+7.网站历史
+  有时能看到过去使用过的服务器、IP、技术栈
+8.子域名 / Site Report
+  可以帮助做资产发现
