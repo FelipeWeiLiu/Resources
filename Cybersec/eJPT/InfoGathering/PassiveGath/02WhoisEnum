@@ -11,3 +11,5 @@ whois <IP>
 主要查询这个IP地址属于哪个网络组织或运营商。
 WHOIS 查询 IP 并不是告诉你“这台主机具体是谁的服务器”，更多的是这个 IP 段由哪个组织/运营商持有或管理。
 如果一个网站用的是Cloudflare，那么 WHOIS 查到的可能是 Cloudflare 的网段信息，而不是网站公司的真实信息。
+
+一般可以和host命令搭配使用，先利用 host eample.com返回dnslookup的IP，之后再whois IP
