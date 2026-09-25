@@ -1,6 +1,7 @@
 Footprinting with Netcraft
 Footprinting 足迹收集 / 信息摸底
 
+Netcarft what's that site running on: https://sitereport.netcraft.com/
 Netcraft用于信息收集，在给出相对的域名后，netcraft会对网站背后的一些公开信息以及使用的网络技术进行收集。例如:
 1.网站使用的 Web Server
   例如 Apache、Nginx、IIS
@@ -15,5 +16,3 @@ Netcraft用于信息收集，在给出相对的域名后，netcraft会对网站�
   有时能看到过去使用过的服务器、IP、技术栈
 8.子域名 / Site Report
   可以帮助做资产发现
-
-Netcarft what's that site running on: https://sitereport.netcraft.com/
