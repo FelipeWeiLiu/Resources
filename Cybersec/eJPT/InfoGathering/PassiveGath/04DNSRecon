@@ -20,3 +20,10 @@ DNS信息侦察
 
 
 dnsrecon -d example.com
+
+
+当NS指向Cloudflare时，通常意味着此Cloudflare服务器作为该域名的权威解析，这个域名的权威DNS解析由cloudflare进行托管。
+
+NS：负责对该域名进行解析
+SOA：负责该DNS区域(Zone)的谁主导，以及如何管理和同步
+托管: DNS 服务由 Cloudflare 提供和维护。
