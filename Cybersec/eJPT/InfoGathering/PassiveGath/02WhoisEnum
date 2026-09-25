@@ -1,4 +1,5 @@
 whois enumeration
+whois <IP>
 
 whois example.com
 主要用于查询这个域名是怎么注册的、由谁管理。
