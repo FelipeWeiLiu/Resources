@@ -1,5 +1,8 @@
 dnsrecon -d example.com
 
+dnsdumpster
+https://dnsdumpster.com/
+
 DNS reconnaissance in passive gathering
 DNS信息侦察
 用于了解一个目标域名背后的网络结构以及资产，例如:
