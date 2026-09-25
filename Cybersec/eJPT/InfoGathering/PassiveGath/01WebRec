@@ -9,6 +9,8 @@ host example.com
 
 whatweb example.com
 
+HTTrack 允许从互联网下载网站到本地目录 
+sudo apt-get install webhttrack
 
 return:
 example.com has address 104.21.44.180
@@ -67,6 +69,3 @@ CDN：Cloudflare
 广告/追踪组件 等
 这个工具本质上是通过某网站在网络上公开暴露的数据，例如HTML源码 ，JavaScript文件，Cookie，
 页面里的特定路径等进行分析。
-
-HTTrack 允许从互联网下载网站到本地目录 
-sudo apt-get install webhttrack
