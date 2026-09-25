@@ -1,7 +1,13 @@
 whois enumeration
 
 whois example.com
-//To search registers information, update date, creation day, contact mail and phone, name server etc.
-//查询域名的注册信息，注册商，注册时间，name server，注册组织等公开信息。
+主要用于查询这个域名是怎么注册的、由谁管理。
+To search registers information, update date, creation day, contact mail and phone, name server etc.
+查询域名的注册信息，注册商，注册时间，name server，注册组织等公开信息。
 也就是对这个域名是谁注册的、什么时候注册的、注册商是谁、用了哪些 Nameserver等公开信息进行查询。
 除了在终端可以运行此命令外，也可以在浏览器上找whois网站进行查询
+
+whois <IP>
+主要查询这个IP地址属于哪个网络组织或运营商。
+WHOIS 查询 IP 并不是告诉你“这台主机具体是谁的服务器”，更多的是这个 IP 段由哪个组织/运营商持有或管理。
+如果一个网站用的是Cloudflare，那么 WHOIS 查到的可能是 Cloudflare 的网段信息，而不是网站公司的真实信息。
