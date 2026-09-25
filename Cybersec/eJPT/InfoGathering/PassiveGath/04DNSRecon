@@ -24,6 +24,32 @@ dnsrecon -d example.com
 
 当NS指向Cloudflare时，通常意味着此Cloudflare服务器作为该域名的权威解析，这个域名的权威DNS解析由cloudflare进行托管。
 
-NS：负责对该域名进行解析
-SOA：负责该DNS区域(Zone)的谁主导，以及如何管理和同步
+NS：负责对该域名进行解析，也就是告诉你这个域名(Zone)的权威DNS服务器有哪些。
+example.com. NS ns1.example.com.
+example.com. NS ns2.example.com.
+在这种情况下，说明ns1.example.com和ns2.example.com都是example.com的权威DNS服务器。
+
+SOA：负责该DNS区域(Zone)的谁主导，以及如何管理和同步，也就是这个Zone的主要管理信息。
+example.com. SOA ns1.example.com. admin.example.com. (
+    2026092501
+    3600
+    600
+    86400
+    300
+)
+
+图:
+DNS Zone: example.com
+│
+├── NS
+│   ├── ns1.example.com
+│   └── ns2.example.com
+│
+└── SOA
+    ├── Primary: ns1.example.com
+    ├── Serial
+    ├── Refresh
+    ├── Retry
+    └── Expire
+
 托管: DNS 服务由 Cloudflare 提供和维护。
