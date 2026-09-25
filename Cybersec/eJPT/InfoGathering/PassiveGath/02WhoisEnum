@@ -4,3 +4,4 @@ whois example.com
 //To search registers information, update date, creation day, contact mail and phone, name server etc.
 //查询域名的注册信息，注册商，注册时间，name server，注册组织等公开信息。
 也就是对这个域名是谁注册的、什么时候注册的、注册商是谁、用了哪些 Nameserver等公开信息进行查询。
+除了在终端可以运行此命令外，也可以在浏览器上找whois网站进行查询
