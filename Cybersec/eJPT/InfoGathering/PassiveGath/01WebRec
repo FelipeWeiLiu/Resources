@@ -67,3 +67,5 @@ CDN：Cloudflare
 广告/追踪组件 等
 这个工具本质上是通过某网站在网络上公开暴露的数据，例如HTML源码 ，JavaScript文件，Cookie，
 页面里的特定路径等进行分析。
+
+HTTrack允许从互联网下载网站到本地目录
