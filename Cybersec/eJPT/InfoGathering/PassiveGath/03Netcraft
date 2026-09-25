@@ -1,7 +1,7 @@
 Footprinting with Netcraft
 Footprinting 足迹收集 / 信息摸底
 
-Netcraft用于信息收集，在给出相对的域名后，netcraft会对网站背后的一些公开信息进行收集。例如:
+Netcraft用于信息收集，在给出相对的域名后，netcraft会对网站背后的一些公开信息以及使用的网络技术进行收集。例如:
 1.网站使用的 Web Server
   例如 Apache、Nginx、IIS
 2.操作系统信息
