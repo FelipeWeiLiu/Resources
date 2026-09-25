@@ -1,1 +1,17 @@
+DNS reconnaissance in passive gathering
+DNS信息侦察
+用于了解一个目标域名背后的网络结构以及资产，例如:
+1.A 记录
+  域名解析到哪个 IPv4
+2.AAAA 记录
+  域名解析到哪个 IPv6
+3.MX 记录
+  邮件服务器
+4.NS 记录
+  域名使用哪些 DNS 服务器
+5.TXT 记录
+  可能包含 SPF、验证信息等
+6.CNAME
+  某个域名是否指向另一个域名
+7.子域名
 
