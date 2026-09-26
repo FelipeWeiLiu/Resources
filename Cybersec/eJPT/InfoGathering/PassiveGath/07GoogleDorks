@@ -9,3 +9,6 @@ cache:example.com 用于对某网站服务的旧版本进行筛选(该网站在�
 intitle:index of
 inurl:auth_user_file.txt
 inurl:passwd.txt
+
+通过google hacking database指定的google dork语法进行查询
+https://www.exploit-db.com/google-hacking-database
