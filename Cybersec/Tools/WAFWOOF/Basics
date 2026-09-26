@@ -1,0 +1,3 @@
+wafwoof -l
+wafwoof <IP>
+wafwoof <IP> -a
