@@ -3,4 +3,4 @@ theHarvester https://github.com/laramies/theHarvester
 
 theHarvester --help
 
-theHarvester -d example.com -b google,baidu,bing
+theHarvester -d example.com -b urlscan,baidu,bing
