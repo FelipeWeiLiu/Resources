@@ -1,3 +1,5 @@
 sublist3r https://github.com/aboul3la/Sublist3r
 
 Subdomain Enumeration with Sublist3r
+
+sudo apt-get install sublist3r
