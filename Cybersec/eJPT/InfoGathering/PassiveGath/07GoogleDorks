@@ -7,3 +7,4 @@ cache:example.com 用于对某网站服务的旧版本进行筛选(该网站在�
 //通过访问waybackmachine网站(https://web.archive.org/)也可以做到同样效果(snapshots)
 
 intitle:index of
+inurl:auth_user_file.txt
