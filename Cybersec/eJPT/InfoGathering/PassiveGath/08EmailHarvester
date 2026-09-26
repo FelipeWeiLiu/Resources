@@ -1,4 +1,5 @@
 theHarvester https://github.com/laramies/theHarvester
+利用工具对开源数据进行搜集，例如邮箱账号等
 
 theHarvester --help
 
