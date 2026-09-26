@@ -1,4 +1,4 @@
 site: *.example.com 对域名中的条件进行筛选，多用于查询子域名
 inurl: admin 对整体url进行筛选，需包括admin字样
 intitle: admin 对url标题名进行筛选，标题需包括admin字样
-filetypr: pdf 对文件类型进行筛选，仅列出pdf类别的文件
+filetype: pdf 对文件类型进行筛选，仅列出pdf类别的文件
