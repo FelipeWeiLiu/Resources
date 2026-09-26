@@ -4,6 +4,6 @@ intitle:admin 对url标题名进行筛选，标题需包括admin字样
 filetype:pdf 对文件类型进行筛选，仅列出pdf类别的文件
 filetypr:xlsx
 cache:example.com 用于对某网站服务的旧版本进行筛选(该网站在谷歌中的缓存模样)
-//通过访问waybackmachine网站(https://web.archive.org/)也可以做到同样效果(snapshops)
+//通过访问waybackmachine网站(https://web.archive.org/)也可以做到同样效果(snapshots)
 
 intitle:index of
