@@ -6,3 +6,6 @@ sudo apt-get install sublist3r
 
 
 sublist3r -d <domain> -e google,baidu
+
+bypass google blocking谷歌会将异常流量指向的地址视为机器人而进行过滤，
+为了解决这个办法，可以挂vpn更换当前IP绕过被Google临时限制的情况
