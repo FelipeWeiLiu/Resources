@@ -3,7 +3,6 @@ inurl:admin 对整体url进行筛选，需包括admin字样
 intitle:admin 对url标题名进行筛选，标题需包括admin字样
 filetype:pdf 对文件类型进行筛选，仅列出pdf类别的文件
 filetypr:xlsx
-
-
-实用:
+cache:example.com 用于对某网站服务的旧版本进行筛选
+ 
 intitle:index of
