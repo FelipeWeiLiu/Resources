@@ -14,3 +14,6 @@ nmap -Pn -F <target>
 
 nmap -Pn -sS <target> -v
 //-v参数会对扫描过程中的实际输出进行显示
+
+nmap -T0-5
+//to speed up or slow down
