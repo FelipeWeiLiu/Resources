@@ -37,3 +37,9 @@ nmap -Pn -sC -sV -oN <PATH> <IP>
 -sC 相当于：--script=default 使用 Nmap 默认 NSE 脚本集, 会对发现的服务做一些常规枚举 */
 
 nmap -Pn -sC -sV -p22, 80, 445, 8080... <IP>
+
+nmap -Pn -F <target>
+//快速扫描100个最常用端口
+
+nmap -Pn -sS <target> -v
+//-v参数会对扫描过程中的实际输出进行显示
