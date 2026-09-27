@@ -8,3 +8,6 @@ nmap <IP>
 当状态为filtered时说明nmap无法判断状态，通常存在网络层或主机层过滤机制，例如防火墙或者http proxy代理。但具体原因需要通过多维度信息进行判断。
 
 nmap -Pn -p1-1000 <target>
+
+nmap -Pn -F <target>
+//快速扫描100个最常用端口
