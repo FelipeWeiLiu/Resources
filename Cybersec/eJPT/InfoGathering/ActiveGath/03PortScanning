@@ -11,3 +11,6 @@ nmap -Pn -p1-1000 <target>
 
 nmap -Pn -F <target>
 //快速扫描100个最常用端口
+
+nmap -Pn -sS <target> -v
+//-v参数会对扫描过程中的实际输出进行显示
