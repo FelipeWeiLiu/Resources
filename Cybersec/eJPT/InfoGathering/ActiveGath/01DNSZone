@@ -1,6 +1,10 @@
 ZoneTransfer.me 用于测试的网站
 dnsenum --help (主动侦察阶段的工具，和前面被动侦察使用的dnsrecon有区别)
 dnsenum example.com
+dig axfr @nsztml.digi.ninja zonetransfer.me
+向 nsztm1.digi.ninja 请求 zonetransfer.me 这个 DNS Zone 的完整区域传送。 
+AXFR = DNS Zone Transfer（区域传送）意思是请求 DNS 服务器把某个 Zone 的记录整体传过来。@后面指定DNS服务器地址，域名是像请求传送的DNS zone
+
 
 DNS Records
 A Resolves a hostname or domain to an IPv4 address
