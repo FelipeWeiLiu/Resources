@@ -1,0 +1,10 @@
+Wordpress常见路径枚举
+
+http://target-site.com/wp-content/uploads/
+
+http://target-site.com/wp-includes/
+
+http://target-site.com/wp-content/plugins/
+
+http://target-site.com/wp-content/themes/
+
