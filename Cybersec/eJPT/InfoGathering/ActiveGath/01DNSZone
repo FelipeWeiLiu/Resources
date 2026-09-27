@@ -19,3 +19,4 @@ DNS管理员从一台dns服务器复制或转移包含特定域相关的记录�
 
 利用前面Passive信息收集阶段所认识的 DNSDumpster 对企业的primary和secondary dns服务器的IP进行收集，也可以使用dnsrecon进行枚举
 
+通过在 /etc/hosts 配置文件中将一个IP地址映射到本地域名来实现类似于DNS服务。不需要向互联网DNS服务器发出DNS查询。
