@@ -1,3 +1,5 @@
+ZoneTransfer.me 用于测试的网站
+
 DNS Records
 A Resolves a hostname or domain to an IPv4 address
 AAAA Resolves a hostname or domain to an IPv6 address
@@ -13,3 +15,4 @@ PTR Resolves an IP address to a hostname
 DNS管理员从一台dns服务器复制或转移包含特定域相关的记录的区域文件到另一台dns服务器
 这时他们会利用到一个称为Zone(区域)的功能。当出现配置错误或者其它安全隐患时，攻击者可能利用主DNS服务器，复制区域文件
 并获得企业的完整网络视图。(例如内部网络地址，子域等)
+
