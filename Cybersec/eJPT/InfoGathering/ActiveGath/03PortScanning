@@ -3,4 +3,4 @@
 nmap <IP>
 //Default nmap scan, 对1000个常用端口进行SYN扫描
 
-当提示 Host seems down (主机已关闭)，因为ping被禁用，因此可以使用-Pn 参数禁用ping主机的过程
+当提示 Host seems down (主机已关闭)，因为ping被禁用，因此可以使用-Pn 参数跳过针对主机的测试过程
