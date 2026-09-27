@@ -8,7 +8,7 @@ MX Resolves a domain to the mail server
 CNAME used for domain aliases
 TXT text record
 HINFO Host information
-SOA Domain authority
+SOA Domain authority (域权限记录)
 SRV Service records
 PTR Resolves an IP address to a hostname
 
