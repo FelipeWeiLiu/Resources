@@ -1,4 +1,5 @@
 ZoneTransfer.me 用于测试的网站
+dnsenum --help (主动侦察阶段的工具，和前面被动侦察使用的dnsrecon有区别)
 
 DNS Records
 A Resolves a hostname or domain to an IPv4 address
@@ -17,3 +18,4 @@ DNS管理员从一台dns服务器复制或转移包含特定域相关的记录�
 并获得企业的完整网络视图。(例如内部网络地址，子域等)
 
 利用前面Passive信息收集阶段所认识的 DNSDumpster 对企业的primary和secondary dns服务器的IP进行收集，也可以使用dnsrecon进行枚举
+
