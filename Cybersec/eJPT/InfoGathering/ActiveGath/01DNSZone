@@ -8,6 +8,7 @@ AXFR
 A = Authoritative
 XDR = Transfer
 AXFR = full zone transfer
+
 dig工具相比于dnsenum更加适合主动侦察阶段的隐蔽性，因为dnsenum为自动化dns扫描工具，默认情况下会对该域名进行大量的请求乃至暴力侦察。
 
 DNS Records
