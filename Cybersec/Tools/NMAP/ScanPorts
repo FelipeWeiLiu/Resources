@@ -43,3 +43,5 @@ nmap -Pn -F <target>
 
 nmap -Pn -sS <target> -v
 //-v参数会对扫描过程中的实际输出进行显示
+
+-T0-5 参数用于设置nmap的时序扫描速度，数值越高扫描的越快。
