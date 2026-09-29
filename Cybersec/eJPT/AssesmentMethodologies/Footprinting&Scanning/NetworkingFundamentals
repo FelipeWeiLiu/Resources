@@ -1,3 +1,6 @@
 To learn OSI model and understand how does NMAP work.
 
 Any system that is running on the OS, and can communicate on the network is host.
+
+Network protocols, ensure that different computer systems, using different hardware and different software
+can communicate with each other.
