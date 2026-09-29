@@ -11,3 +11,8 @@ The primary goal of networking is the exchage of information betwenn networked h
 This information is transferred by packets. (Network Packets)
 
 数据包以电力，更准确说是比特流(二进制中的0和1)，通过以太网或是无线网的方式在光纤中进行物理传播。（物理传输）
+
+The structure of any protocols: 1. Header; 2. Payload(有效载荷);
+Header: The packet that containing important information, for instead, where do the packets are coming on (source),
+their destination or etc...
+Payload: The actual data that's been sent.
