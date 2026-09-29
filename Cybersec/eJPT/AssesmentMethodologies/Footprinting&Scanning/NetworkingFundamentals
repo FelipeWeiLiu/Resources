@@ -4,3 +4,5 @@ Any system that is running on the OS, and can communicate on the network is host
 
 Network protocols, ensure that different computer systems, using different hardware and different software
 can communicate with each other.  ----- Standard form of cummunication
+
+Cummunication between different hosts, via protocol is transferred/facilitated throught the use of packets. (数据包)
