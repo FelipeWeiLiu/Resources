@@ -6,3 +6,8 @@ Network protocols, ensure that different computer systems, using different hardw
 can communicate with each other.  ----- Standard form of cummunication
 
 Cummunication between different hosts, via protocol is transferred/facilitated throught the use of packets. (数据包)
+
+The primary goal of networking is the exchage of information betwenn networked hosts. 
+This information is transferred by packets. (Network Packets)
+
+数据包以电力，更准确说是比特流(二进制中的0和1)，通过以太网或是无线网的方式在光纤中进行物理传播。（物理传输）
