@@ -26,4 +26,4 @@ OSI model just be as the way of understanding how does the network work.
 4. Transport Layer --> TCP, UDP
 3. Network Layer --> IP, ICMP
 2. Data link Layer --> Ethernet, switches , routers
-1. Physical Layer --> USB, Ethernet, Cable, Fiber
+1. Physical Layer --> USB, Ethernet, Cable, Fiber, Hubs
