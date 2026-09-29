@@ -14,5 +14,6 @@ This information is transferred by packets. (Network Packets)
 
 The structure of any protocols: 1. Header; 2. Payload(有效载荷);
 Header: The packet that containing important information, for instead, where do the packets are coming on (source),
-their destination or etc...
+their destination or etc... It has a protocol-based-specific structure that ensures any hosts can correctly handle 
+the overall communication.
 Payload: The actual data that's been sent.
