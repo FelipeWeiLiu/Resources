@@ -16,4 +16,14 @@ The structure of any protocols: 1. Header; 2. Payload(有效载荷);
 Header: The packet that containing important information, for instead, where do the packets are coming on (source),
 their destination or etc... It has a protocol-based-specific structure that ensures any hosts can correctly handle 
 the overall communication.
-Payload: The actual data that's been sent.
+Payload: The actual data that's been sent, such email, messages, contents etc...
+
+OSI(Open Systems Interconnection) model is a conceptual framework. (概念框架)
+OSI model just be as the way of understanding how does the network work.
+7. Application Layer --> HTTP, FTP, SSH, DNS
+6. Presentation Layer --> SSL/TLS, SSH
+5. Session Layer --> APIs, NetBios, RPC
+4. Transport Layer --> TCP, UDP
+3. Network Layer --> IP, ICMP
+2. Data link Layer --> Ethernet, switches , routers
+1. Physical Layer --> USB, Ethernet, Cable, Fiber
