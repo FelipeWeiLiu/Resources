@@ -27,5 +27,6 @@ OSI model just be as the way of understanding how does the network work.
   --Managing sessions or connections between applications. 
 4. Transport Layer --> TCP, UDP
 3. Network Layer --> IP, ICMP
+  --Respinsible for logical addressing,routing, and fordwarding data packets between devices across  networks.
 2. Data link Layer --> Ethernet, switches , routers
 1. Physical Layer --> USB, Ethernet, Cable, Fiber, Hubs
