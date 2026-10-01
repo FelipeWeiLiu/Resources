@@ -30,3 +30,7 @@ OSI model just be as the way of understanding how does the network work.
   --Respinsible for logical addressing,routing, and fordwarding data packets between devices across  networks.
 2. Data link Layer --> Ethernet, switches , routers
 1. Physical Layer --> USB, Ethernet, Cable, Fiber, Hubs
+
+Routing(路由) 决定数据应该走哪条路径
+Forwarding（转发）：路由器已经知道下一步该往哪里走，然后真正把数据包从某个接口发出去。
+IP Address --> Routing --> Packet Forwarding
