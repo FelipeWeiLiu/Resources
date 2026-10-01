@@ -39,3 +39,7 @@ IP (Internet Protocol)
 -IP allows for the fragmentation(碎片化) of large packets into smaller fragments when traversing networks with
 varying Maximum Transsmition Unit (MTU) sizes. The receiveng host reassembles these fragments to resconstruct 
 the original packet.
+
+ICMP (Internet Control Message Protocol)
+-Is closely associated with IP and is used for error reporting and diagnostics. Common ICMP messages include 
+echo request and echo reply. (ping)
