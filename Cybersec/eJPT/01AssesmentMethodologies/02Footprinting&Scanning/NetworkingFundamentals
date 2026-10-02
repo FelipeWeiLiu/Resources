@@ -43,3 +43,6 @@ the original packet.
 ICMP (Internet Control Message Protocol)
 -Is closely associated with IP and is used for error reporting and diagnostics. Common ICMP messages include 
 echo request and echo reply. (ping)
+
+TCP is a connection-oriented protocol and UDP is a connectionless protocol, UDP is faster than TCP but providing no guarantees(不提供任何保证)
+regarding the order or reliability(可靠性) of data delivery. (数据传输)
