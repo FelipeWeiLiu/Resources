@@ -62,3 +62,14 @@ SYN (Synchronize)
 Client -> SYN -> Server Intention to stablish the connection, ISN (Initial Sequence Number)
 Server -> SYN+ACK -> Client
 Client -> ACK -> Server
+
+From the CLient side:
+Establishing a connection
+SYN (set): Initiates a connection request
+ACK (clear): No acknowledgement yet
+FIN (clear): No termination request
+
+Establishing a connection
+SYN (set): Acknowledges the connection request
+ACK (set): Acknowledges the received data
+FIN (clear): No termination yet
