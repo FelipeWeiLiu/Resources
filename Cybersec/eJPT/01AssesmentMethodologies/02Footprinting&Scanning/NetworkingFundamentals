@@ -69,7 +69,7 @@ SYN (set): Initiates a connection request
 ACK (clear): No acknowledgement yet
 FIN (clear): No termination request
 
-Establishing a connection
+Establishing a connection (Response)
 SYN (set): Acknowledges the connection request
 ACK (set): Acknowledges the received data
 FIN (clear): No termination yet
