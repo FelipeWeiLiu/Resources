@@ -53,6 +53,8 @@ TCP guarantees reliable of data's delivery because one of his primary mechanism 
 that means if the segment of data is not Ack, TCP will automatically resents the segments. (Lost packets)
 Furthermore, TCP ensures if the packets and datas is delivered in correct order. TCP will re-order all packets before pass them to the higher layer.
 
+TCP works over IP.
+
 TCP  3-Way Hand-shake (TCP三次握手)
 It must be mutual akcnowledgement before anything is transfered.
 
