@@ -47,6 +47,8 @@ echo request and echo reply. (ping)
 TCP is a connection-oriented protocol that means TCP establishes(建立) a connection between the sender and receiver before any data is exchanged,
 and UDP(User Datagram Protocol) is a connectionless protocol, UDP is faster than TCP but providing no guarantees(不提供任何保证)
 regarding(关于) the order or reliability(可靠性) of data delivery. (数据传输)
+Each UDP packet (datagram) is treated independently, commontly used for real-time applications, simple and stateless
+stateless protocol (无状态协议)
 
 Why TCP is reliable?
 TCP guarantees reliable of data's delivery because one of his primary mechanism is Acknowledgements (Ack) and retransmission of lost packets, 
