@@ -1,3 +1,6 @@
+netstat -anpt
+//to look all TCP sessions stablished on your Linux actual time.
+
 To learn OSI model and understand how does NMAP work.
 
 Any system that is running on the OS, and can communicate on the network is host.
@@ -83,6 +86,3 @@ FIN (set): The process is terminated
 
 1 = SET; 0 = NOT SET
 //By binary numbers
-
-netstat -anpt
-//to look all TCP sessions stablished on your Linux actual time.
