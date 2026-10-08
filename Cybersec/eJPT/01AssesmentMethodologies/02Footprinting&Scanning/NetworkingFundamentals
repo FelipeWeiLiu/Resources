@@ -75,6 +75,6 @@ ACK (set): Acknowledges the received data
 FIN (clear): No termination yet
 
 Terminating a connection
-SYN (clear):
-ACK (set):
-FIN (set):
+SYN (clear): No connection request
+ACK (set): Acknowledges the received data
+FIN (set): The process is terminated
