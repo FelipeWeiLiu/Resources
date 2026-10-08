@@ -80,3 +80,6 @@ Terminating a connection
 SYN (clear): No connection request
 ACK (set): Acknowledges the received data
 FIN (set): The process is terminated
+
+netstat -anpt
+//to look all TCP sessions stablished on your Linux actual time.
