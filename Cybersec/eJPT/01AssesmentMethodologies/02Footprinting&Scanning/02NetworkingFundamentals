@@ -81,5 +81,8 @@ SYN (clear): No connection request
 ACK (set): Acknowledges the received data
 FIN (set): The process is terminated
 
+1 = SET; 0 = NOT SET
+//By binary numbers
+
 netstat -anpt
 //to look all TCP sessions stablished on your Linux actual time.
