@@ -1,2 +1,6 @@
 Network Mapping
 Focus on the process of to identify all host is currently online or active
+To determine:
+1. What hosts are online
+2. What ports is opened on the target
+3. What services and O.S. are running on the target
