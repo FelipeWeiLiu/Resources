@@ -1,4 +1,9 @@
 It assists in the identification of vulnerabilities in web applications
 assists in...帮助进行
+
 It provides a blueprint of the target network architecture
 blueprint 蓝图，结构
+
+Which host discovery technique involves sending ICMP Echo Request packets to potential hosts and analyzing their responses?
+potential = 潜在的 / 可能存在的
+analyzing = 分析
