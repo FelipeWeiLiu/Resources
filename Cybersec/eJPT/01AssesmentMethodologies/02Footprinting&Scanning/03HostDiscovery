@@ -7,3 +7,8 @@ To have an idea and determine:
 1. What hosts are online
 2. What ports is opened on the target
 3. How many systems and what services, O.S. are running on the target
+
+Objectives
+1. Discovery of live hosts
+2. Identification of open ports and services
+3. Network topology mapping
