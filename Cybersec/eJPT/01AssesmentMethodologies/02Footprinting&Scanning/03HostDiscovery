@@ -17,7 +17,7 @@ Host discovery techniques
 The choice of technique depends on factors such as network characteristics, stealth requierements, 
 and the goals of the penetration test.
 
-1. Ping Sweeps (ICMP Echo Requests): Sending ICMP Echo Requests (ping) to a range of IP addresses to identify live hosts.
+1. Ping Sweeps (ICMP Echo Requests): Sending ICMP Echo Requests (ping) to a range of IP addresses to identify live hosts. (Online hosts)
 This is a quick and commonly used method.
 
 2. ARP Scanning: Using Address Resolution Protocol (ARP) requests to identify hosts on a local network. 
