@@ -42,7 +42,7 @@ This can be effective for hosts that do not respond to ICMP or TCP probes.
 
 ICMP or TCP SYN ping?
 1. ICMP Ping:
-Pros: ICMP ping is a widely supported and quick method for identifying live hosts.
+Pros: ICMP ping is a widely(广泛的) supported and quick method for identifying live hosts.
 Cons: Some hosts or firewalls may be configured to block ICMP traffic, limiting its effectiveness. ICMP ping can also be easily detected.
 
 2. TCP SYN Ping:
