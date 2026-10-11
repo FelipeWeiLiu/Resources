@@ -22,7 +22,8 @@ This is a quick and commonly used method. In certain cases it does not work, for
 to block the ICMP echo request, for this case, you can not identify that the target is in offline.
 
 2. ARP Scanning: Using Address Resolution Protocol (ARP) requests to identify hosts on a local network. 
-ARP scanning is effective in discovering hosts within the same broadcast domain.
+ARP scanning is effective in discovering hosts within the same broadcast domain. ARP only runs or works on
+a local network.
 
 3. TCP SYN Ping (Half-Open Scan): Sending TCP SYN packets to a specific port (often port 80) to check if a host is alive. 
 If the host is alive, it responds with a TCP SYN-ACK. This technique is stealthier than ICMP ping.
