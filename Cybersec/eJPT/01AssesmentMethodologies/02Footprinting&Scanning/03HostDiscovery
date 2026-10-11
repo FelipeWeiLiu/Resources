@@ -19,7 +19,7 @@ and the goals of the penetration test.
 
 1. Ping Sweeps (ICMP Echo Requests): Sending ICMP Echo Requests (ping) to a range of IP addresses to identify live hosts. (Online hosts)
 This is a quick and commonly used method. In certain cases it does not work, for instead the windows firewall that by default is configured
-to block the ICMP echo request, for this case, you can not think that the target is in offline.
+to block the ICMP echo request, for this case, you can not identify that the target is in offline.
 
 2. ARP Scanning: Using Address Resolution Protocol (ARP) requests to identify hosts on a local network. 
 ARP scanning is effective in discovering hosts within the same broadcast domain.
