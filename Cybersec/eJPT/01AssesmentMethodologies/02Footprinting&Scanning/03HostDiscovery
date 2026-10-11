@@ -16,4 +16,12 @@ Objectives
 Host discovery techniques
 The choice of technique depends on factors such as network characteristics, stealth requierements, 
 and the goals of the penetration test.
-1. Ping Sweeps 
+
+1. Ping Sweeps (ICMP Echo Requests): Sending ICMP Echo Requests (ping) to a range of IP addresses to identify live hosts.
+This is a quick and commonly used method.
+
+2. ARP Scanning: Using Address Resolution Protocol (ARP) requests to identify hosts on a local network. 
+ARP scanning is effective in discovering hosts within the same broadcast domain.
+
+3. TCP SYN Ping (Half-Open Scan): Sending TCP SYN packets to a specific port (often port 80) to check if a host is alive. 
+If the host is alive, it responds with a TCP SYN-ACK. This technique is stealthier than ICMP ping.
