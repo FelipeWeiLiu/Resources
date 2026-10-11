@@ -27,3 +27,12 @@ a local network.
 
 3. TCP SYN Ping (Half-Open Scan): Sending TCP SYN packets to a specific port (often port 80) to check if a host is alive. 
 If the host is alive, it responds with a TCP SYN-ACK. This technique is stealthier(更加隐蔽的) than ICMP ping.
+
+3.1. TCP ACK Ping: Sending TCP ACK packets to a specific port to check if a host is alive. This technique expects no response, 
+but if a TCP RST (reset) is received, it indicates that the host is alive.
+
+3.2. SYN-ACK Ping (Sends SYN-ACK packets): Sending TCP SYN-ACK packets to a specific port to check if a host is alive. 
+If a TCP RST is received, it indicates that the host is alive.
+
+4. UDP Ping: Sending UDP packets to a specific port to check if a host is alive. 
+This can be effective for hosts that do not respond to ICMP or TCP probes.
