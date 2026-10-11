@@ -15,7 +15,8 @@ Objectives
 
 Host discovery techniques
 The choice of technique depends on factors such as network characteristics, stealth requierements, 
-and the goals of the penetration test.
+and the goals of the penetration test. The choice of the best way for host discovery techniche on the pentesting
+depends on various factors, there is not a one-size-fits-all answer.
 
 1. Ping Sweeps (ICMP Echo Requests): Sending ICMP Echo Requests (ping) to a range of IP addresses to identify live hosts. (Online hosts)
 This is a quick and commonly used method. In certain cases it does not work, for instead the windows firewall that by default is configured
