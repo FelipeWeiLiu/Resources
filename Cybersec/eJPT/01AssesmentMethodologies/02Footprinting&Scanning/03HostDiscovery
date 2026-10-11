@@ -12,3 +12,8 @@ Objectives
 1. Discovery of live hosts
 2. Identification of open ports and services
 3. Network topology mapping
+
+Host discovery techniques
+The choice of technique depends on factors such as network characteristics, stealth requierements, 
+and the goals of the penetration test.
+1. Ping Sweeps 
