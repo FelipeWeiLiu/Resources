@@ -26,4 +26,4 @@ ARP scanning is effective in discovering hosts within the same broadcast domain.
 a local network.
 
 3. TCP SYN Ping (Half-Open Scan): Sending TCP SYN packets to a specific port (often port 80) to check if a host is alive. 
-If the host is alive, it responds with a TCP SYN-ACK. This technique is stealthier than ICMP ping.
+If the host is alive, it responds with a TCP SYN-ACK. This technique is stealthier(更加隐蔽的) than ICMP ping.
