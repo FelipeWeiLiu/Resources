@@ -3,7 +3,7 @@ In the context of penetration testing refers to the process of discovering and i
 infrastructure elements within a target network.
 
 Focus on the process of to identify all host is currently online or active
-To determine:
+To have an idea and determine:
 1. What hosts are online
 2. What ports is opened on the target
-3. What services and O.S. are running on the target
+3. How many systems and what services, O.S. are running on the target
