@@ -38,3 +38,6 @@ If a TCP RST is received, it indicates that the host is alive.
 
 4. UDP Ping: Sending UDP packets to a specific port to check if a host is alive. 
 This can be effective for hosts that do not respond to ICMP or TCP probes.
+
+
+ICMP or TCP SYN ping?
