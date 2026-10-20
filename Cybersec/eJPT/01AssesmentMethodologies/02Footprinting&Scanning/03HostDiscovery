@@ -26,7 +26,7 @@ ICMP echo request (type 8): Sented by the localsite, to clear if the target is o
 ICMP echo reply (type 0): Sented by the targetsite, to confirm its status(Online). 
 1.1 ICMP echo request type 8
 1.2 ICMP echo reply
-Type = 0
+Type = 0 (That means the host is online)
 Code = 0
 Identifier = 1234
 Sequence = 5
