@@ -1,0 +1,2 @@
+If we want to capture traffics from the particular interface with wirshark,
+run the program with the command "sudo wireshark -i eth1", eth1 is the primary ethernet.
