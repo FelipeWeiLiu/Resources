@@ -64,3 +64,5 @@ Cons: Some hosts or firewalls may be configured to block ICMP traffic, limiting 
 2. TCP SYN Ping:
 Pros: TCP SYN ping is stealthier than ICMP and may bypass firewalls that allow outbound connections.
 Cons: Some hosts may not respond to TCP SYN requests, and the results can be affected by firewalls and security devices.
+
+Wireshark
