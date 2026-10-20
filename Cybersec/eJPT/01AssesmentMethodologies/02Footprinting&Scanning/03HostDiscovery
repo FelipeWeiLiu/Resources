@@ -72,3 +72,5 @@ Pros: TCP SYN ping is stealthier than ICMP and may bypass firewalls that allow o
 Cons: Some hosts may not respond to TCP SYN requests, and the results can be affected by firewalls and security devices.
 
 Wireshark
+If we want to capture traffics from the particular interface with wirshark,
+run the program with the command "sudo wireshark -i eth1", eth1 is the primary ethernet.
