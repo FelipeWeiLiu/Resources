@@ -7,3 +7,5 @@ blueprint 蓝图，结构
 Which host discovery technique involves sending ICMP Echo Request packets to potential hosts and analyzing their responses?
 potential = 潜在的 / 可能存在的
 analyzing = 分析
+
+In the context of the ping utility it simply means...
