@@ -44,6 +44,7 @@ we just need to change the parater "-c" instead of "-n".
 ping -c specift_number target_IP = Unicast (一对一发给指定IP)
 ping -b -c specift_number target_IP_range = Broadcaast (一对多，给本地子网所有设备发)
 For instead: ping -b -c 1 10.10.23.0 
+tool fping (The improvement of the ping)
 
 2. ARP Scanning: Using Address Resolution Protocol (ARP) requests to identify hosts on a local network. 
 ARP scanning is effective in discovering hosts within the same broadcast domain. ARP only runs or works on
