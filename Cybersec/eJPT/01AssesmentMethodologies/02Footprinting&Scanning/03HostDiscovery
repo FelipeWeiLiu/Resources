@@ -50,6 +50,7 @@ ping -b -c specift_number target_IP_range = Broadcaast (一对多，给本地子
 For instead: ping -b -c 1 10.10.23.0 
 tool fping (The improvement of the ping)
 using "man fping" to read the instructions and how to use it
+fping -h
 
 2. ARP Scanning: Using Address Resolution Protocol (ARP) requests to identify hosts on a local network. 
 ARP scanning is effective in discovering hosts within the same broadcast domain. ARP only runs or works on
