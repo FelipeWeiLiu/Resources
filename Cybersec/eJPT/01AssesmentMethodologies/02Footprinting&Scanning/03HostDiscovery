@@ -1,4 +1,6 @@
 ** Never absolutely rely on what just ping sweep result show us **
+Because those kind of technique is not perfect, we need to think and enumerate the different real cases to get a realistic conlcusion.
+
 Unicast: ping -c specift_number target_IP
 Broadcast: ping -b -c specift_number target_IP_range 
 fping -a -g 10.10.23.0/24 2>/dev/null
