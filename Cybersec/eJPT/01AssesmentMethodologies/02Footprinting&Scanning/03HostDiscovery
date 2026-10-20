@@ -35,6 +35,8 @@ Data = ...
 1.3 Linux/Windows terminal output: 
 64 bytes from 8.8.8.8: icmp_seq=1 ttl=117 time=20.3 ms
 Take in mind, if the O.S. of the target is Windows, it could no reply, but that not mean the host must be dead or offline.
+In some cases, this could be the problem of the traffic block, so we can specify the amount of ICMP packets that will be send,
+in the linux O.S. we can specify the parameter "-c" using "ping -c specift_number target_IP"
 
 2. ARP Scanning: Using Address Resolution Protocol (ARP) requests to identify hosts on a local network. 
 ARP scanning is effective in discovering hosts within the same broadcast domain. ARP only runs or works on
