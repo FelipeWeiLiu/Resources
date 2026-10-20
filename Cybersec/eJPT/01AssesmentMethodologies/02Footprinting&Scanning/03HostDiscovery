@@ -1,3 +1,6 @@
+Unicast: ping -c specift_number target_IP
+Broadcast: ping -b -c specift_number target_IP_range 
+
 Network Mapping
 In the context of penetration testing refers to the process of discovering and identifying devices, hosts, and networ
 infrastructure elements within a target network.
