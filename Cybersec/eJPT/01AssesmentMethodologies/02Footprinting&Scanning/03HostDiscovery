@@ -24,7 +24,16 @@ This is a quick and commonly used method. In certain cases it does not work, for
 to block the ICMP echo request, for this case, you can not identify that the target is in offline.
 ICMP echo request (type 8): Sented by the localsite, to clear if the target is online.
 ICMP echo reply (type 0): Sented by the targetsite, to confirm its status(Online). 
-
+1.1 ICMP echo request type 8
+1.2 ICMP echo reply
+Type = 0
+Code = 0
+Identifier = 1234
+Sequence = 5
+TTL = 128
+Data = ...
+1.3 Linux/Windows output: 
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=117 time=20.3 ms
 
 2. ARP Scanning: Using Address Resolution Protocol (ARP) requests to identify hosts on a local network. 
 ARP scanning is effective in discovering hosts within the same broadcast domain. ARP only runs or works on
