@@ -9,7 +9,7 @@ nmap -sU <IP>
 //使用UDP扫描
 
 nmap -sn 192.168.2.0/24
-//sn参数代表 no port scan，不对该网段的端口进行扫描
+//sn参数代表使用ping scan并no port scan，利用ICMP packets并不对该网段的端口进行扫描
 
 nmap -sV <IP> -p <PORT>
 //对服务版本进行识别
