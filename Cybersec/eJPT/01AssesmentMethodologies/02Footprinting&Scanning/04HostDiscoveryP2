@@ -12,3 +12,10 @@ how each scanning options affects the accuracy of the host discovery scans. **
 | 255.255.0.0 | `/16` |
 | 255.255.255.0 | `/24` |
 | 255.255.255.255 | `/32` |
+
+IP: 10.1.0.8
+Subnet Mask: 255.255.0.0
+Network segment: 10.1.0.0/16
+
+Assign the scanning range using nmap
+nmap -sn 10.1.0.0/24 // "/24", assign the scanning range, in this case the last 8 bits (1 byte) and use the ping method for scanning.
