@@ -1,0 +1,6 @@
+Unicast(一对一): ping -c specift_number target_IP
+Broadcast(一对多): ping -b -c specift_number target_IP_range 
+fping -a -g 10.10.23.0/24 2>/dev/null
+parameter -a: Only output alive host
+parameter -g: Generate a range of IP scanning
+nmap -sn target_IP (Scanning with ICMP using nmap)
