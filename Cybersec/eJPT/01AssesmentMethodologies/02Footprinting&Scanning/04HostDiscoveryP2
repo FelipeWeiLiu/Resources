@@ -19,3 +19,38 @@ Network segment: 10.1.0.0/16
 
 Assign the scanning range using nmap
 nmap -sn 10.1.0.0/24 // "/24", assign the scanning range, in this case the last 8 bits (1 byte) and use the ping method for scanning.
+
+When our device is connected on the local network and perform -sn scanning using nmap for that local network, nmap will using 
+ARP protocol priority 
+
+Ethernet Destination:
+FF:FF:FF:FF:FF:FF
+(Broadcast mode)
+
+192.168.1.10/24 Attack Machine
+192.168.1.20/24 Target
+
+1. Attack Machine -> ARP Request
+“Who has 192.168.1.20?”
+“Tell 192.168.1.10”
+
+2. 192.168.1.20 -> ARP Reply -> 192.168.1.10
+“192.168.1.20 is at AA:BB:CC:DD:EE:FF”
+
+
+Target on the local network, Ethernet LAN？
+        │
+   ┌────┴────┐
+   │         │
+  YES        NO
+   │         │
+ARP Request  Cannot ARP Request
+   │         │
+   │      经过Router
+   │         │
+   ▼         ▼
+ARP Reply   ICMP/TCP等探测
+   │         │
+   └────┬────┘
+        ▼
+   判断 Host 是否 Up
