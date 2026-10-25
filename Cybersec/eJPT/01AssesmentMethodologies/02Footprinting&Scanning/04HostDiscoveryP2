@@ -21,7 +21,7 @@ Assign the scanning range using nmap
 nmap -sn 10.1.0.0/24 // "/24", assign the scanning range, in this case the last 8 bits (1 byte) and use the ping method for scanning.
 
 When our device is connected on the local network and perform -sn scanning using nmap for that local network, nmap will using 
-ARP protocol priority 
+ARP protocol priority, because in the case of the same local network, using ARP is more reliable than using ICMP.
 
 Ethernet Destination:
 FF:FF:FF:FF:FF:FF
@@ -53,4 +53,4 @@ ARP Reply   ICMP/TCP等探测
    │         │
    └────┬────┘
         ▼
-   判断 Host 是否 Up
+Does host is Up or Down?
