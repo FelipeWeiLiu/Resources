@@ -1,1 +1,3 @@
 To perform NMAP for host discovery
+
+nmap -sn target
