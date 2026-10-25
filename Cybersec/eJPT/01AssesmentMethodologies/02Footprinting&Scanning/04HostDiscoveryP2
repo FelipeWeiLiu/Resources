@@ -26,12 +26,13 @@ ARP protocol priority, because in the case of the same local network, using ARP 
 Our attack machine will send a ARP Broadcast Requests(Layer 2) to all devices that is available within a range of the network,
 and waiting for ARP reply to identify target status.
 
-Ethernet Destination:
-FF:FF:FF:FF:FF:FF
-(Broadcast mode)
 
 192.168.1.10/24 Attack Machine
 192.168.1.20/24 Target
+
+Ethernet Destination:
+FF:FF:FF:FF:FF:FF
+(Broadcast mode)
 
 1. Attack Machine -> ARP Request
 “Who has 192.168.1.20?”
