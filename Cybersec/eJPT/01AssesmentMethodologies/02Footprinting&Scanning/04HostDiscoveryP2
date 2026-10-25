@@ -1,4 +1,4 @@
-To perform NMAP for host discovery
+To perform NMAP for host discovery efficiency
 
 nmap -sn target
 
