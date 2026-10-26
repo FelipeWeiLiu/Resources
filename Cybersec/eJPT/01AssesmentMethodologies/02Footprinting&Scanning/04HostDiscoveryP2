@@ -22,8 +22,9 @@ nmap -sn 10.1.0.0/24 // "/24", assign the scanning range, in this case the last 
 
 Host Discovery with ARP
 When our device is connected on the local network and perform -sn scanning using nmap for that local network, nmap will using 
-ARP protocol as a priority option, because in the case of the same local network, using ARP is more reliable than using ICMP.
-Our attack machine will send a ARP Broadcast Requests(Layer 2) to all devices that is available within a range of the network,
+ARP protocol as a priority option, in the case of the same local network, using ARP is more reliable than using ICMP.
+Because ICMP echo packets could be blocked by the firewall, but it doesn't affect to ARP request. Our attack machine will send 
+a ARP Broadcast Requests(Layer 2) to all devices that is available within a range of the network,
 and waiting for ARP reply to identify target status.
 
 
