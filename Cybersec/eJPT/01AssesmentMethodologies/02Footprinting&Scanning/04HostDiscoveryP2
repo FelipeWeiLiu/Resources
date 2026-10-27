@@ -71,3 +71,5 @@ whatever nmap receives SYN+ACK packets or RST packets, that all mean the host is
 
 nmap -sn -PS<PORT> <target>
 nmap -sn -PS3389 <target> //Windows RDP
+or specify nmap -sn -PS3389, 80, 443 <target>
+
