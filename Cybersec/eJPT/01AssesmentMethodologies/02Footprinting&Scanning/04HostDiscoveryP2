@@ -4,9 +4,11 @@ nmap -sn target
 nmap -sn -iL targets.txt
 nmap -sn -iL <targetlist>
 // -iL, define a target list and perform nmap scanning within the network scope of the target list.
-nmap -sn -PS<PORT> <target>
+nmap -sn -PS<PORT> <target> //SYN pings
 nmap -sn -PS22 <target>
 nmap -sn -PS1-1000 <target> //sign the range of ports
+nmap -sn -PA<PORT> <target> //ACK pings
+
 
 ** We need to understand how do each ways of hosts discoveries exactly work,
 because in different or particular cases, we have to choose the best one and understand
@@ -80,4 +82,5 @@ because according to the 3-ways-handshake our attack machine has not stablished 
 the target system, and by default from the protocol, the target system will response a RST to define 
 this ACK does not valid or does no exits(the connection). In the case of the host is offline, our attack
 machine will no receive any response.
+nmap -sn -PA<PORT> <target>
 
