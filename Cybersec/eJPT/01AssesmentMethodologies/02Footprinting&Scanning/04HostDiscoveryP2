@@ -1,7 +1,7 @@
 To perform NMAP for host discovery efficiency
 
 nmap -sn target
-nmap -sn -iL target.txt
+nmap -sn -iL targets.txt
 nmap -sn -iL <targetlist>
 
 ** We need to understand how do each ways of hosts discoveries exactly work,
