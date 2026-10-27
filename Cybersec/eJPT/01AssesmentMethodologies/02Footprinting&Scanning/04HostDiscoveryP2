@@ -73,3 +73,7 @@ nmap -sn -PS<PORT> <target>
 nmap -sn -PS3389 <target> //Windows RDP
 or specify nmap -sn -PS3389,80,443 <target>
 
+
+nmap TCP ACK ping method
+
+
