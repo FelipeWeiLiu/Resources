@@ -3,6 +3,8 @@ To perform NMAP for host discovery efficiency
 nmap -sn target
 nmap -sn -iL targets.txt
 nmap -sn -iL <targetlist>
+// -iL, define a target list and perform nmap scanning within the network scope of the target list.
+nmap -sn -PS <target>
 
 ** We need to understand how do each ways of hosts discoveries exactly work,
 because in different or particular cases, we have to choose the best one and understand
@@ -57,9 +59,13 @@ Scanning target within the local network
 2.3 Using ICMP, TCP method
 2.4 Does host is up or down?
 
-nmap TCP SYN packets method
+
+nmap TCP SYN ping method (Identify the host is alive)
 By default, nmap will send a tcp SYN packets to the port 80 that is running on the target system, 
 if the host is closed, it will response a TCP RST packet, and in the opposite case the host responses SYN+ACK packet
 indicating that the connection is stablished, that means the host is Online, and afterwards, nmap will finish the connection
 by sending RST packet to the target.
+
+nmap -sn -PS <target>
+
 
