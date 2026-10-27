@@ -81,6 +81,7 @@ Sending a TCP ACK packet to the default port 80, if the host is up, will respons
 because according to the 3-ways-handshake our attack machine has not stablished a TCP connection with
 the target system, and by default from the protocol, the target system will response a RST to define 
 this ACK does not valid or does no exits(the connection). In the case of the host is offline, our attack
-machine will no receive any response.
-nmap -sn -PA<PORT> <target>
+machine will no receive any response. Not recommanded because in certain cases, the certain S.O. maybe
+configured to block ACK packets. This is not a very reliable host discovery technique.
 
+nmap -sn -PA<PORT> <target>
