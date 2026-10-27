@@ -63,9 +63,8 @@ Scanning target within the local network
 nmap TCP SYN ping method (Identify the host is alive)
 By default, nmap will send a tcp SYN packets to the port 80 that is running on the target system, 
 if the host is closed, it will response a TCP RST packet, and in the opposite case the host responses SYN+ACK packet
-indicating that the connection is stablished, that means the host is Online, and afterwards, nmap will finish the connection
-by sending RST packet to the target.
+indicating that the connection is stablished, and afterwards, nmap will finish the connection with the RST packet. 
+Or if the port 80 is not running on the target, the host will response as a RST packet,
+whatever SYN+ACK packet or RST packet, that all mean the host is Online.
 
 nmap -sn -PS <target>
-
-
