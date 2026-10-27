@@ -8,6 +8,7 @@ nmap -sn -PS<PORT> <target> //SYN pings
 nmap -sn -PS22 <target>
 nmap -sn -PS1-1000 <target> //sign the range of ports
 nmap -sn -PA<PORT> <target> //ACK pings
+nmap -sn -PE<PORT> <target> //Echo requests ping
 
 
 ** We need to understand how do each ways of hosts discoveries exactly work,
