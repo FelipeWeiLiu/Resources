@@ -6,7 +6,7 @@ nmap -sn -iL <targetlist>
 // -iL, define a target list and perform nmap scanning within the network scope of the target list.
 nmap -sn -PS<PORT> <target> //SYN pings
 nmap -sn -PS22 <target>
-nmap -sn -PS1-1000 <target> //sign the range of ports
+nmap -sn -PS1-1000 <target> //sign the range of ports and using SYN pings host discovery method
 nmap -sn -PA<PORT> <target> //ACK pings
 nmap -sn -PE<PORT> <target> //Echo requests ping
 nmap -sn -PE<PORT> <target> --send-ip // Echo requests for the same local network
