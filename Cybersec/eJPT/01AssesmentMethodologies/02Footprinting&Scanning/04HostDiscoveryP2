@@ -10,7 +10,7 @@ nmap -sn -PS1-1000 <target> //sign the range of ports and using SYN pings host d
 nmap -sn -PA<PORT> <target> //ACK pings
 nmap -sn -PE<PORT> <target> //Echo requests ping
 nmap -sn -PE<PORT> <target> --send-ip // Echo requests for the same local network
-
+nmap -Pn <target> //To discover all alive ports
 
 ** We need to understand how do each ways of hosts discoveries exactly work,
 because in different or particular cases, we have to choose the best one and understand
