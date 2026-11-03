@@ -5,4 +5,3 @@ When we want to scan the Windows system or any systems that is blocking
 our traditionals host disciveries prove, we need to use the "Pn" option, 
 that means don't use ping scan, What this does, is to skip the Host Discovery part
 and perform a port scan.
-
