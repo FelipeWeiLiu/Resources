@@ -6,6 +6,9 @@ our traditionals host disciveries prove, we need to use the "Pn" option,
 that means don't use ping scan, What this does, is to skip the Host Discovery part
 and perform a port scan.
 
+nmap -F <target> //NMAP fast scan option
+nmap -Pn -p- //Indicate -p- to scan all ports (scanning range 1~65535)
+
 Typically working theory of TCP SYN Scan (-sS)
 PORT STATUS: OPEN
 1. NMAP -> SYN -> Target
