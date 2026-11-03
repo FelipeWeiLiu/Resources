@@ -12,3 +12,12 @@ In the context of the ping utility it simply means...
 
 ...is found on other O.S. natively
 。。。可以在任何操作系统的内置插件中被找到并使用
+
+There is a firewall in place
+in place 已经部署
+
+Stateful Host-Based Firewall
+基于主机的有状态(能够跟踪网络目前连接状态的)防火墙，例如windows defender firewall
+
+if we want to tell....
+tell判断，辨别
