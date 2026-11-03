@@ -5,3 +5,14 @@ When we want to scan the Windows system or any systems that is blocking
 our traditionals host disciveries prove, we need to use the "Pn" option, 
 that means don't use ping scan, What this does, is to skip the Host Discovery part
 and perform a port scan.
+
+Typically TCP SYN Scan (-sS) working theory
+PORT STATUS: OPEN
+1. NMAP -> SYN -> Target
+2. Target -> SYN+ACK -> NMAP
+PORT STATUS: CLOSED
+1. NMAP -> SYN -> Target
+2. Target -> RST -> NMAP
+PORT STATUS: FILTERED
+1. NMAP -> SYN -> Target
+2. No response...
