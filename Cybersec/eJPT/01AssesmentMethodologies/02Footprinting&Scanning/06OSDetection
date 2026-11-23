@@ -1,3 +1,4 @@
 nmap -sS <Target_IP>
 nmap -T4 -sS -p- <Target_IP>
 nmap -T4 -sS -sV -O --osscan-guess -p- <Target_IP>
+nmap -T4 -sS -sV --version-intensity -O --osscan-guess -p- <Target_IP>
