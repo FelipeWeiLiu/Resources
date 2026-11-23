@@ -9,6 +9,7 @@ and perform a port scan.
 nmap -F <target> //NMAP fast scan option
 nmap -Pn -p- //Indicate -p- to scan all ports (scanning range 1~65535)
 
+nmap -Pn -sS /*
 Typically working theory of TCP SYN Scan (-sS)
 PORT STATUS: OPEN
 1. NMAP -> SYN -> Target
@@ -19,8 +20,11 @@ PORT STATUS: CLOSED
 PORT STATUS: FILTERED
 1. NMAP -> SYN -> Target
 2. No response...
-
 The primary reason that consider the -sS scanning is stealthier scanning option, is because when we receive the
 syn+ack packet from the port that is runnning on the target system, nmap will send a RST packet to finish the connection, 
 and cause it doen't complete the 3-way-handshake process. Its result this scanning option avoid the creation of connection log
-entries on the target system. Most O.S. log the creation of TCP session (Full TCP 3-way-handshake).
+entries on the target system. Most O.S. log the creation of TCP session (Full TCP 3-way-handshake). */
+
+nmap -Pn -sT
+/* The option that requires full tcp 3-way-handshake, only to be used in the case that is no concern for detection of the network,
+is more reliable where accuracy is required. */
