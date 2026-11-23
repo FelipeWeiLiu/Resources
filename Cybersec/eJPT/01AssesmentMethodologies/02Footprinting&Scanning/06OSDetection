@@ -1,4 +1,6 @@
 nmap -sS <Target_IP>
 nmap -T4 -sS -p- <Target_IP>
 nmap -T4 -sS -sV -O --osscan-guess -p- <Target_IP>
-nmap -T4 -sS -sV --version-intensity -O --osscan-guess -p- <Target_IP>
+nmap -T4 -sS -sV --version-intensity 0~9 -O --osscan-guess -p- <Target_IP>
+//version intensity range from 0 to 9, the higher intensity level increases tho possibility of the
+service version that is running on the target system's port, 9 refers try to use all version detection.
