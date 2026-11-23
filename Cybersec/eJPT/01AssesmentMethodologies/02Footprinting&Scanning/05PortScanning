@@ -19,3 +19,8 @@ PORT STATUS: CLOSED
 PORT STATUS: FILTERED
 1. NMAP -> SYN -> Target
 2. No response...
+
+The primary reason that consider the -sS scanning is stealthier scanning option, is because when we receive the
+syn+ack packet from the port that is runnning on the target system, nmap will send a RST packet to finish the connection, 
+and cause it doen't complete the 3-way-handshake process. Its result this scanning option avoid the creation of connection log
+entries on the target system. Most O.S. log the creation of TCP session (Full TCP 3-way-handshake).
