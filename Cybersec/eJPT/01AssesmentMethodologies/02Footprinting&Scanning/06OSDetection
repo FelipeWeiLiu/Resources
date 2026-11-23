@@ -1,1 +1,2 @@
-
+nmap -sS <Target_IP>
+nmap -T4 -sS -p- <Target_IP>
