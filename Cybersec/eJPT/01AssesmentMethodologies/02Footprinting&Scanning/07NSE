@@ -34,3 +34,5 @@ brute(密码猜测), intrusive(入侵), exploit(漏洞利用相关脚本)
 
 Before using each scripts from nmap, is necessary to check its category and know the risk that it will be provided. 
 nmap --script-help="mongodb-databases" //Terminal Output: Categories: default, discovery, safe
+
+nmap -A //Enable OS detection, version detection, script scanning, and traceroute.
