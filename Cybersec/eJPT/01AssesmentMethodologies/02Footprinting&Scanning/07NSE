@@ -4,3 +4,7 @@ write and share scripts to automate(自动化) a wide variety of tasks. Nmap has
 already created scripts by community, nmap is open source.
 
 Nmap's library PATH: /usr/share/nmap/scripts/
+Extension: .nse
+
+ls -la /usr/share/nmap/scripts/ | grep http
+ls -la /usr/share/nmap/scripts/ | grep -e "http"
