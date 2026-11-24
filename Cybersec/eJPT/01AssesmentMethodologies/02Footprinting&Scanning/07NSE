@@ -28,4 +28,6 @@ default(常规默认检测), safe(通常不具备破坏性的检测),
 discovery(主机及服务信息发现), version(辅助服务版本识别),
 auth(身份验证相关检测), vuln(漏洞检测), 
 brute(密码猜测), intrusive(入侵), exploit(漏洞利用相关脚本)
+
+Before using each scripts from nmap, is necessary to check its category and know the risk that it will be provided. 
 nmap --script-help="mongodb-databases" //Terminal Output: Categories: default, discovery, safe
