@@ -10,3 +10,4 @@ ls -la /usr/share/nmap/scripts/ | grep http
 ls -la /usr/share/nmap/scripts/ | grep -e "http"
 
 passive gath scripts, usefull for http enumeration: http-enum.nse
+
