@@ -1,3 +1,8 @@
+Commonly used
+nmap --script=default <TARGET> // or just use the parameter "-sC"
+nmap --script=version <TARGET>
+nmap --script=vuln <TARGET>
+
 NSE Nmap Scripting Engine
 NSE is a powerful feature of the nmap tool or utility and essentially allows users to
 write and share scripts to automate(自动化) a wide variety of tasks. Nmap has a huge library of
@@ -11,3 +16,10 @@ ls -la /usr/share/nmap/scripts/ | grep -e "http"
 
 passive gath scripts, usefull for http enumeration: http-enum.nse
 
+nmap -sC <TARGET>// or use "nmap --script=default <TARGET>"
+
+NMAP Scripts Categories
+default(常规默认检测), safe(通常不具备破坏性的检测),
+discovery(主机及服务信息发现), version(辅助服务版本识别),
+auth(身份验证相关检测), vuln(漏洞检测), 
+brute(密码猜测), intrusive(入侵), exploit(漏洞利用相关脚本)
