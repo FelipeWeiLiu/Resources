@@ -1,3 +1,5 @@
+Nmap's library PATH: /usr/share/nmap/scripts/
+
 nmap --script-help="mongodb-databases" 
 Commonly used
 nmap --script=default <TARGET> // or just use the parameter "-sC"
