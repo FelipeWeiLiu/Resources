@@ -3,6 +3,9 @@ Nmap's library PATH: /usr/share/nmap/scripts/
 ls -la /usr/share/nmap/scripts/ | grep http
 ls -la /usr/share/nmap/scripts/ | grep -e "http"
 
+nmap -sS -sV --script=ftp-* -p55413 -T4 <TARGET>
+// "*" to tell nmap run all scripts that is revelant to vsftpd service.
+
 nmap --script-help="mongodb-databases" 
 Commonly used
 nmap --script=default <TARGET> // or just use the parameter "-sC"
