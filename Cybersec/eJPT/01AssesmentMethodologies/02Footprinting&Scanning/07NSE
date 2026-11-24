@@ -1,5 +1,8 @@
 Nmap's library PATH: /usr/share/nmap/scripts/
 
+ls -la /usr/share/nmap/scripts/ | grep http
+ls -la /usr/share/nmap/scripts/ | grep -e "http"
+
 nmap --script-help="mongodb-databases" 
 Commonly used
 nmap --script=default <TARGET> // or just use the parameter "-sC"
@@ -13,7 +16,6 @@ already created scripts by community, nmap is open source.
 
 Nmap's library PATH: /usr/share/nmap/scripts/
 Extension: .nse
-
 ls -la /usr/share/nmap/scripts/ | grep http
 ls -la /usr/share/nmap/scripts/ | grep -e "http"
 
