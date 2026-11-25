@@ -1,0 +1,16 @@
+How can we use the nmap to detect the presents of a host-based-firewall or the presents of the filterying mechanism.
+Nmap scanning methods in order to evade intrusion detection systems or in order to avoide triggering intrusion detection systems.
+We perform nmap -sA Ack scanning option and
+
+
+ACK scan is very usefull for detect how firewalls handle(处理) unexpected(非预期的) TCP packets.
+
+nmap -> ACK -> Target (In the case of no TCP 3-way-handshake -> Unusually)
+Target -> RST -> nmap (Denied to establish TCP session)
+
+Stateful Firewall
+nmap -> ACK -> Stateful Firewall -> Filtered -> No response... -> Nmap: Filtered
+
+Stateless Firewall
+nmap -> ACK -> Stateless Firewall -> Check ACL rules -> If comply -> Target -> Nmap: Unfiltered
+nmap -> ACK -> Stateless Firewall -> Check ACL rules -> No comply -> No response.. -> Nmap: Filtered
