@@ -14,3 +14,28 @@ nmap -> ACK -> Stateful Firewall -> Filtered -> No response... -> Nmap: Filtered
 Stateless Firewall
 nmap -> ACK -> Stateless Firewall -> Check ACL rules -> If comply -> Target -> Nmap: Unfiltered
 nmap -> ACK -> Stateless Firewall -> Check ACL rules -> No comply -> No response.. -> Nmap: Filtered
+
+
+If port 80 enables to establish new connection while port 443 is filtered
+
+1.
+nmap -> SYN -> p80 -> OPEN
+nmap -> ACK -> p80 -> Filtered
+//The firewall allows the establishment of new session according to the tcp 3-way-handshake,
+but is configured to filtered unexpected traffic (Ack)
+
+2.
+nmap -> SYN -> p80 -> OPEN
+nmap -> ACK -> p80 -> Unfiltered
+//The firewall allows both of the tcp SYN and ACK packet to pass throught
+
+3.
+nmap -> SYN -> p443 -> Filtered
+nmap -> ACK -> p443 -> Unfiltered
+//There may be a stateless filtering rule that specifically targets SYN packets.
+
+4.
+nmap -> SYN -> p443 -> Filtered
+nmap -> ACK -> p443 -> Filtered
+//Both of the tcp SYN and ACK scan is blokced and filtered by firewall, 
+the firewall type cannot be determined.
