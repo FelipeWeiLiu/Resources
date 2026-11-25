@@ -11,6 +11,13 @@ Stateful Firewall
 nmap -> ACK -> Stateful Firewall -> Connection Tracking（连接跟踪）-> unexpected packet ->
 Filtered -> No response... -> Nmap: Filtered
 
+The typically statefull firewall, saves a connection state table that records information, 
+such as the source and destination IP addresses, ports, protocols, and connection states.
+Client: 192.168.1.10:50000
+Server: 192.168.1.100:80
+Protocol: TCP
+State: ESTABLISHED
+
 
 Stateless Firewall
 nmap -> ACK -> Stateless Firewall -> Check ACL rules -> If comply -> Target -> Nmap: Unfiltered
