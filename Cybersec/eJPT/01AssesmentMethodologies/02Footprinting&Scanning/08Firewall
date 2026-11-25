@@ -4,16 +4,18 @@ We perform nmap -sA Ack scanning option and
 
 
 ACK scan is very usefull for detect how firewalls handle(处理) unexpected(非预期的) TCP packets.
-
-nmap -> ACK -> Target (In the case of no TCP 3-way-handshake -> Unusually)
-Target -> RST -> nmap (Denied to establish TCP session)
+Firewall: nmap -> ACK -> Target (In the case of no TCP 3-way-handshake -> Unusually)
+No firewall: Target -> RST -> nmap (Denied to establish TCP session)
 
 Stateful Firewall
-nmap -> ACK -> Stateful Firewall -> Filtered -> No response... -> Nmap: Filtered
+nmap -> ACK -> Stateful Firewall -> Connection Tracking（连接跟踪）-> unexpected packet ->
+Filtered -> No response... -> Nmap: Filtered
+
 
 Stateless Firewall
 nmap -> ACK -> Stateless Firewall -> Check ACL rules -> If comply -> Target -> Nmap: Unfiltered
 nmap -> ACK -> Stateless Firewall -> Check ACL rules -> No comply -> No response.. -> Nmap: Filtered
+
 
 
 If port 80 enables to establish new connection while port 443 is filtered
