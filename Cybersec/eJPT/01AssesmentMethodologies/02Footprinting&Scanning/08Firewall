@@ -10,7 +10,7 @@ nmap -f --mtu <value> //using bytes, for instead, --mtu 8, that is mean fragment
 
 We could also append(附加) random data to sent packets to the target, using "--data-length".
 
-"D" to spoof IP address.
+"D" to spoof IP address. (可以伪造并作为诱饵ip增加隐蔽性，例如将诱饵ip写成默认网关)
 
 nmap -Pn- sS- -sV -p- -f --data-length 200 -D 10.10.23.1, 10.10.23.2 <Target_IP>
 
