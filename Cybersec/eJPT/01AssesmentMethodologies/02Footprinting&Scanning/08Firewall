@@ -14,6 +14,9 @@ We could also append(附加) random data to sent packets to the target, using "-
 
 nmap -Pn- sS- -sV -p- -f --data-length 200 -D 10.10.23.1, 10.10.23.2 <Target_IP>
 
+Using "-g" option to change the source port. 
+nmap -g 53 <Target_IP> 
+
 ACK scan is very usefull for detect how firewalls handle(处理) unexpected(非预期的) TCP packets.
 1.nmap -> ACK -> Target (In the case of no comply TCP 3-way-handshake, result as a unexpected packet)
 2.Target -> RST -> nmap (Denied to establish TCP session)
