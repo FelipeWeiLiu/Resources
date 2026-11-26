@@ -8,6 +8,7 @@ T2: Polite
 T3 //The default timing template used by nmap
 T4: Aggressive
 T5: Insane
+T0 and T1 are very used for IDS evasion.
 
 --scan-delay <time> //Specify the amount of time between each packet been sent
 nmap --scan-delay 15s <Target_IP>
