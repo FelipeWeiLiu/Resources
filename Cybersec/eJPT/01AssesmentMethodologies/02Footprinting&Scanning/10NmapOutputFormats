@@ -19,6 +19,11 @@ db_import <file.xml> //Specify the PATH and the xml format file that we need to 
 hosts //To show target information that we import with the xml format file on the previous step.
 services // To show the open ports that is running on the target system that we import with the xml format file on the previous step.
 
+Run the nmap command within metasploit
+db_nmap -Pn -sS -sV -O -p445 <TARGET>
+//When we utilize the db_nmap command within the metasploit framework, the scan results will be automatically saved in the metasploit framework
+within the current work space that we operating in.
+
 -oS //Script kiddie format
 
 -oG //Grepable format, using grep.
