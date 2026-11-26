@@ -8,6 +8,11 @@ packet into smaller packets. Using the parameter "-f" and specify MTU (Maximum T
 nmap -f
 nmap -f --mtu <value> //using bytes, for instead, --mtu 8, that is mean fragment the packet into smallers packets that considered 8 bytes for each one.
 
+We could also append(附加) random data to sent packets to the target, using "--data-length".
+
+"D" to spoof IP address.
+
+nmap -Pn- sS- -sV -p- -f --data-length 200 -D 10.10.23.1, 10.10.23.2 <Target_IP>
 
 ACK scan is very usefull for detect how firewalls handle(处理) unexpected(非预期的) TCP packets.
 1.nmap -> ACK -> Target (In the case of no comply TCP 3-way-handshake, result as a unexpected packet)
