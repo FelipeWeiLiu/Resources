@@ -9,3 +9,8 @@ and have all relevant information about the target. That make esier to have a ce
 -oS //Script kiddie format
 
 -oG //Grepable format, using grep.
+
+-oA <basename> //Allows output our scan results in the 3 major formats at once (-oN, -oX, -oG)
+
+-v //Increase amount of information display to our terminal when we performing the scan.
+
