@@ -6,7 +6,7 @@ Firewall evasion
 One of the technique that we utlize to evade intrution detection systems or to make harder to detect port scan activity in Nmap is to fragment the
 packet into smaller packets. Using the parameter "-f" and specify MTU (Maximum Transmission Unit)
 nmap -f
-nmap -f --mtu <value> //using bytes, for instead, --mtu 8, that is mean fragment the packet into smallers packets that considered 8 bytes for each one.
+nmap -f --mtu <value> //using bytes, for instead, --mtu 8, that is mean splitting large packet into smallers packets that considered 8 bytes for each one.
 
 We could also append(附加) random data to sent packets to the target, using "--data-length".
 
