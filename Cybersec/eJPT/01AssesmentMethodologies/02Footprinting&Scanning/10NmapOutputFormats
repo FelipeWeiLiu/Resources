@@ -17,7 +17,7 @@ workspace
 db_status //To check the database status, in this case, it should output "Connected to msf. Connection type: postgresql."
 db_import <file.xml> //Specify the PATH and the xml format file that we need to import
 hosts //To show target information that we import with the xml format file on the previous step.
-
+services // To show the open ports that is running on the target system that we import with the xml format file on the previous step.
 
 -oS //Script kiddie format
 
