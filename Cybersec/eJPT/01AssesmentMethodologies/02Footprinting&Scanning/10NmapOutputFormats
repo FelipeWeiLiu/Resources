@@ -13,7 +13,7 @@ We need to input those commands on the terminal
 service postgresql start
 msfconsole
 workspace -a pentest_1 // use workspace -h to show the commands
-workspace
+workspace pentest_1
 db_status //To check the database status, in this case, it should output "Connected to msf. Connection type: postgresql."
 db_import <file.xml> //Specify the PATH and the xml format file that we need to import
 hosts //To show target information that we import with the xml format file on the previous step.
