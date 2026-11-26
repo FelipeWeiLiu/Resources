@@ -9,6 +9,7 @@ T4: Aggressive
 T5: Insane
 
 --scan-delay <time> //Specify the amount of time between each packet been sent
+nmap --scan-delay 15s <Target_IP>
 
 --host-timeout <time> //Give up on target after this long <time>
 //Specify --host-timeout 5s;3m;1h
