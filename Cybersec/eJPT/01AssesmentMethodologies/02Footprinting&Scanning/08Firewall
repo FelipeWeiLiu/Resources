@@ -2,6 +2,12 @@ How can we use the nmap to detect the presents of a host-based-firewall or the p
 Nmap scanning methods in order to evade intrusion detection systems or in order to avoide triggering intrusion detection systems.
 We perform nmap -sA Ack scanning option as a method to detect windows firewall.
 
+Firewall evasion
+One of the technique that we utlize to evade intrution detection systems or to make harder to detect port scan activity in Nmap is to fragment the
+packet into smaller packets. Using the parameter "-f" and specify MTU (Maximum Transmission Unit)
+nmap -f
+nmap -f --mtu <value> //using bytes, for instead, --mtu 8, that is mean fragment the packet into smallers packets that considered 8 bytes for each one.
+
 
 ACK scan is very usefull for detect how firewalls handle(处理) unexpected(非预期的) TCP packets.
 1.nmap -> ACK -> Target (In the case of no comply TCP 3-way-handshake, result as a unexpected packet)
