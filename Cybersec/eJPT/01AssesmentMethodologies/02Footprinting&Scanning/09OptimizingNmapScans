@@ -7,3 +7,8 @@ T2: Polite
 T3 //The default timing template used by nmap
 T4: Aggressive
 T5: Insane
+
+--scan-delay <time> //Specify the amount of time between each packet been sent
+
+--host-timeout <time> //Give up on target after this long <time>
+//Specify --host-timeout 5s;3m;1h
