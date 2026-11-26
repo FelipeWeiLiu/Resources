@@ -1,1 +1,11 @@
+Differents output formats that nmap provides.
+OUTPUT formats:
 
+-oN //Normal format, save the results with the format that we've typically seen on the terminal.
+
+-oX //XML format, we can save the nmap results to a XML formats and import them to the Metasploit Framework database,
+and have all relevant information about the target. That make esier to have a centralise view of the target.
+
+-oS //Script kiddie format
+
+-oG //Grepable format, using grep.
