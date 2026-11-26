@@ -1,4 +1,5 @@
 Optimizing (优化) nmap scans
+Speed up or slow down
 
 -T<0-5>
 T0: Paranoid //Really used for to Intrusion detection systems evasion
