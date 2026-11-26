@@ -1,0 +1,9 @@
+Optimizing (优化) nmap scans
+
+-T<0-5>
+T0: Paranoid //Really used for to Intrusion detection systems evasion
+T1: Sneaky
+T2: Polite
+T3 //The default timing template used by nmap
+T4: Aggressive
+T5: Insane
